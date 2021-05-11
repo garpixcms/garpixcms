@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+
+  server:
+    image: nginx:alpine
+    restart: always
+    depends_on:
+      - web
+    volumes:
+     - ./nginx.conf:/etc/nginx/nginx.conf
+     - ./public:/code/public
+    ports:
+      - '80:80'
+      - '443:443'
+
+  web:
+    build: .
+    command: sh -c "/code/run.sh"
+    restart: always
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+    volumes:
+      - ./public:/code/public
+
+  postgres:
+    image: postgres:13-alpine
+    restart: always
+    env_file:
+    - .env
+    volumes:
+      - ./dumps:/code/dumps
+      - ./data/postgresql:/var/lib/postgresql/data

@@ -1,0 +1,8 @@
+{% extends 'garpixcms/base.html' %}
+
+{% block content %}
+<h1>{{object.title}} <span class="text-muted">Главная страница</span></h1>
+<div>
+    {{object.content|safe}}
+</div>
+{% endblock %}

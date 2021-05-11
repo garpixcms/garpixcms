@@ -1,0 +1,1 @@
+from garpixcms.settings import *

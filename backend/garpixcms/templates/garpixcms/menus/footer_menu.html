@@ -1,0 +1,5 @@
+{% for menu_item in menu %}
+<a {% if menu_item.target_blank %}target="_blank" {% endif %}
+   href="{{ menu_item.get_link }}">{{ menu_item.title }}</a>
+{% if not forloop.last %}|{% endif %}
+{% endfor %}

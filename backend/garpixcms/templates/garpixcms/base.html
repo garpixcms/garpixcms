@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% include 'garpix_page/seo.html' %}
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
+          crossorigin="anonymous">
+</head>
+<body>
+{% include 'garpixcms/include/header.html' %}
+
+<main class="container">
+    {% block content %}
+    {% endblock %}
+</main>
+
+{% include 'garpixcms/include/footer.html' %}
+</body>
+</html>
