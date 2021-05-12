@@ -8,7 +8,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='garpixcms',
-    version='1.0.2',
+    version='1.0.3',
     description='',
     long_description=long_description,
     url='https://github.com/garpixcms/garpixcms',
@@ -37,5 +37,6 @@ setup(
         'uwsgi >= 2.0.19.1',
         'environs >= 9.3.2',
         'django-ckeditor >= 6.0.0',
+        'djangorestframework >= 3.12.4',
     ],
 )

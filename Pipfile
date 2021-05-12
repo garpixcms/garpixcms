@@ -12,6 +12,7 @@ psycopg2-binary = "*"
 garpix-qa = "==1.0.5"
 uwsgi = "*"
 django-ckeditor = "*"
+djangorestframework = "*"
 
 [dev-packages]
 

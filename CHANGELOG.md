@@ -1,3 +1,7 @@
+### 1.0.3 (12.05.2021)
+
+- Bug fix with djangorestframework dependency.
+
 ### 1.0.2 (12.05.2021)
 
 - Bug fix with CKEditor dependency.
