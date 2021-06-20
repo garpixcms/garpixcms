@@ -8,13 +8,9 @@ pip install cookiecutter
 cookiecutter https://github.com/garpixcms/garpixcms-empty-template
 
 # Enter name for your website...
-
-cd website
-
-# See README.md of project
-
-cat README.md
 ```
+
+For russian documentation, please see [https://garpixcms.github.io/garpixcms/](https://garpixcms.github.io/garpixcms/)
 
 # Changelog
 

@@ -1,0 +1,15 @@
+theme:
+  name: "material"
+
+site_name: GarpixCMS
+
+plugins:
+- search
+- mkdocstrings
+
+nav:
+  - Быстрый старт: index.md
+  - Установка:
+    - Установка зависимостей: install_deps.md
+    - Создание нового проекта: install_new_project.md
+    - Запускаем проект: install_start_project.md

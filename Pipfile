@@ -13,6 +13,8 @@ garpix-qa = "==1.0.5"
 uwsgi = "*"
 django-ckeditor = "*"
 djangorestframework = "*"
+mkdocs-material = "*"
+mkdocstrings = "*"
 
 [dev-packages]
 

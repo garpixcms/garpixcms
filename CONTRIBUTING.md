@@ -47,3 +47,12 @@ python3 backend/manage.py runserver
 ```
 
 9. Make changes and send pull request to main repository.
+
+----
+
+For documentation:
+
+```
+mkdocs serve
+mkdocs gh-deploy
+```
