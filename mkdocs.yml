@@ -13,3 +13,5 @@ nav:
     - Установка зависимостей: install_deps.md
     - Создание нового проекта: install_new_project.md
     - Запускаем проект: install_start_project.md
+  - Примеры:
+    - Простой корпорат на шаблонах: example_simple_templates_site.md
