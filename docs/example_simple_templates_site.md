@@ -27,7 +27,6 @@
 * Название: "Главная"
 * ЧПУ: стираем, должно быть пустым
 * Сайты для отображения: Выбираем единственное значение
-* Тип страницы: "Главная страница"
 * Содержимое: "Главная страница моего сайта"
 * Можно также заполнить SEO-теги (далее вы сможете их увидеть, если откроете код страницы [http://localhost:8000/](http://localhost:8000/))
 
@@ -42,7 +41,6 @@
 * Название: "О нас"
 * ЧПУ: автоматически
 * Сайты для отображения: Выбираем единственное значение
-* Тип страницы: "Обычная страница"
 * Содержимое: "Здесь текст о нас"
 
 **2.5. Далее создаем меню. Переходим в "Пункты меню".**
@@ -82,35 +80,10 @@
 Для начала надо понять терминологию:
 
 * Страница (Page, Model Page) - это модель, дочерний класс от `BasePage`. Вы можете создавать их сами.
-* Тип страницы (Page Type) - захардкоженный в `settings.py` тип страницы. Необходим для возможности создания разного поведения и представления страниц (именно поэтому он не объединен со Страницей в одну сущность).
-* Контекст (Context) - функция, которая возвращает словарь. Значения можно применять в шаблонах. Всегда включает в себя `object` (объект класса страницы) и `request`.
+* Контекст (Context) - функция, которая возвращает словарь. Находится в модели. Значения можно применять в шаблонах. Всегда включает в себя `object` (объект класса страницы) и `request`.
 * Шаблон (Template) - стандартный Django шаблон.
 
-Рассмотрим то, что есть в типах страниц по умолчанию (файл `app/settings.py` импортирует все из внутреннего `garpixcms/settings.py`):
-
-```python
-PAGE_TYPE_HOME = 'HOME'  # Тип страницы
-PAGE_TYPE_DEFAULT = 'DEFAULT'  # Тип страницы
-
-PAGE_TYPES = {
-    PAGE_TYPE_HOME: {
-            'title': 'Главная страница',  # Название для типа страницы
-            'template': 'garpixcms/pages/home.html',  # Шаблон для типа страницы
-            'context': 'garpix_page.contexts.default.context'  # Контекст для типа страницы
-    },
-    PAGE_TYPE_DEFAULT: {
-            'title': 'Обычная страница',  # Название для типа страницы
-            'template': 'garpixcms/pages/default.html',  # Шаблон для типа страницы
-            'context': 'garpix_page.contexts.default.context'  # Контекст для типа страницы
-    },
-}
-
-CHOICES_PAGE_TYPES = [(k, v['title']) for k, v in PAGE_TYPES.items()]  # Получение choices из словаря
-```
-
-Обратите внимание, что тип страниц связывается с самой страницей (моделью) через админ-панель.
-
-Вы можете посмотреть на страницу по умолчанию в `garpixcms/models/page`.
+Вы можете посмотреть на страницу по умолчанию в `garpixcms/models/page.py`.
 
 **3.2. Добавляем новые типы страниц**
 
@@ -142,10 +115,12 @@ class ContactPage(BasePage):
     address = models.CharField(max_length=250, verbose_name='Адрес', blank=True, default='', null=False)
     phone = models.CharField(max_length=30, verbose_name='Номер телефона', blank=True, default='', null=False)
     email = models.CharField(max_length=100, verbose_name='E-mail', blank=True, default='', null=False)
+    
+    template = 'pages/contact_page.html'
 
     class Meta:
-        verbose_name = "Страница Контакты"
-        verbose_name_plural = "Страницы Контакты"
+        verbose_name = "Контакты"
+        verbose_name_plural = "Контакты"
         ordering = ('-created_at',)
 
 ```
@@ -229,43 +204,13 @@ python3 manage.py migrate
 {% endblock %}
 ```
 
-Теперь добавляем новый тип страниц, редактируем `app/settings.py`:
-
-```python
-PAGE_TYPE_HOME = 'HOME'
-PAGE_TYPE_DEFAULT = 'DEFAULT'
-PAGE_TYPE_CONTACT = 'CONTACT'
-
-PAGE_TYPES = {
-    PAGE_TYPE_HOME: {
-            'title': 'Главная страница',
-            'template': 'garpixcms/pages/home.html',
-            'context': 'garpix_page.contexts.default.context'
-    },
-    PAGE_TYPE_DEFAULT: {
-            'title': 'Обычная страница',
-            'template': 'garpixcms/pages/default.html',
-            'context': 'garpix_page.contexts.default.context'
-    },
-    PAGE_TYPE_CONTACT: {
-            'title': 'Страница Контакты',
-            'template': 'pages/contact_page.html',
-            'context': 'garpix_page.contexts.default.context'
-    },
-}
-
-CHOICES_PAGE_TYPES = [(k, v['title']) for k, v in PAGE_TYPES.items()]
-
-```
-
 После этого идем в админ-панель и добавляем новую страницу через "Структура страниц":
 
-Страница "Контакты" (выбираем модель "Страница Контакты").
+Страница "Контакты" (выбираем модель "Контакты").
 
 * Название: "Контакты"
 * ЧПУ: автоматически
 * Сайты для отображения: Выбираем единственное значение
-* Тип страницы: "Страница Контакты"
 * E-mail: "example@gmail.com"
 * Номер телефона: "8 999 999 99 99"
 * Адрес: "г. Москва"
@@ -284,7 +229,8 @@ CHOICES_PAGE_TYPES = [(k, v['title']) for k, v in PAGE_TYPES.items()]
 
 Добавим новую модель и создадим тип страницы.
 
-В директории `content/models` создаем файл `news_page.py`:
+В директории `content/models` создаем файл `news_page.py` (обратите внимание, что поля совпадают с обычной страницей (`garpixcms.Page`), но мы создали новую модель.
+Это сделали для того, чтобы удобнее было управлять содержимым. Плюс, вполне возможно, что в будущем потребуется сделать особую логику, например, отложенную публикацию новостей.
 
 ```python
 from garpix_page.models import BasePage
@@ -293,6 +239,8 @@ from ckeditor_uploader.fields import RichTextUploadingField
 
 class NewsPage(BasePage):
     content = RichTextUploadingField(verbose_name='Содержание', blank=True, default='')
+    
+    template = 'pages/news_page.html'
 
     class Meta:
         verbose_name = "Новость"
@@ -373,42 +321,123 @@ python3 manage.py migrate
 {% endblock %}
 ```
 
-Теперь добавляем новый тип страниц, редактируем `app/settings.py`:
-
-```python
-PAGE_TYPE_HOME = 'HOME'
-PAGE_TYPE_DEFAULT = 'DEFAULT'
-PAGE_TYPE_CONTACT = 'CONTACT'
-PAGE_TYPE_NEWS_DETAIL = 'NEWS_DETAIL'
-
-PAGE_TYPES = {
-    PAGE_TYPE_HOME: {
-            'title': 'Главная страница',
-            'template': 'garpixcms/pages/home.html',
-            'context': 'garpix_page.contexts.default.context'
-    },
-    PAGE_TYPE_DEFAULT: {
-            'title': 'Обычная страница',
-            'template': 'garpixcms/pages/default.html',
-            'context': 'garpix_page.contexts.default.context'
-    },
-    PAGE_TYPE_CONTACT: {
-            'title': 'Страница Контакты',
-            'template': 'pages/contact_page.html',
-            'context': 'garpix_page.contexts.default.context'
-    },
-    PAGE_TYPE_NEWS_DETAIL: {
-            'title': 'Страница Детальная новость',
-            'template': 'pages/news_detail.html',
-            'context': 'garpix_page.contexts.default.context'
-    },
-}
-
-CHOICES_PAGE_TYPES = [(k, v['title']) for k, v in PAGE_TYPES.items()]
-
-```
-
 Пока не добавляйте новости в админ-панели. Сначала сделаем их списочное представление, см. дальше.
 
 **3.2.3. Страница "Список новостей"**
 
+Теперь необходимо создать страницу, которая будет содержать список новостей. Для этого сделаем еще один тип страниц.
+
+В директории `content/models` создаем файл `news_list_page.py` и добавим модели особый контекст (функция `get_context`).
+
+```python
+from garpix_page.models import BasePage
+from .news_page import NewsPage
+
+
+class NewsListPage(BasePage):
+    template = 'pages/news_list_page.html'
+    
+    def get_context(self, request=None, *args, **kwargs):
+        context = super().get_context(request, *args, **kwargs)
+        posts = NewsPage.on_site.filter(is_active=True, parent=kwargs['object'])
+        context.update({
+            'posts': posts
+        })
+        return context
+
+    class Meta:
+        verbose_name = "Список новостей"
+        verbose_name_plural = "Списки новостей"
+        ordering = ('-created_at',)
+
+```
+
+Изменяем файл `content/models/__init__.py`:
+
+```python
+from .contact_page import ContactPage
+from .news_page import NewsPage
+from .news_list import NewsListPage
+
+```
+
+В директории `content/admin` создаем файл `news_list_page.py`:
+
+```python
+from ..models.news_list import NewsListPage
+from django.contrib import admin
+from garpix_page.admin import BasePageAdmin
+
+
+@admin.register(NewsListPage)
+class NewsListPageAdmin(BasePageAdmin):
+    pass
+
+```
+
+Изменяем файл `content/admin/__init__.py`:
+
+```python
+from .contact_page import ContactPageAdmin
+from .news_page import NewsPageAdmin
+from .news_list_page import NewsListPage
+
+```
+
+В директории `content/translation` создаем файл `news_list_page.py`:
+
+```python
+from modeltranslation.translator import TranslationOptions, register
+from ..models import NewsListPage
+
+
+@register(NewsListPage)
+class NewsListPageTranslationOptions(TranslationOptions):
+    pass
+
+```
+
+Изменяем файл `content/translation/__init__.py`:
+
+```python
+from .contact_page import ContactPageTranslationOptions
+from .news_page import NewsPageTranslationOptions
+from .news_list_page import NewsListPageTranslationOptions
+
+```
+
+Теперь опять создаем миграции и применяем их:
+
+```bash
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
+
+Также, можем реализовать другой шаблон, поэтому давайте создадим файл `content/templates/pages/news_list_page.html`:
+
+```html
+{% extends 'garpixcms/base.html' %}
+
+{% block content %}
+<h1>{{object.title}}</h1>
+{% for post in posts %}
+    <div>
+        <h3><a href="{{post.get_absolute_url}}">{{post.title}}</a></h3>
+    </div>
+{% endfor %}
+{% endblock %}
+```
+
+Теперь можно заходить в административную панель, создавать объект "Список новостей" и заполнять его данные.
+
+После этого, создавайте объекты "Новость" и указывайте поле "Родитель" у объекта список новостей, который только что создали.
+
+Остается добавить меню:
+
+* Название для админа: Новости
+* Название: Новости
+* Тип меню: Header menu
+* Страница, на которую ведет пункт меню: Список новостей
+* Сортировка: 100
+
+После этого, можно перейти на [http://localhost:8000](http://localhost:8000) и посмотреть что получилось.
