@@ -178,7 +178,7 @@ from .contact_page import ContactPageTranslationOptions
 ```bash
 # app/settings.py
 
-INSTALLED_APPS.append('content')
+INSTALLED_APPS += ['content']
 
 ```
 
