@@ -536,7 +536,7 @@ class ContactPageTranslationOptions(TranslationOptions):
 <p>Добавляем новое приложение <code>content</code> в <code>app/settings.py</code>:</p>
 <pre><code class="language-bash"># app/settings.py
 
-INSTALLED_APPS.append('content')
+INSTALLED_APPS += ['content']
 
 </code></pre>
 <p>После чего создаем миграции и применяем их:</p>
