@@ -161,24 +161,6 @@ CKEDITOR_CONFIGS = {
 
 COMMON_CONTEXT = 'garpix_page.contexts.default.context'
 
-PAGE_TYPE_HOME = 'HOME'
-PAGE_TYPE_DEFAULT = 'DEFAULT'
-
-PAGE_TYPES = {
-    PAGE_TYPE_HOME: {
-            'title': 'Главная страница',
-            'template': 'garpixcms/pages/home.html',
-            'context': 'garpix_page.contexts.default.context'
-    },
-    PAGE_TYPE_DEFAULT: {
-            'title': 'Обычная страница',
-            'template': 'garpixcms/pages/default.html',
-            'context': 'garpix_page.contexts.default.context'
-    },
-}
-
-CHOICES_PAGE_TYPES = [(k, v['title']) for k, v in PAGE_TYPES.items()]
-
 # menu
 
 MENU_TYPE_HEADER_MENU = 'header_menu'

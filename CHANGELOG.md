@@ -1,3 +1,7 @@
+### 1.1.0 (22.06.2021)
+
+- Upgrade `garpix_page` to version 2.0.0.
+
 ### 1.0.3 (12.05.2021)
 
 - Bug fix with djangorestframework dependency.
