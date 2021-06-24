@@ -1,3 +1,7 @@
+### 1.3.0 (24.06.2021)
+
+- Added `garpix_auth`.
+
 ### 1.2.0 (23.06.2021)
 
 - Upgrade `garpix_page` to version 2.2.0.

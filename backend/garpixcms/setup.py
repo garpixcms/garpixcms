@@ -33,6 +33,7 @@ setup(
         'garpix_page == 2.2.0',
         'garpix_menu == 1.0.0',
         'garpix_qa == 1.0.5',
+        'garpix_auth == 1.1.0',
         'psycopg2-binary >= 2.8.6',
         'uwsgi >= 2.0.19.1',
         'environs >= 9.3.2',
