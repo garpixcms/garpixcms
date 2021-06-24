@@ -15,3 +15,4 @@ nav:
     - Запускаем проект: install_start_project.md
   - Примеры:
     - Простой корпорат на шаблонах: example_simple_templates_site.md
+    - Пример реализации входа на сайт: example_simple_auth.md
