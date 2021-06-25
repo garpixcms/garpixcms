@@ -1,0 +1,12 @@
+{% extends 'garpixcms/base.html' %}
+
+{% block content %}
+<h1>{{object.title}}</h1>
+
+<h2>Вход</h2>
+<p>Чтобы форма входа работала, включите в <code>app/settings.py</code> переменную <code>ENABLE_GARPIX_AUTH = True</code></p>
+<div>
+    {% include 'garpixcms/include/login.html' %}
+</div>
+
+{% endblock %}

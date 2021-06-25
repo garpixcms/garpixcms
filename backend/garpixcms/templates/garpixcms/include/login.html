@@ -1,0 +1,10 @@
+{% if request.user.is_authenticated %}
+    User is authenticated ({{request.user.username}}) | <a href="{% url 'logout' %}">Logout</a>
+{% else %}
+    <form action="{% url 'authorize' %}?next=/" method="post">
+        {% csrf_token %}
+        <div><input type="text" name="username"></div>
+        <div><input type="password" name="password"></div>
+        <div><button type="submit">Login</button></div>
+    </form>
+{% endif %}

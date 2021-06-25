@@ -1,3 +1,7 @@
+### 1.3.1 (24.06.2021)
+
+- Fix templaets, docs.
+
 ### 1.3.0 (24.06.2021)
 
 - Added `garpix_auth`.

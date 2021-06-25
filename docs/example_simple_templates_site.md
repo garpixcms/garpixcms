@@ -441,3 +441,16 @@ python3 manage.py migrate
 * Сортировка: 100
 
 После этого, можно перейти на [http://localhost:8000](http://localhost:8000) и посмотреть что получилось.
+
+P.S. Вы можете переписать шаблон для обычных страниц `templates/garpixcms/pages/default.html`, например, на следующее содержимое:
+
+```html
+{% extends 'garpixcms/base.html' %}
+
+{% block content %}
+<h1>{{object.title}}</h1>
+<div>
+    {{object.content|safe}}
+</div>
+{% endblock %}
+```
