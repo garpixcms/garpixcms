@@ -357,8 +357,23 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#spa-httpie" class="md-nav__link">
+    Пример использования входа для SPA сайтов через httpie
+  </a>
+  
+    <nav class="md-nav" aria-label="Пример использования входа для SPA сайтов через httpie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#1-httpie" class="md-nav__link">
     Шаг 1. Установите httpie:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-appsettingspy" class="md-nav__link">
+    Шаг 2. Включите в app/settings.py вход:
   </a>
   
 </li>
@@ -374,6 +389,59 @@
   <a href="#3" class="md-nav__link">
     Шаг 3. Сделайте запрос на вход
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Пример использования входа для сайтов на шаблонах
+  </a>
+  
+    <nav class="md-nav" aria-label="Пример использования входа для сайтов на шаблонах">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    Шаг 1. Настраиваем сайт
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-appsettingspy_1" class="md-nav__link">
+    Шаг 2. Включите в app/settings.py вход:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    Шаг 3. Создаем страницу входа
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-" class="md-nav__link">
+    Шаг 4. Создайте в админ-панели страницу входа
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    Шаг 5. Попробуйте войти
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -457,8 +525,23 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#spa-httpie" class="md-nav__link">
+    Пример использования входа для SPA сайтов через httpie
+  </a>
+  
+    <nav class="md-nav" aria-label="Пример использования входа для SPA сайтов через httpie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#1-httpie" class="md-nav__link">
     Шаг 1. Установите httpie:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-appsettingspy" class="md-nav__link">
+    Шаг 2. Включите в app/settings.py вход:
   </a>
   
 </li>
@@ -474,6 +557,59 @@
   <a href="#3" class="md-nav__link">
     Шаг 3. Сделайте запрос на вход
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Пример использования входа для сайтов на шаблонах
+  </a>
+  
+    <nav class="md-nav" aria-label="Пример использования входа для сайтов на шаблонах">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    Шаг 1. Настраиваем сайт
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-appsettingspy_1" class="md-nav__link">
+    Шаг 2. Включите в app/settings.py вход:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    Шаг 3. Создаем страницу входа
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-" class="md-nav__link">
+    Шаг 4. Создайте в админ-панели страницу входа
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    Шаг 5. Попробуйте войти
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -514,10 +650,16 @@ ENABLE_GARPIX_AUTH = True
 <li><code>/token-auth/</code> - вход для SPA сайтов, выдает токен.</li>
 </ul>
 <h2 id="_3">Примеры</h2>
-<p>Пример использования входа для SPA сайтов через httpie:</p>
+<h3 id="spa-httpie">Пример использования входа для SPA сайтов через httpie</h3>
 <h4 id="1-httpie">Шаг 1. Установите httpie:</h4>
 <pre><code>brew install httpie  # для macos
 apt-get install httpie -y  # для debian/ubuntu
+</code></pre>
+<h4 id="2-appsettingspy">Шаг 2. Включите в <code>app/settings.py</code> вход:</h4>
+<pre><code class="language-python">from garpixcms.settings import *
+
+ENABLE_GARPIX_AUTH = True
+
 </code></pre>
 <h4 id="2_1">Шаг 2. Запустите сайт</h4>
 <pre><code class="language-bash">python3 backend/manage.py runserver
@@ -542,6 +684,102 @@ X-Frame-Options: DENY
 }
 
 </code></pre>
+<h3 id="_4">Пример использования входа для сайтов на шаблонах</h3>
+<h4 id="1_1">Шаг 1. Настраиваем сайт</h4>
+<p>Создайте главную страницу по примеру из <a href="example_simple_templates_site.html">документации</a>.</p>
+<h4 id="2-appsettingspy_1">Шаг 2. Включите в <code>app/settings.py</code> вход:</h4>
+<pre><code class="language-python">from garpixcms.settings import *
+
+ENABLE_GARPIX_AUTH = True
+
+</code></pre>
+<h4 id="3_1">Шаг 3. Создаем страницу входа</h4>
+<p>Добавим новую модель и создадим тип страницы.</p>
+<p>В директории <code>content/models</code> создаем файл <code>login_page.py</code>.</p>
+<pre><code class="language-python">from garpix_page.models import BasePage
+
+
+class LoginPage(BasePage):
+
+    template = 'garpixcms/pages/login.html'
+
+    class Meta:
+        verbose_name = &quot;Страница входа&quot;
+        verbose_name_plural = &quot;Страницы входа&quot;
+        ordering = ('-created_at',)
+
+</code></pre>
+<p>Изменяем файл <code>content/models/__init__.py</code>:</p>
+<pre><code class="language-python"># ...
+from .login_page import LoginPage
+
+</code></pre>
+<p>В директории <code>content/admin</code> создаем файл <code>login_page.py</code>:</p>
+<pre><code class="language-python">from ..models.login_page import LoginPage
+from django.contrib import admin
+from garpix_page.admin import BasePageAdmin
+
+
+@admin.register(LoginPage)
+class LoginPageAdmin(BasePageAdmin):
+    pass
+
+</code></pre>
+<p>Изменяем файл <code>content/admin/__init__.py</code>:</p>
+<pre><code class="language-python"># ...
+from .login_page import LoginPageAdmin
+
+</code></pre>
+<p>В директории <code>content/translation</code> создаем файл <code>login_page.py</code>:</p>
+<pre><code class="language-python">from modeltranslation.translator import TranslationOptions, register
+from ..models import LoginPage
+
+
+@register(LoginPage)
+class LoginPageTranslationOptions(TranslationOptions):
+    pass
+
+</code></pre>
+<p>Изменяем файл <code>content/translation/__init__.py</code>:</p>
+<pre><code class="language-python"># ...
+from .login_page import LoginPageTranslationOptions
+
+</code></pre>
+<p>Теперь опять создаем миграции и применяем их:</p>
+<pre><code class="language-bash">python3 manage.py makemigrations
+python3 manage.py migrate
+</code></pre>
+<p>Также, вы можете реализовать другой шаблон. Ниже пример обычного шаблона <code>garpixcms/pages/login.html</code>:</p>
+<pre><code class="language-html">{% extends 'garpixcms/base.html' %}
+
+{% block content %}
+&lt;h1&gt;{{object.title}}&lt;/h1&gt;
+
+&lt;h2&gt;Вход&lt;/h2&gt;
+&lt;p&gt;Чтобы форма входа работала, включите в &lt;code&gt;app/settings.py&lt;/code&gt; переменную &lt;code&gt;ENABLE_GARPIX_AUTH = True&lt;/code&gt;&lt;/p&gt;
+&lt;div&gt;
+    {% include 'garpixcms/include/login.html' %}
+&lt;/div&gt;
+
+{% endblock %}
+</code></pre>
+<p>И файла <code>garpixcms/include/login.html</code>:</p>
+<pre><code class="language-html">{% if request.user.is_authenticated %}
+    User is authenticated ({{request.user.username}}) | &lt;a href=&quot;{% url 'logout' %}&quot;&gt;Logout&lt;/a&gt;
+{% else %}
+    &lt;form action=&quot;{% url 'authorize' %}?next=/&quot; method=&quot;post&quot;&gt;
+        {% csrf_token %}
+        &lt;div&gt;&lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;button type=&quot;submit&quot;&gt;Login&lt;/button&gt;&lt;/div&gt;
+    &lt;/form&gt;
+{% endif %}
+
+</code></pre>
+<h4 id="4-">Шаг 4. Создайте в админ-панели страницу входа</h4>
+<p>Создайте в "Структуре страниц" новую страницу и заполните необходимые поля. Обратите внимание, что ЧПУ не должен совпадать с обработчиком логина (URL: <code>/login/</code>)</p>
+<h4 id="5">Шаг 5. Попробуйте войти</h4>
+<p>Перейдите на страницу http://localhost:8000/ и попробуйте войти с помощью формы по умолчанию.</p>
                 
               
               
