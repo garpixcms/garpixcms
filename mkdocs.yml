@@ -16,3 +16,4 @@ nav:
   - Примеры:
     - Простой корпорат на шаблонах: example_simple_templates_site.md
     - Пример реализации входа на сайт: example_simple_auth.md
+    - Пример уведомлений на сайте: example_notify.md
