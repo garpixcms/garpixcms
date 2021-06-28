@@ -1,0 +1,759 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
+    
+    
+      
+        <title>Пример уведомлений на сайте - GarpixCMS</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ca7ac06f.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.f1a3b89f.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="GarpixCMS" class="md-header__button md-logo" aria-label="GarpixCMS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GarpixCMS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Пример уведомлений на сайте
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="GarpixCMS" class="md-nav__button md-logo" aria-label="GarpixCMS" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    GarpixCMS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        Быстрый старт
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Установка
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Установка" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Установка
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="install_deps.html" class="md-nav__link">
+        Установка зависимостей
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="install_new_project.html" class="md-nav__link">
+        Создание нового проекта
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="install_start_project.html" class="md-nav__link">
+        Запускаем проект
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Примеры
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Примеры" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Примеры
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="example_simple_templates_site.html" class="md-nav__link">
+        Простой корпорат на шаблонах
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="example_simple_auth.html" class="md-nav__link">
+        Пример реализации входа на сайт
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Пример уведомлений на сайте
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="example_notify.html" class="md-nav__link md-nav__link--active">
+        Пример уведомлений на сайте
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Общий принцип работы
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Настройка:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Важно!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    Обобщенный принцип работы
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    Использование:
+  </a>
+  
+    <nav class="md-nav" aria-label="Использование:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    Шаблоны
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viber" class="md-nav__link">
+    Viber
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Общий принцип работы
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Настройка:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Важно!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    Обобщенный принцип работы
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    Использование:
+  </a>
+  
+    <nav class="md-nav" aria-label="Использование:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    Шаблоны
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viber" class="md-nav__link">
+    Viber
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">Пример уведомлений на сайте</h1>
+<h2 id="_2">Общий принцип работы</h2>
+<ol>
+<li>
+<p>Зайти в админ-панель и перейти в раздел "Уведомления" - "SMTP-аккаунты".
+Добавить SMTP-аккаунт для отправки Email-уведомлений. Это будут отправители Email-уведомлений.</p>
+</li>
+<li>
+<p>Также перейти в "Уведомления" - "Категории" и создать категорию, которая будет использоваться
+для отправки писем. Обычно достаточно одной категории. Возможность вносить несколько категорий
+необходима для разделения на информационные и маркетинговые уведомления.</p>
+</li>
+<li>
+<p>Зайти в "Уведомления" - "Шаблоны" и создать шаблон на определенное событие (когда вы добавили
+их в <code>settings.py</code> - см. ниже в настройке).</p>
+</li>
+<li>
+<p>В коде, где необходимо отработать отправку уведомления, выполняем следующие действия:</p>
+</li>
+</ol>
+<pre><code class="language-python">from garpix_confirm.settings import CHOICES_NOTIFY_CONFIRM_EVENT
+from garpix_notify.models import Notify
+
+# Синтаксис
+# Notify.send(&lt;event&gt;, &lt;context&gt;[, &lt;user=None&gt;, &lt;email=None&gt;, &lt;phone=None&gt;, &lt;files=None&gt;, &lt;data_json=None&gt;])
+# Т.е. указываем первым параметром идентификатор события, 
+# вторым переменные для шаблона,
+# третьим - пользователя, которому отправить (необязательно указывать его емейл, номер телефона и т.п.,
+# т.к. это будет определено автоматически в зависимости от типа шаблона)
+
+# Пример
+user = request.user  # это будет получатель уведомления.
+
+Notify(CHOICES_NOTIFY_CONFIRM_EVENT, {
+    'confirmation_code': 'abcdef12345',
+}, user=user)
+
+# Если у нас нет пользователя в системе, но необходимо отправить емейл, то можем поступить
+# следующим образом
+
+Notify(CHOICES_NOTIFY_CONFIRM_EVENT, {
+    'confirmation_code': 'abcdef12345',
+}, email='example@mail.ru')
+
+</code></pre>
+<h2 id="_3">Настройка:</h2>
+<p>Уведомления отправляются только по шаблонам. Шаблон - это модель, которая может быть
+одним из типов (Емейл, СМС или Пуш-уведомление) и содержащая текст, который будет отправлен.</p>
+<p>При отправке уведомления (-ий) по шаблону, также можно добавить контекст, который будет применен
+при отправке сообщения (например, можно при отправке уведомления о регистрации передать имя пользователя
+в письмо). Шаблоны уведомлений используют контекст через шаблонизатор джанго. Т.е. можно применять
+переменные <code>{{ variable }}</code>, использовать циклы и условные операторы <code>{% if blabla %}{% endif %}</code> и т.п.</p>
+<p>При отправке уведомления (-ий) по шаблону - обязательно передается событие. При этом, если на одно
+событие висит несколько шаблонов, то будут отправлены они все.</p>
+<p>События обязательно должны иметь уникальный числовой идентификатор.</p>
+<p>В настройках <code>settings.py</code> указывается словарь, содержащий описание всех (!) событий, на которые
+можно повесить уведомление. При этом обязательным является только числовой идентификатор события
+и его заголовок <code>title</code>.</p>
+<p>В settings.py необходимо указать следующие настройки:</p>
+<pre><code class="language-python">from garpix_confirm.settings import CHOICES_NOTIFY_CONFIRM_EVENT, NOTIFY_EVENTS_CONFIRM
+
+REGISTRATION_EVENT = 1
+FEEDBACK_EVENT = 2
+
+NOTIFY_EVENTS = {
+    REGISTRATION_EVENT: {
+        'title': 'Регистрация',
+        'context_description': 'super reg context description',
+        'event_description': 'super event description',
+        'test_data': {'ho': 'hey'},
+    },
+    FEEDBACK_EVENT: {
+        'title': 'Обратная связь',
+    },
+}
+
+# НЕ МЕНЯТЬ!
+CHOICES_NOTIFY_EVENT = sorted([(k, v['title']) for k, v in NOTIFY_EVENTS.items()], key=lambda x: x[1])
+
+NOTIFY_USER_WANT_MESSAGE_CHECK = &quot;app.notify_user_want_message.check&quot;  # default: None
+
+</code></pre>
+<p>,где
+* <code>NOTIFY_EVENTS</code> - словарь содержащий события с описанием, где:<br />
+     - title - название события, 
+     - context_description - описание переменных шаблона (для отображения в админке), 
+     - event_description - описание события, 
+     - test_data - словарь, с данными (аналогично реальному контексту) для отладки шаблонов (отправка тестовых сообщений)</p>
+<ul>
+<li><code>CHOICES_NOTIFY_EVENT</code> - генерация списка типа события для модели шаблонов.</li>
+<li><code>NOTIFY_SMS_URL</code> - URL сервиса отправки смс.</li>
+<li><code>NOTIFY_SMS_API_ID</code> - ид для доступа к сервису отправки смс.</li>
+<li><code>FCM_DJANGO_SETTINGS</code> - ключ для авторизации FCM SERVER.</li>
+<li><code>NOTIFY_USER_WANT_MESSAGE_CHECK</code> - путь к методу, который определяет, отправлять ли пользователю уведомление (может пользователь не хочет их получать, отключил это).</li>
+</ul>
+<p>Пример <code>app.notify_user_want_message.check</code>:</p>
+<pre><code>def check(notify_event_id, notify_type, user=None):
+    if user is None:
+        return True
+    return user.is_notify_enabled:  # your custom variable
+</code></pre>
+<h2 id="_4">Важно!</h2>
+<ol>
+<li>В настройках celery проекта необходимо указать следующее:
+settings.py:</li>
+</ol>
+<pre><code>CELERY_ENABLE_UTC = False
+DJANGO_CELERY_BEAT_TZ_AWARE = False
+</code></pre>
+<p>settings.py:</p>
+<pre><code>from django.utils import timezone
+app.now = timezone.now
+</code></pre>
+<p>Необходимость настроек обусловлена тем что celery неоднозначно преобразовывает время выполнения задач если в 
+системе/проекте указана timezone отличная от UTC.</p>
+<ol>
+<li>В отдельной командной строке ввести:</li>
+</ol>
+<pre><code>celery -A app worker --loglevel=info -B
+</code></pre>
+<p>"celery" должен быть запущен параллельно с "runserver"</p>
+<h2 id="_5">Обобщенный принцип работы</h2>
+<ol>
+<li>
+<p>Создаем события, попутно определяя контекст события.</p>
+</li>
+<li>
+<p>Создаем категории уведомлений. Причем категория:</p>
+<ul>
+<li>с точки зрения шаблона является аналогом base.html для страниц проекта. </li>
+<li>сточки зрения SMTP аккаунта - определяет с каких сервисов (аккаунтов ***@***.***) будут оптравлятся события.  </li>
+</ul>
+</li>
+<li>Создаем шаблоны уведомлений. При указании соответствующих данных в <code>settings.NOTIFY_EVENTS.event_id['test_data']</code> в 
+админке возможна отправка тестовых уведомлений для отладки.</li>
+<li>В соответствующих участках кода проекта создаем уведомления согласно примерам ниже с указанием соответствующего события.</li>
+</ol>
+<h2 id="_6">Использование:</h2>
+<h3 id="_7">Шаблоны</h3>
+<p>Для отправки писем по шаблонам, необходимо вызвать метод <code>send</code> модели <code>Notify</code></p>
+<pre><code class="language-python">Notify.send(&lt;event&gt;, &lt;context&gt;[, &lt;user=None&gt;, &lt;email=None&gt;, &lt;phone=None&gt;, &lt;files=None&gt;, &lt;data_json=None&gt;])
+</code></pre>
+<p>,где</p>
+<ul>
+<li><code>event</code> - событие, весь перечень указан в <code>settings.notify.CHOICES_NOTIFY_EVENT</code></li>
+<li><code>context</code> - контекст, необходимый для рендеринга уведомления</li>
+<li><code>user</code> - пользователь, который будет указан, если он не указан в модели шаблона</li>
+<li><code>email</code> - email для отправки почты, который будет указан, если он не указан в модели шаблона</li>
+<li><code>phone</code> - телефон, который будет указан, если он не указан в модели шаблона</li>
+<li><code>files</code> - массив файлов, который будет автоматически сохранен и добавлен ко всем письмам</li>
+<li><code>data_json</code> - словарь данных, который будет автоматически сохранен и отправлен как data к пушам</li>
+</ul>
+<p>Команда использует шаблоны <code>notify.models.NotifyTemplate</code>, которые можно заполнить в админке <em>Уведомления -&gt; Шаблоны</em>. Команда автоматически пробегает по всем созданным шаблонам, соответствующим указанному событию и создает по ним уведомления, предварительно отрендерив поля текст и html, с указанным контекстом</p>
+<h2 id="viber">Viber</h2>
+<ul>
+<li><strong>Регистрация бота</strong><ul>
+<li>Бота зарегистрировать тут https://partners.viber.com/ и получить токен \
+    токен = viber_api_key</li>
+</ul>
+</li>
+<li>
+<p><strong>Настройки бота</strong></p>
+<ul>
+<li>Указать токен в админке  Уведомления -&gt; Настройки </li>
+<li>Можно изменить имя и аватар бота</li>
+<li>Можно изменить ответы бота на различные события</li>
+<li>Бот работает только на https, для локальной разработки можно использовать ngrok</li>
+<li>Документация от вайбера https://developers.viber.com/docs/api/</li>
+</ul>
+</li>
+<li>
+<p><strong>Web hook</strong></p>
+<ul>
+<li>Для установки вебхука нужно перейти по ссылке https://yourdomain/garpix_notify/send_webhook</li>
+<li>Для снятия вебхука нужно отправить POST запрос на адрес https://chatapi.viber.com/pa/set_webhook
+headers X-Viber-Auth-Token: &lt;ваш токен&gt; \
+body { "url":"" }</li>
+</ul>
+</li>
+<li><strong>Получить id пользователя</strong><ul>
+<li>Пользователь должен первым начать диалог с ботом</li>
+<li>Чтобы пользователь получал рассылку от бота, он должен отправить боту viber_secret_key</li>
+<li>viber_secret_key указывается в настройка юзера в админке. поле Ключ подключения Viber</li>
+<li>Если сообщение пользователя совпадает с  viber_secret_key, то viber_chat_id заполняется</li>
+<li>id юзера привязывается к конкретному боту, то есть, для разных ботов у юзера будет разный id</li>
+</ul>
+</li>
+<li><strong>Отправка сообщений</strong>   <ul>
+<li>Создаем шаблон и заполняем в нем все обязательные поля, Тип должен быть Viber</li>
+<li>Для отправки сообщений группе пользователй создаем Список пользователей</li>
+<li>Можно отправлять сообщения через код, для этого в методе send нужно указать viber_chat_id</li>
+</ul>
+</li>
+</ul>
+<pre><code> Notify.send(settings.YOUR_EVENT, {
+         'some_context': blabla
+        }, viber_chat_id='')
+
+</code></pre>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="example_simple_auth.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Пример реализации входа на сайт" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Пример реализации входа на сайт
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.82b56eb2.min.js"></script>
+      
+    
+  </body>
+</html>
