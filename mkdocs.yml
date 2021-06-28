@@ -15,5 +15,5 @@ nav:
     - Запускаем проект: install_start_project.md
   - Примеры:
     - Простой корпорат на шаблонах: example_simple_templates_site.md
-    - Пример реализации входа на сайт: example_simple_auth.md
-    - Пример уведомлений на сайте: example_notify.md
+    - Вход по логину/паролю: example_simple_auth.md
+    - Уведомления (Email, SMS, Push, ...): example_notify.md
