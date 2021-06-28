@@ -196,9 +196,9 @@ Notify.send(<event>, <context>[, <user=None>, <email=None>, <phone=None>, <files
     * Можно отправлять сообщения через код, для этого в методе send нужно указать viber_chat_id
     
 ```
- Notify.send(settings.YOUR_EVENT, {
-         'some_context': blabla
-        }, viber_chat_id='')
+Notify.send(settings.YOUR_EVENT, {
+  'some_context': blabla
+}, viber_chat_id='')
 
 ```
      
