@@ -11,3 +11,8 @@ services:
     volumes:
       - ./dumps:/code/dumps
       - ./data/postgresql:/var/lib/postgresql/data
+
+  redis:
+     image: redis:alpine
+     ports:
+        - '6379:6379'

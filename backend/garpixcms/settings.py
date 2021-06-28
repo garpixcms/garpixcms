@@ -41,10 +41,14 @@ INSTALLED_APPS = [
     'ckeditor_uploader',
     'rest_framework',
     'django.contrib.sites',
+    'solo',
+    'fcm_django',
+    'user',
     'app',
     'garpix_qa',
     'garpix_page',
     'garpix_menu',
+    'garpix_notify',
     # auth
     'rest_framework.authtoken',
     'oauth2_provider',
@@ -218,7 +222,45 @@ CHOICE_MENU_TYPES = [(k, v['title']) for k, v in MENU_TYPES.items()]
 MIGRATION_MODULES = {
     'garpix_page': 'app.migrations.garpix_page',
     'garpix_menu': 'app.migrations.garpix_menu',
+    'garpix_notify': 'app.migrations.garpix_notify',
     'garpixcms': 'app.migrations.garpixcms',
 }
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'user.User'
+
+NOTIFY_SMS_URL = "http://sms.ru/sms/send"
+NOTIFY_SMS_API_ID = env('NOTIFY_SMS_API_ID', "1234567890")
+FCM_DJANGO_SETTINGS = {
+    "FCM_SERVER_KEY": env('FCM_SERVER_KEY', "1234567890")
+}
+
+# Celery
+
+REDIS_HOST = os.getenv('REDIS_HOST', 'localhost')
+
+# Celery
+CELERY_BROKER_URL = 'redis://{}:6379/1'.format(REDIS_HOST)
+CELERY_RESULT_BACKEND = 'redis://{}:6379/2'.format(REDIS_HOST)
+# CELERY_RESULT_BACKEND = 'django-db'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+# CELERY_TIMEZONE = TIME_ZONE
+# CELERY_TASK_ALWAYS_EAGER = TEST
+CELERY_ENABLE_UTC = False
+DJANGO_CELERY_BEAT_TZ_AWARE = False
+
+# Example notify
+
+# notify events
+EXAMPLE_EVENT = 1
+
+NOTIFY_EVENTS = {
+    EXAMPLE_EVENT: {
+        'title': 'Example',
+    },
+}
+
+CHOICES_NOTIFY_EVENT = [(k, v['title']) for k, v in NOTIFY_EVENTS.items()]
