@@ -1,3 +1,7 @@
+### 1.4.1 (28.06.2021)
+
+- Bug fix with `garpix_notify` - url not resolved `authorize`.
+
 ### 1.4.0 (28.06.2021)
 
 - Added `garpix_notify`.
