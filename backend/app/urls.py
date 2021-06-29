@@ -1,3 +1,3 @@
-from garpixcms.urls import *
+from garpixcms.urls import *  # noqa
 
-urlpatterns = [] + urlpatterns
+urlpatterns = [] + urlpatterns  # noqa

@@ -1,3 +1,7 @@
+### 1.4.2 (29.06.2021)
+
+- Bug fix with `BASE_DIR` for `garpix_qa`.
+
 ### 1.4.1 (28.06.2021)
 
 - Bug fix with `garpix_notify` - url not resolved `authorize`.

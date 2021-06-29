@@ -1,1 +1,1 @@
-from .page import PageTranslationOptions
+from .page import PageTranslationOptions  # noqa

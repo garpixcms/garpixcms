@@ -1,1 +1,1 @@
-from .page import PageAdmin
+from .page import PageAdmin  # noqa
