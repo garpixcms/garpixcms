@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'garpix_page',
     'garpix_menu',
     'garpix_notify',
+    'drf_yasg',
     # auth
     'rest_framework.authtoken',
     'oauth2_provider',

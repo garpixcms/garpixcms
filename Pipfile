@@ -18,6 +18,7 @@ mkdocstrings = "*"
 twine = "*"
 garpix-auth = "==1.1.0"
 garpix-notify = "==3.0.1"
+drf-yasg = "*"
 
 [dev-packages]
 

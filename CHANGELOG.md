@@ -1,3 +1,7 @@
+### 1.4.3 (01.07.2021)
+
+- Added documentation to url: `/api/docs/`
+
 ### 1.4.2 (29.06.2021)
 
 - Bug fix with `BASE_DIR` for `garpix_qa`.
