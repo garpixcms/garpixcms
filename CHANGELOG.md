@@ -1,3 +1,7 @@
+### 1.5.1 (01.07.2021)
+
+- Changed `/static/` to `/static-backend/`.
+
 ### 1.5.0 (01.07.2021)
 
 - Upgrade `garpix_notify` to version 3.0.2.
