@@ -1,3 +1,7 @@
+### 1.5.0 (01.07.2021)
+
+- Upgrade `garpix_notify` to version 3.0.2.
+
 ### 1.4.3 (01.07.2021)
 
 - Added documentation to url: `/api/docs/`
