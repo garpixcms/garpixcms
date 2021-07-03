@@ -1,3 +1,7 @@
+### 1.5.2 (03.07.2021)
+
+- Upgrade `garpix_qa` to version 1.0.6.
+
 ### 1.5.1 (01.07.2021)
 
 - Changed `/static/` to `/static-backend/`.
