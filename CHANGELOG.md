@@ -1,3 +1,7 @@
+### 1.6.1 (08.07.2021)
+
+- Resort `INSTALLED_APPS`.
+
 ### 1.6.0 (08.07.2021)
 
 - Added `django-cors-headers`. If `DEBUG == True`, then `CORS_ALLOW_ALL_ORIGINS = True`

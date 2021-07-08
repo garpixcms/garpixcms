@@ -37,8 +37,6 @@ INSTALLED_APPS = [
     'solo',
     'fcm_django',
     'corsheaders',
-    'user',
-    'app',
     'garpix_qa',
     'garpix_page',
     'garpix_menu',
@@ -52,6 +50,9 @@ INSTALLED_APPS = [
     'garpix_auth',
     # end auth
     'garpixcms',
+    # website
+    'app',
+    'user',
 ]
 
 MIDDLEWARE = [
