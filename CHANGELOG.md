@@ -1,3 +1,7 @@
+### 1.6.0 (08.07.2021)
+
+- Added `django-cors-headers`. If `DEBUG == True`, then `CORS_ALLOW_ALL_ORIGINS = True`
+
 ### 1.5.2 (03.07.2021)
 
 - Upgrade `garpix_qa` to version 1.0.6.

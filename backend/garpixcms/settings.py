@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'solo',
     'fcm_django',
+    'corsheaders',
     'user',
     'app',
     'garpix_qa',
@@ -56,6 +57,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -258,3 +260,6 @@ NOTIFY_EVENTS = {
 }
 
 CHOICES_NOTIFY_EVENT = [(k, v['title']) for k, v in NOTIFY_EVENTS.items()]
+
+if DEBUG:
+    CORS_ALLOW_ALL_ORIGINS = True

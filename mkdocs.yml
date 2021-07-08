@@ -17,3 +17,4 @@ nav:
     - Простой корпорат на шаблонах: example_simple_templates_site.md
     - Вход по логину/паролю: example_simple_auth.md
     - Уведомления (Email, SMS, PUSH и другие): example_notify.md
+  - FAQ: faq.md
