@@ -1,3 +1,7 @@
+### 1.6.2 (11.07.2021)
+
+- Path for `.env` file.
+
 ### 1.6.1 (08.07.2021)
 
 - Resort `INSTALLED_APPS`.

@@ -3,7 +3,7 @@ from environs import Env
 from app.basedir import BASE_DIR
 
 env = Env()
-env.read_env()
+env.read_env(os.path.join(BASE_DIR, '.env'), recurse=True)
 
 ENABLE_GARPIX_AUTH = False
 
