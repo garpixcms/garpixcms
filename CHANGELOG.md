@@ -1,3 +1,7 @@
+### 1.6.3 (12.07.2021)
+
+- Upgrade `garpix_notify` to version 3.0.3.
+
 ### 1.6.2 (11.07.2021)
 
 - Path for `.env` file.
