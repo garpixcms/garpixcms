@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 django = "==3.1"
 garpix-page = "==2.0.0"
-garpix-menu = "==1.0.0"
+garpix-menu = "==1.0.1"
 environs = "*"
 psycopg2-binary = "*"
 garpix-qa = "==1.0.5"

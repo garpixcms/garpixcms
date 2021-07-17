@@ -1,3 +1,7 @@
+### 1.6.4 (17.07.2021)
+
+- Upgrade `garpix_menu` to version 1.0.1.
+
 ### 1.6.3 (12.07.2021)
 
 - Upgrade `garpix_notify` to version 3.0.3.
