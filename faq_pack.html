@@ -14,7 +14,7 @@
     
     
       
-        <title>GarpixCMS</title>
+        <title>Создание своего пакета - GarpixCMS</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#faq-" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Быстрый старт
+              Создание своего пакета
             
           </span>
         </div>
@@ -171,51 +171,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Быстрый старт
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
         Быстрый старт
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    Новый проект
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -358,12 +318,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       <label class="md-nav__link" for="__nav_4">
         FAQ
@@ -391,11 +353,51 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="faq_pack.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Создание своего пакета
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="faq_pack.html" class="md-nav__link md-nav__link--active">
         Создание своего пакета
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Как создать новый переиспользуемый пакет?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -432,8 +434,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    Новый проект
+  <a href="#_1" class="md-nav__link">
+    Как создать новый переиспользуемый пакет?
   </a>
   
 </li>
@@ -451,33 +453,11 @@
               
                 
                 
-                <h1 id="_1">Быстрый старт</h1>
-<p>Необходимо установить Python (рекомендуется <code>3.8</code>), Pipenv, Docker и cookiecutter. Подробнее смотрите в разделе <a href="install_deps.html">Установка зависимостей</a>.</p>
-<p>Далее создаем <a href="install_new_project.html">новый проект</a> или <a href="install_start_project.html">запускаем существующий</a>. Перейдите по ссылкам для подробной документации.</p>
-<p>Если подробная документация не требуется, то можете использовать команды ниже.</p>
-<h2 id="_2">Новый проект</h2>
-<pre><code class="language-bash">cookiecutter https://github.com/garpixcms/garpixcms-empty-template
-cd website
-cp example.env .env
-pipenv install
-pipenv shell
-docker-compose up -d
-python3 backend/manage.py makemigrations
-python3 backend/manage.py migrate
-python3 backend/manage.py createsuperuser
-python3 backend/manage.py runserver
-</code></pre>
-<h1 id="_3">Запускаем существующий проект</h1>
-<pre><code class="language-bash">git clone &lt;repo_url&gt;
-cd &lt;directory&gt;
-cp example.env .env
-pipenv install
-pipenv shell
-docker-compose up -d
-python3 backend/manage.py migrate
-python3 backend/manage.py createsuperuser
-python3 backend/manage.py runserver
-</code></pre>
+                <h1 id="faq-">FAQ - Вопросы и ответы</h1>
+<h4 id="_1">Как создать новый переиспользуемый пакет?</h4>
+<p>Используйте возможности пакета <a href="https://github.com/garpixcms/garpix_pack">garpix_pack</a>.</p>
+<p>Для создания пакета используйте команду <code>python3 backend/manage.py startpackage my_package</code> (вместо команды <code>startapp</code>).</p>
+<p>Для размещения на pypi.org, используйте <code>python3 backend/manage.py pack my_package</code>.</p>
                 
               
               
@@ -496,21 +476,21 @@ python3 backend/manage.py runserver
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-      
         
-        <a href="install_deps.html" class="md-footer__link md-footer__link--next" aria-label="Next: Установка зависимостей" rel="next">
+        <a href="faq_cors.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: CORS" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Next
+                Previous
               </span>
-              Установка зависимостей
+              CORS
             </div>
           </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
         </a>
+      
       
     </nav>
   
