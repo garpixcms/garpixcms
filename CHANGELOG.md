@@ -1,3 +1,7 @@
+### 1.7.0 (18.07.2021)
+
+- Added manage.py command `pack` for packing packages. Syntax use - `python3 manage.py pack <app_name>`
+
 ### 1.6.4 (17.07.2021)
 
 - Upgrade `garpix_menu` to version 1.0.1.
