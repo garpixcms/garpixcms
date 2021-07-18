@@ -1,3 +1,7 @@
+### 1.7.1 (18.07.2021)
+
+- From version 1.7.0 `pack` and `startpackage` into package `garpix_pack`.
+
 ### 1.7.0 (18.07.2021)
 
 - Added manage.py command `pack` for packing packages. Syntax use - `python3 manage.py pack <app_name>`
