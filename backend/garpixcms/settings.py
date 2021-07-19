@@ -5,7 +5,7 @@ from app.basedir import BASE_DIR
 env = Env()
 env.read_env(os.path.join(BASE_DIR, '.env'), recurse=True)
 
-ENABLE_GARPIX_AUTH = False
+ENABLE_GARPIX_AUTH = env.bool('ENABLE_GARPIX_AUTH', False)
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env('SECRET_KEY')
@@ -43,13 +43,6 @@ INSTALLED_APPS = [
     'garpix_notify',
     'garpix_pack',
     'drf_yasg',
-    # auth
-    'rest_framework.authtoken',
-    'oauth2_provider',
-    'social_django',
-    'rest_framework_social_oauth2',
-    'garpix_auth',
-    # end auth
     'garpixcms',
     # website
     'app',
@@ -160,33 +153,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, '..', 'frontend', 'static'),
 ]
 
-# authentication
-
-AUTHENTICATION_BACKENDS = (
-    # Only your social networks (for example)
-    # 'social_core.backends.google.GoogleOAuth2',
-    # 'social_core.backends.twitter.TwitterOAuth',
-    # 'social_core.backends.vk.VKOAuth2',
-    # 'social_core.backends.facebook.FacebookAppOAuth2',
-    # 'social_core.backends.facebook.FacebookOAuth2',
-    # Django
-    'rest_framework_social_oauth2.backends.DjangoOAuth2',
-    'django.contrib.auth.backends.ModelBackend',
-)
-
-SOCIAL_AUTH_PIPELINE = (
-    'social_core.pipeline.social_auth.social_details',
-    'social_core.pipeline.social_auth.social_uid',
-    'social_core.pipeline.social_auth.auth_allowed',
-    'social_core.pipeline.social_auth.social_user',
-    'social_core.pipeline.user.get_username',
-    'social_core.pipeline.social_auth.associate_by_email',
-    'social_core.pipeline.user.create_user',
-    'social_core.pipeline.social_auth.associate_user',
-    'social_core.pipeline.social_auth.load_extra_data',
-    'social_core.pipeline.user.user_details'
-)
-
 # ckeditor
 
 CKEDITOR_UPLOAD_PATH = ''
@@ -265,6 +231,40 @@ NOTIFY_EVENTS = {
 }
 
 CHOICES_NOTIFY_EVENT = [(k, v['title']) for k, v in NOTIFY_EVENTS.items()]
+
+# Authentication
+
+if ENABLE_GARPIX_AUTH:
+    INSTALLED_APPS += [
+        'rest_framework.authtoken',
+        'oauth2_provider',
+        'social_django',
+        'rest_framework_social_oauth2',
+        'garpix_auth',
+    ]
+    AUTHENTICATION_BACKENDS = (
+        # Only your social networks (for example)
+        # 'social_core.backends.google.GoogleOAuth2',
+        # 'social_core.backends.twitter.TwitterOAuth',
+        # 'social_core.backends.vk.VKOAuth2',
+        # 'social_core.backends.facebook.FacebookAppOAuth2',
+        # 'social_core.backends.facebook.FacebookOAuth2',
+        # Django
+        'rest_framework_social_oauth2.backends.DjangoOAuth2',
+        'django.contrib.auth.backends.ModelBackend',
+    )
+    SOCIAL_AUTH_PIPELINE = (
+        'social_core.pipeline.social_auth.social_details',
+        'social_core.pipeline.social_auth.social_uid',
+        'social_core.pipeline.social_auth.auth_allowed',
+        'social_core.pipeline.social_auth.social_user',
+        'social_core.pipeline.user.get_username',
+        'social_core.pipeline.social_auth.associate_by_email',
+        'social_core.pipeline.user.create_user',
+        'social_core.pipeline.social_auth.associate_user',
+        'social_core.pipeline.social_auth.load_extra_data',
+        'social_core.pipeline.user.user_details'
+    )
 
 if DEBUG:
     CORS_ALLOW_ALL_ORIGINS = True

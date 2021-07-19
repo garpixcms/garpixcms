@@ -1,3 +1,7 @@
+### 1.7.3 (19.07.2021)
+
+- `ENABLE_GARPIX_AUTH` now is bool environment variable. Fixed bug with `reverse url authorize`.
+
 ### 1.7.2 (19.07.2021)
 
 - Added `/frontend/templates` to `TEMPLATES` variable. 
