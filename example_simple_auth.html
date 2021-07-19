@@ -372,8 +372,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-appsettingspy" class="md-nav__link">
-    Шаг 2. Включите в app/settings.py вход:
+  <a href="#2-env" class="md-nav__link">
+    Шаг 2. Включите в .env вход:
   </a>
   
 </li>
@@ -413,8 +413,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-appsettingspy_1" class="md-nav__link">
-    Шаг 2. Включите в app/settings.py вход:
+  <a href="#2-env_1" class="md-nav__link">
+    Шаг 2. Включите в .env вход:
   </a>
   
 </li>
@@ -606,8 +606,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-appsettingspy" class="md-nav__link">
-    Шаг 2. Включите в app/settings.py вход:
+  <a href="#2-env" class="md-nav__link">
+    Шаг 2. Включите в .env вход:
   </a>
   
 </li>
@@ -647,8 +647,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-appsettingspy_1" class="md-nav__link">
-    Шаг 2. Включите в app/settings.py вход:
+  <a href="#2-env_1" class="md-nav__link">
+    Шаг 2. Включите в .env вход:
   </a>
   
 </li>
@@ -703,10 +703,10 @@
 <p>Для начала, создайте новый проект по <a href="install_new_project.html">документации</a>.</p>
 <p>Если после входа увидите ошибку "No template names provided" - это значит, что можно переходить к следующему шагу.</p>
 <h4 id="2">Шаг 2. Включаем вход</h4>
-<p>Необходимо включить вход в <code>app/settings.py</code>:</p>
-<pre><code class="language-python">from garpixcms.settings import *
+<p>Необходимо включить вход в <code>.env</code>:</p>
+<pre><code class="language-bash"># ...
 
-ENABLE_GARPIX_AUTH = True
+ENABLE_GARPIX_AUTH=True
 
 </code></pre>
 <p>Это включает следующие точки:</p>
@@ -721,10 +721,10 @@ ENABLE_GARPIX_AUTH = True
 <pre><code>brew install httpie  # для macos
 apt-get install httpie -y  # для debian/ubuntu
 </code></pre>
-<h4 id="2-appsettingspy">Шаг 2. Включите в <code>app/settings.py</code> вход:</h4>
-<pre><code class="language-python">from garpixcms.settings import *
+<h4 id="2-env">Шаг 2. Включите в <code>.env</code> вход:</h4>
+<pre><code class="language-bash"># ...
 
-ENABLE_GARPIX_AUTH = True
+ENABLE_GARPIX_AUTH=True
 
 </code></pre>
 <h4 id="2_1">Шаг 2. Запустите сайт</h4>
@@ -753,10 +753,10 @@ X-Frame-Options: DENY
 <h3 id="_4">Пример использования входа для сайтов на шаблонах</h3>
 <h4 id="1_1">Шаг 1. Настраиваем сайт</h4>
 <p>Создайте главную страницу по примеру из <a href="example_simple_templates_site.html">документации</a>.</p>
-<h4 id="2-appsettingspy_1">Шаг 2. Включите в <code>app/settings.py</code> вход:</h4>
-<pre><code class="language-python">from garpixcms.settings import *
+<h4 id="2-env_1">Шаг 2. Включите в <code>.env</code> вход:</h4>
+<pre><code class="language-bash"># ...
 
-ENABLE_GARPIX_AUTH = True
+ENABLE_GARPIX_AUTH=True
 
 </code></pre>
 <h4 id="3_1">Шаг 3. Создаем страницу входа</h4>
