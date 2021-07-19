@@ -10,12 +10,12 @@
 
 #### Шаг 2. Включаем вход
 
-Необходимо включить вход в `app/settings.py`:
+Необходимо включить вход в `.env`:
 
-```python
-from garpixcms.settings import *
+```bash
+# ...
 
-ENABLE_GARPIX_AUTH = True
+ENABLE_GARPIX_AUTH=True
 
 ```
 
@@ -36,12 +36,12 @@ brew install httpie  # для macos
 apt-get install httpie -y  # для debian/ubuntu
 ```
 
-#### Шаг 2. Включите в `app/settings.py` вход:
+#### Шаг 2. Включите в `.env` вход:
 
-```python
-from garpixcms.settings import *
+```bash
+# ...
 
-ENABLE_GARPIX_AUTH = True
+ENABLE_GARPIX_AUTH=True
 
 ```
 
@@ -83,12 +83,12 @@ X-Frame-Options: DENY
 
 Создайте главную страницу по примеру из [документации](example_simple_templates_site.md).
 
-#### Шаг 2. Включите в `app/settings.py` вход:
+#### Шаг 2. Включите в `.env` вход:
 
-```python
-from garpixcms.settings import *
+```bash
+# ...
 
-ENABLE_GARPIX_AUTH = True
+ENABLE_GARPIX_AUTH=True
 
 ```
 
