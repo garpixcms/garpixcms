@@ -1,3 +1,7 @@
+### 1.8.0 (19.07.2021)
+
+- Url for login `token-auth/` changed to `api/login/`.
+
 ### 1.7.3 (19.07.2021)
 
 - `ENABLE_GARPIX_AUTH` now is bool environment variable. Fixed bug with `reverse url authorize`.

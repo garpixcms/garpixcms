@@ -20,7 +20,7 @@ if settings.ENABLE_GARPIX_AUTH:
     urlpatterns += [
         path('logout/', LogoutView.as_view(url='/'), name="logout"),
         path('login/', LoginView.as_view(), name="authorize"),
-        path('token-auth/', obtain_auth_token),
+        path('api/login/', obtain_auth_token),
     ]
 
 if settings.DEBUG:

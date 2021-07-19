@@ -23,7 +23,7 @@ ENABLE_GARPIX_AUTH=True
 
 * `/login/` - вход для сайтов на шаблонах, выдает сессию;
 * `/logout/` - выйти из системы, удалить токен, сессию;
-* `/token-auth/` - вход для SPA сайтов, выдает токен.
+* `/api/login/` - вход для SPA сайтов, выдает токен.
 
 ## Примеры
 
@@ -54,7 +54,7 @@ python3 backend/manage.py runserver
 #### Шаг 3. Сделайте запрос на вход
 
 ```bash
-echo '{"username": "aleksey", "password": "mQZdc5WhVXoxXEno"}' | http POST 'http://localhost:8000/token-auth/'
+echo '{"username": "aleksey", "password": "mQZdc5WhVXoxXEno"}' | http POST 'http://localhost:8000/api/login/'
 ```
 
 Вывод:
@@ -180,7 +180,7 @@ python3 manage.py migrate
 <h1>{{object.title}}</h1>
 
 <h2>Вход</h2>
-<p>Чтобы форма входа работала, включите в <code>app/settings.py</code> переменную <code>ENABLE_GARPIX_AUTH = True</code></p>
+<p>Чтобы форма входа работала, включите в <code>.env</code> переменную <code>ENABLE_GARPIX_AUTH=True</code></p>
 <div>
     {% include 'garpixcms/include/login.html' %}
 </div>
