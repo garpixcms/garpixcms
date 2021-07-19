@@ -713,7 +713,7 @@ ENABLE_GARPIX_AUTH=True
 <ul>
 <li><code>/login/</code> - вход для сайтов на шаблонах, выдает сессию;</li>
 <li><code>/logout/</code> - выйти из системы, удалить токен, сессию;</li>
-<li><code>/token-auth/</code> - вход для SPA сайтов, выдает токен.</li>
+<li><code>/api/login/</code> - вход для SPA сайтов, выдает токен.</li>
 </ul>
 <h2 id="_3">Примеры</h2>
 <h3 id="spa-httpie">Пример использования входа для SPA сайтов через httpie</h3>
@@ -731,7 +731,7 @@ ENABLE_GARPIX_AUTH=True
 <pre><code class="language-bash">python3 backend/manage.py runserver
 </code></pre>
 <h4 id="3">Шаг 3. Сделайте запрос на вход</h4>
-<pre><code class="language-bash">echo '{&quot;username&quot;: &quot;aleksey&quot;, &quot;password&quot;: &quot;mQZdc5WhVXoxXEno&quot;}' | http POST 'http://localhost:8000/token-auth/'
+<pre><code class="language-bash">echo '{&quot;username&quot;: &quot;aleksey&quot;, &quot;password&quot;: &quot;mQZdc5WhVXoxXEno&quot;}' | http POST 'http://localhost:8000/api/login/'
 </code></pre>
 <p>Вывод:</p>
 <pre><code>HTTP/1.1 200 OK
@@ -822,7 +822,7 @@ python3 manage.py migrate
 &lt;h1&gt;{{object.title}}&lt;/h1&gt;
 
 &lt;h2&gt;Вход&lt;/h2&gt;
-&lt;p&gt;Чтобы форма входа работала, включите в &lt;code&gt;app/settings.py&lt;/code&gt; переменную &lt;code&gt;ENABLE_GARPIX_AUTH = True&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Чтобы форма входа работала, включите в &lt;code&gt;.env&lt;/code&gt; переменную &lt;code&gt;ENABLE_GARPIX_AUTH=True&lt;/code&gt;&lt;/p&gt;
 &lt;div&gt;
     {% include 'garpixcms/include/login.html' %}
 &lt;/div&gt;
