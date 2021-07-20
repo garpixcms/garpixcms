@@ -1,3 +1,7 @@
+### 1.8.1 (20.07.2021)
+
+- Upgrade `garpix_menu` to version 1.0.2.
+
 ### 1.8.0 (19.07.2021)
 
 - Url for login `token-auth/` changed to `api/login/`.
