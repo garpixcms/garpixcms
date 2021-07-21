@@ -509,7 +509,13 @@
                 
                 
                 <h1 id="_1">Утилиты</h1>
-<p>Все утилиты импортируются из <code>garpix_utils</code>.</p>
+<p>Все утилиты импортируются из <code>garpix_utils</code></p>
+<ul>
+<li><code>file.get_file_path</code> - генерация пути для сохранения файла (для FileField)</li>
+<li><code>string.get_random_string</code> - создание строки случайных символов</li>
+<li><code>signature.make_signature_sha512</code> - создание цифровой подписи</li>
+<li><code>models.ActiveMixin</code> - миксин для моделей, которым необходимо поле "Активность"</li>
+</ul>
 <h4 id="fileget_file_path-filefield"><code>file.get_file_path</code> - генерация пути для сохранения файла (для FileField)</h4>
 <p>Формирует путь файла относительно года и месяца, чтобы множество файлов не скапливались на одном уровне.</p>
 <p>Можно использовать в качестве значения 'upload_to' поля FileField модели Django. </p>
