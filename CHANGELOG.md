@@ -1,3 +1,7 @@
+### 1.9.0 (21.07.2021)
+
+- Added package `garpix_utils`.
+
 ### 1.8.1 (20.07.2021)
 
 - Upgrade `garpix_menu` to version 1.0.2.
