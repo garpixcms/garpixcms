@@ -1,6 +1,11 @@
 # Утилиты
 
-Все утилиты импортируются из `garpix_utils`.
+Все утилиты импортируются из `garpix_utils`
+
+* `file.get_file_path` - генерация пути для сохранения файла (для FileField)
+* `string.get_random_string` - создание строки случайных символов
+* `signature.make_signature_sha512` - создание цифровой подписи
+* `models.ActiveMixin` - миксин для моделей, которым необходимо поле "Активность"
 
 #### `file.get_file_path` - генерация пути для сохранения файла (для FileField)
 
