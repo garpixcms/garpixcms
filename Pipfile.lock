@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "1167302c77ec4294e21ab7f077efbc6a662a9ff1737ae670de59e0a69359e2b6"
+            "sha256": "79160049f8a7919b904b836d8dfe81ebe64272f1eb62e7a76db299019a471906"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -419,11 +419,11 @@
         },
         "garpix-utils": {
             "hashes": [
-                "sha256:990e81dc517e3fed88b0022d59e4c9e892f4dc42408b7818c31bfeec4f09f6b3",
-                "sha256:b80300ec378d5afe63c8175c0cde3b05cc4e96ea98530f9b7690940ea16eb2bf"
+                "sha256:0bcbd643c471decba8369da9f3bdb174bd457cb1e47faa1b1bcdc683d122575d",
+                "sha256:a528d10b4a731bfbb20e7d4c9b57d3ad58f6d2a1d2cd2fdac2bdb3e73aac6d6d"
             ],
             "index": "pypi",
-            "version": "==1.0.1"
+            "version": "==1.0.2"
         },
         "ghp-import": {
             "hashes": [
