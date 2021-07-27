@@ -1,3 +1,7 @@
+### 1.9.2 (27.07.2021)
+
+- Upgrade `garpix_utils` to version 1.1.0.
+
 ### 1.9.1 (21.07.2021)
 
 - Upgrade `garpix_utils` to version 1.0.2.
