@@ -1,3 +1,7 @@
+### 1.10.0 (29.07.2021)
+
+- Added static urls to urlpatterns.
+
 ### 1.9.2 (27.07.2021)
 
 - Upgrade `garpix_utils` to version 1.1.0.
