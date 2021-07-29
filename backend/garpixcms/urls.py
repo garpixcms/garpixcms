@@ -29,7 +29,7 @@ if settings.DEBUG:
     schema_view = get_schema_view(openapi.Info(
         title="Application",
         default_version='v1',
-        description="API for Schoeller",
+        description="API docs",
         contact=openapi.Contact(email="garpix@garpix.com"),
     ), public=False)
 
