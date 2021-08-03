@@ -22,3 +22,4 @@ nav:
   - FAQ:
     - CORS: faq_cors.md
     - Создание своего пакета: faq_pack.md
+    - Количество выводимых записей в Структуре страниц: faq_list_per_page.md

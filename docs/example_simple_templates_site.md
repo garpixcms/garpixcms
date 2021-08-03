@@ -55,7 +55,7 @@
 * Страница, на которую ведет пункт меню: Главная страница
 * Сортировка: 50
 
-Меню "Доставка":
+Меню "О нас":
 
 * Название для админа: О нас
 * Название: О нас
@@ -357,14 +357,14 @@ class NewsListPage(BasePage):
 ```python
 from .contact_page import ContactPage
 from .news_page import NewsPage
-from .news_list import NewsListPage
+from .news_list_page import NewsListPage
 
 ```
 
 В директории `content/admin` создаем файл `news_list_page.py`:
 
 ```python
-from ..models.news_list import NewsListPage
+from ..models.news_list_page import NewsListPage
 from django.contrib import admin
 from garpix_page.admin import BasePageAdmin
 
