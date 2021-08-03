@@ -266,5 +266,7 @@ if ENABLE_GARPIX_AUTH:
         'social_core.pipeline.user.user_details'
     )
 
+GARPIX_PAGE_ADMIN_LIST_PER_PAGE = 25
+
 if DEBUG:
     CORS_ALLOW_ALL_ORIGINS = True

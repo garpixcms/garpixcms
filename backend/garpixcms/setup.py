@@ -8,7 +8,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='garpixcms',
-    version='1.10.0',
+    version='1.11.0',
     description='',
     long_description=long_description,
     url='https://github.com/garpixcms/garpixcms',
@@ -31,7 +31,7 @@ setup(
     install_requires=[
         'Django == 3.1',
         'garpix_utils == 1.1.0',
-        'garpix_page == 2.2.0',
+        'garpix_page == 2.3.0',
         'garpix_menu == 1.0.2',
         'garpix_qa == 1.0.6',
         'garpix_auth == 1.1.1',
