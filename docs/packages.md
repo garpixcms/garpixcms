@@ -7,7 +7,7 @@
 * [garpix_page](https://github.com/garpixcms/garpix_page) - страницы из админ-панели с ЧПУ и возможностью расширения.
 * [garpix_menu](https://github.com/garpixcms/garpix_menu) - меню из админ-панели для страниц и внешних ссылок.
 * [garpix_auth](https://github.com/garpixcms/garpix_auth) - реализация входа через форму и по API, выхода, входа через соцсети.
-* [garpix_pack](https://github.com/garpixcms/garpix_pack) - создание и размещение новых пакетов на pypi.org.
+* [garpix_package](https://github.com/garpixcms/garpix_package) - создание и размещение новых пакетов на pypi.org.
 * [garpix_notify](https://github.com/garpixcms/garpix_notify) - уведомления на события по Email, SMS, PUSH, Viber, Telegram.
 
 ## Внешние пакеты

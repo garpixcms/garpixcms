@@ -20,8 +20,8 @@ garpix-auth = "==1.1.0"
 garpix-notify = "==3.0.3"
 drf-yasg = "*"
 django-cors-headers = "*"
-garpix-pack = "*"
 garpix-utils = "==1.1.0"
+garpix-package = "==2.0.0"
 
 [dev-packages]
 

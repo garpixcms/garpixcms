@@ -2,7 +2,7 @@
 
 #### Как создать новый переиспользуемый пакет?
 
-Используйте возможности пакета [garpix_pack](https://github.com/garpixcms/garpix_pack).
+Используйте возможности пакета [garpix_package](https://github.com/garpixcms/garpix_package).
 
 Для создания пакета используйте команду `python3 backend/manage.py startpackage my_package` (вместо команды `startapp`).
 

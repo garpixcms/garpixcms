@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'garpix_page',
     'garpix_menu',
     'garpix_notify',
-    'garpix_pack',
+    'garpix_package',
     'drf_yasg',
     'garpixcms',
     # website

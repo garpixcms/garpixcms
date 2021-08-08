@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a757da220ed67ce5057894914e503242812cd08ceaab17cd7be0756ff3042b56"
+            "sha256": "5000db2afc30d3214c9210291a11ebfbbe4de7e99e2d0cc282f7fd1396504ed2"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -55,11 +55,11 @@
         },
         "bleach": {
             "hashes": [
-                "sha256:306483a5a9795474160ad57fce3ddd1b50551e981eed8e15a582d34cef28aafa",
-                "sha256:ae976d7174bba988c0b632def82fdc94235756edfb14e6558a9c5be555c9fb78"
+                "sha256:c1685a132e6a9a38bf93752e5faab33a9517a6c0bb2f37b785e47bf253bdb51d",
+                "sha256:ffa9221c6ac29399cc50fcc33473366edd0cf8d5e2cbbbb63296dc327fb67cc8"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'",
-            "version": "==3.3.1"
+            "markers": "python_version >= '3.6'",
+            "version": "==4.0.0"
         },
         "cachetools": {
             "hashes": [
@@ -393,13 +393,13 @@
             "index": "pypi",
             "version": "==3.0.3"
         },
-        "garpix-pack": {
+        "garpix-package": {
             "hashes": [
-                "sha256:53611cb8400357bca6d30c970e932669c507dbc1c50dca3dab53859c2a6dfae7",
-                "sha256:e75166de0c13bf9fd28b66f0a4b499bb663219923f2a96a537cc316cf1383be1"
+                "sha256:1d30d40d74fe200220abb0baee4bdbf3a6760eafcc98159ee2416cd8383c1f5c",
+                "sha256:4240b5792dfe7e0d9d3014cc5ccab78d13b0f3be19e031eec9cdb51f75693e76"
             ],
             "index": "pypi",
-            "version": "==1.0.0"
+            "version": "==2.0.0"
         },
         "garpix-page": {
             "hashes": [
@@ -613,7 +613,7 @@
                 "sha256:b8156d653ed91356e71675ce1fa1186d2b2c2085050012522895c9aa98fca3e5",
                 "sha256:f301b983a34259df90b3fcf7edc234b5e6c7065bd578781e66fd90b8cfbe76be"
             ],
-            "markers": "python_version >= '3.6' and python_full_version < '4.0.0'",
+            "markers": "python_version >= '3.6' and python_version < '4'",
             "version": "==0.2.1"
         },
         "mkdocs-material": {
@@ -858,7 +858,7 @@
                 "sha256:1ec7e028fe8361acc1ce909ada4e6beabec28ef31e629618549109e1d58549f0",
                 "sha256:89ca4926d0acc266235beb24cb0b0591aa6bf7adedfae54bf9421d529d782c8d"
             ],
-            "markers": "python_full_version >= '3.6.1' and python_full_version < '4.0.0'",
+            "markers": "python_version < '4' and python_full_version >= '3.6.1'",
             "version": "==0.11.1"
         },
         "pytz": {
@@ -913,10 +913,10 @@
         },
         "radon": {
             "hashes": [
-                "sha256:24d6342963a5ed82730bc8a289da2709349d356a42f631920f3efb6000b1a30a",
-                "sha256:9d6637fb026d63e7a3a65539976461f81a6d4e2b20c420615d0ce4cff73614a7"
+                "sha256:cb1d8752e5f862fb9e20d82b5f758cbc4fb1237c92c9a66450ea0ea7bf29aeee",
+                "sha256:fa74e018197f1fcb54578af0f675d8b8e2342bd8e0b72bef8197bc4c9e645f36"
             ],
-            "version": "==5.0.1"
+            "version": "==5.1.0"
         },
         "readme-renderer": {
             "hashes": [
@@ -1016,11 +1016,11 @@
         },
         "social-auth-app-django": {
             "hashes": [
-                "sha256:2c69e57df0b30c9c1823519c5f1992cbe4f3f98fdc7d95c840e091a752708840",
-                "sha256:567ad0e028311541d7dfed51d3bf2c60440a6fd236d5d4d06c5a618b3d6c57c5",
-                "sha256:df5212370bd250108987c4748419a1a1d0cec750878856c2644c36aaa0fd3e58"
+                "sha256:52241a25445a010ab1c108bafff21fc5522d5c8cd0d48a92c39c7371824b065d",
+                "sha256:b6e3132ce087cdd6e1707aeb1b588be41d318408fcf6395435da0bc6fe9a9795"
             ],
-            "version": "==4.0.0"
+            "markers": "python_version >= '3.6'",
+            "version": "==5.0.0"
         },
         "social-auth-core": {
             "hashes": [
@@ -1136,7 +1136,7 @@
                 "sha256:39fb8672126159acb139a7718dd10806104dec1e2f0f6c88aab05d17df10c8d4",
                 "sha256:f57b4c16c62fa2760b7e3d97c35b255512fb6b59a259730f36ba32ce9f8e342f"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_full_version < '4.0.0'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4'",
             "version": "==1.26.6"
         },
         "uwsgi": {
