@@ -253,7 +253,10 @@ REST_FRAMEWORK = {
     )
 }
 
-AUTHENTICATION_BACKENDS = []
+AUTHENTICATION_BACKENDS = [
+    'rest_framework_social_oauth2.backends.DjangoOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+]
 
 SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.social_details',
@@ -271,10 +274,6 @@ SOCIAL_AUTH_PIPELINE = (
 if ENABLE_GARPIX_AUTH:
     INSTALLED_APPS += [
         'garpix_auth',
-    ]
-    AUTHENTICATION_BACKENDS = [
-        'rest_framework_social_oauth2.backends.DjangoOAuth2',
-        'django.contrib.auth.backends.ModelBackend',
     ]
 
 
