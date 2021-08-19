@@ -14,7 +14,7 @@
     
     
       
-        <title>CORS - GarpixCMS</title>
+        <title>Вход по логину/паролю (SPA) - GarpixCMS</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#faq-" class="md-skip">
+        <a href="#spa-react-vuejs-angular" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CORS
+              Вход по логину/паролю (SPA)
             
           </span>
         </div>
@@ -256,12 +256,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
         Примеры
@@ -289,11 +291,126 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../example_auth_spa/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Вход по логину/паролю (SPA)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Вход по логину/паролю (SPA)
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    Шаг 1. Создание нового проекта
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    Шаг 2. Включаем вход
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Примеры
+  </a>
+  
+    <nav class="md-nav" aria-label="Примеры">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spa-httpie" class="md-nav__link">
+    Пример использования входа для SPA сайтов через httpie
+  </a>
+  
+    <nav class="md-nav" aria-label="Пример использования входа для SPA сайтов через httpie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-httpie" class="md-nav__link">
+    Шаг 1. Установите httpie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    Шаг 2. Настройте вход
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    Шаг 3. Запустите сайт
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    Шаг 4. Сделайте запрос на вход
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    Шаг 5. Обновляйте протухший токен
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    Шаг 6. Удаляйте токены при выходе
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -364,14 +481,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
       <label class="md-nav__link" for="__nav_6">
         FAQ
@@ -387,51 +502,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          CORS
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../faq_cors/" class="md-nav__link">
         CORS
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#cors" class="md-nav__link">
-    Есть ли защита от кроссдоменных запросов (CORS)?
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -534,9 +609,84 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cors" class="md-nav__link">
-    Есть ли защита от кроссдоменных запросов (CORS)?
+  <a href="#1" class="md-nav__link">
+    Шаг 1. Создание нового проекта
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    Шаг 2. Включаем вход
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Примеры
+  </a>
+  
+    <nav class="md-nav" aria-label="Примеры">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spa-httpie" class="md-nav__link">
+    Пример использования входа для SPA сайтов через httpie
+  </a>
+  
+    <nav class="md-nav" aria-label="Пример использования входа для SPA сайтов через httpie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-httpie" class="md-nav__link">
+    Шаг 1. Установите httpie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    Шаг 2. Настройте вход
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    Шаг 3. Запустите сайт
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    Шаг 4. Сделайте запрос на вход
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    Шаг 5. Обновляйте протухший токен
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    Шаг 6. Удаляйте токены при выходе
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -553,10 +703,90 @@
               
                 
                 
-                <h1 id="faq-">FAQ - Вопросы и ответы</h1>
-<h4 id="cors">Есть ли защита от кроссдоменных запросов (CORS)?</h4>
-<p>Да, используется модуль <a href="https://github.com/adamchainz/django-cors-headers">django-cors-headers</a>.
-При параметре <code>DEBUG</code> равном <code>True</code>, доступны все кроссдоменные запросы (<code>CORS_ALLOW_ALL_ORIGINS = True</code>).</p>
+                <h1 id="spa-react-vuejs-angular">Пример реализации входа на SPA-сайт (React, Vue.js, Angular)</h1>
+<h4 id="1">Шаг 1. Создание нового проекта</h4>
+<p>Для начала, создайте новый проект по <a href="../install_new_project/">документации</a>.</p>
+<p>Если после входа увидите ошибку "No template names provided" - это значит, что можно переходить к следующему шагу.</p>
+<h4 id="2">Шаг 2. Включаем вход</h4>
+<p>Необходимо включить вход в <code>.env</code>:</p>
+<pre><code class="language-bash"># ...
+
+ENABLE_GARPIX_AUTH=True
+
+</code></pre>
+<p>Это включает следующие точки:</p>
+<ul>
+<li><code>/login/</code> - вход для сайтов на шаблонах, выдает сессию;</li>
+<li><code>/logout/</code> - выйти из системы, удалить токен, сессию;</li>
+<li><code>/api/auth/login/</code> - вход для SPA сайтов.</li>
+<li><code>/api/auth/refresh/</code> - обновление токена SPA сайтов.</li>
+<li><code>/api/auth/logout/</code> - выход для SPA сайтов.</li>
+</ul>
+<h2 id="_1">Примеры</h2>
+<h3 id="spa-httpie">Пример использования входа для SPA сайтов через httpie</h3>
+<h4 id="1-httpie">Шаг 1. Установите httpie</h4>
+<pre><code>brew install httpie  # для macos
+apt-get install httpie -y  # для debian/ubuntu
+</code></pre>
+<h4 id="2_1">Шаг 2. Настройте вход</h4>
+<p>Файл <code>.env</code>:</p>
+<pre><code class="language-bash"># ...
+
+ENABLE_GARPIX_AUTH=True
+</code></pre>
+<p>Создание и применение миграций:</p>
+<pre><code class="language-bash">python3 backend/manage.py makemigrations
+python3 backend/manage.py migrate
+</code></pre>
+<p>Указать в <code>backend/app/settings.py</code> переменные (если указать значение <code>0</code> - протухать не будет):</p>
+<pre><code class="language-python">GARPIX_ACCESS_TOKEN_TTL_SECONDS = 86400  # Токен будет протухать через сутки
+GARPIX_REFRESH_TOKEN_TTL_SECONDS = 86400 * 14  # Рефреш-токен будет протухать после 14 суток
+</code></pre>
+<h4 id="3">Шаг 3. Запустите сайт</h4>
+<pre><code class="language-bash">python3 backend/manage.py runserver
+</code></pre>
+<h4 id="4">Шаг 4. Сделайте запрос на вход</h4>
+<p>Изменить адрес логина с <code>/api/login/</code> на <code>/api/auth/login/</code>.</p>
+<p>Пример запроса (в качестве примера используется httpie):</p>
+<pre><code class="language-bash">http POST 'http://localhost:8000/api/auth/login/' username=user password=mysuperpassword
+</code></pre>
+<p>Пример ответа:</p>
+<pre><code class="language-json">{
+    &quot;access_token&quot;: &quot;7c21c191a3720925ff80350b395725d31745bcac&quot;,
+    &quot;access_token_expires&quot;: 86400,
+    &quot;refresh_token&quot;: &quot;946cd6498df1de4bb24d0fc63286b01341265b3e&quot;,
+    &quot;refresh_token_expires&quot;: 1209600,
+    &quot;token_type&quot;: &quot;Bearer&quot;
+}
+</code></pre>
+<h4 id="5">Шаг 5. Обновляйте протухший токен</h4>
+<p>Если <code>access_token</code> протух, то запросы проходить не будут.
+Тогда необходимо обновить токен с помощью этой команды (в качестве примера используется httpie):</p>
+<pre><code class="language-bash">http POST 'http://localhost:8000/api/auth/refresh/' refresh_token=946cd6498df1de4bb24d0fc63286b01341265b3e
+</code></pre>
+<p>Пример ответа:</p>
+<pre><code class="language-json">{
+    &quot;access_token&quot;: &quot;227b68233b26ab16239db556a267a4f849fd882c&quot;,
+    &quot;access_token_expires&quot;: 86400,
+    &quot;result&quot;: true
+}
+</code></pre>
+<p>При этом, если refresh-токен протух, то ответ будет:</p>
+<pre><code class="language-json">{
+    &quot;result&quot;: false
+}
+</code></pre>
+<h4 id="6">Шаг 6. Удаляйте токены при выходе</h4>
+<p>Также, когда необходимо удалить все токены с бэкенда (сделать выход), то
+используем следующую команду (в качестве примера используется httpie):</p>
+<pre><code class="language-bash">http POST 'http://localhost:8000/api/auth/logout/' 'Authorization: Bearer 227b68233b26ab16239db556a267a4f849fd882c'
+</code></pre>
+<p>В случае успеха будет ответ:</p>
+<pre><code class="language-json">{
+    &quot;result&quot;: true
+}
+</code></pre>
+<p>В случае неудачи будет статус-код <code>401 Unauthorized</code>.</p>
                 
               
               
@@ -576,7 +806,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../utils/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Утилиты" rel="prev">
+        <a href="../example_simple_templates_site/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Простой корпорат на шаблонах" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -585,20 +815,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Утилиты
+              Простой корпорат на шаблонах
             </div>
           </div>
         </a>
       
       
         
-        <a href="../faq_pack/" class="md-footer__link md-footer__link--next" aria-label="Next: Создание своего пакета" rel="next">
+        <a href="../example_auth_templates/" class="md-footer__link md-footer__link--next" aria-label="Next: Вход по логину/паролю (шаблоны)" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Создание своего пакета
+              Вход по логину/паролю (шаблоны)
             </div>
           </div>
           <div class="md-footer__button md-icon">
