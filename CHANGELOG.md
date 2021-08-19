@@ -1,3 +1,7 @@
+### 2.0.0 (19.08.2021)
+
+- Upgrade `garpix_auth` to version 2.0.1.
+
 ### 1.15.0 (12.08.2021)
 
 - Upgrade `garpix_notify` to version 4.0.0.

@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'solo',
     'fcm_django',
     'corsheaders',
+    'rest_framework.authtoken',
+    'oauth2_provider',
+    'social_django',
+    'rest_framework_social_oauth2',
+    # garpixcms
     'garpix_qa',
     'garpix_page',
     'garpix_menu',
@@ -187,6 +192,7 @@ CHOICE_MENU_TYPES = [(k, v['title']) for k, v in MENU_TYPES.items()]
 # Migrations
 
 MIGRATION_MODULES = {
+    'garpix_auth': 'app.migrations.garpix_auth',
     'garpix_page': 'app.migrations.garpix_page',
     'garpix_menu': 'app.migrations.garpix_menu',
     'garpix_notify': 'app.migrations.garpix_notify',
@@ -234,37 +240,43 @@ CHOICES_NOTIFY_EVENT = [(k, v['title']) for k, v in NOTIFY_EVENTS.items()]
 
 # Authentication
 
+# GARPIX_ACCESS_TOKEN_TTL_SECONDS = 86400  # 24 hours
+GARPIX_ACCESS_TOKEN_TTL_SECONDS = 0  # infinity
+# GARPIX_REFRESH_TOKEN_TTL_SECONDS = 86400 * 14  # 14 days
+GARPIX_REFRESH_TOKEN_TTL_SECONDS = 0  # infinity
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'garpix_auth.rest.authentication.MainAuthentication',
+        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
+        'rest_framework_social_oauth2.authentication.SocialAuthentication',
+    )
+}
+
+AUTHENTICATION_BACKENDS = []
+
+SOCIAL_AUTH_PIPELINE = (
+    'social_core.pipeline.social_auth.social_details',
+    'social_core.pipeline.social_auth.social_uid',
+    'social_core.pipeline.social_auth.auth_allowed',
+    'social_core.pipeline.social_auth.social_user',
+    'social_core.pipeline.user.get_username',
+    'social_core.pipeline.social_auth.associate_by_email',
+    'social_core.pipeline.user.create_user',
+    'social_core.pipeline.social_auth.associate_user',
+    'social_core.pipeline.social_auth.load_extra_data',
+    'social_core.pipeline.user.user_details'
+)
+
 if ENABLE_GARPIX_AUTH:
     INSTALLED_APPS += [
-        'rest_framework.authtoken',
-        'oauth2_provider',
-        'social_django',
-        'rest_framework_social_oauth2',
         'garpix_auth',
     ]
-    AUTHENTICATION_BACKENDS = (
-        # Only your social networks (for example)
-        # 'social_core.backends.google.GoogleOAuth2',
-        # 'social_core.backends.twitter.TwitterOAuth',
-        # 'social_core.backends.vk.VKOAuth2',
-        # 'social_core.backends.facebook.FacebookAppOAuth2',
-        # 'social_core.backends.facebook.FacebookOAuth2',
-        # Django
+    AUTHENTICATION_BACKENDS = [
         'rest_framework_social_oauth2.backends.DjangoOAuth2',
         'django.contrib.auth.backends.ModelBackend',
-    )
-    SOCIAL_AUTH_PIPELINE = (
-        'social_core.pipeline.social_auth.social_details',
-        'social_core.pipeline.social_auth.social_uid',
-        'social_core.pipeline.social_auth.auth_allowed',
-        'social_core.pipeline.social_auth.social_user',
-        'social_core.pipeline.user.get_username',
-        'social_core.pipeline.social_auth.associate_by_email',
-        'social_core.pipeline.user.create_user',
-        'social_core.pipeline.social_auth.associate_user',
-        'social_core.pipeline.social_auth.load_extra_data',
-        'social_core.pipeline.user.user_details'
-    )
+    ]
+
 
 GARPIX_PAGE_ADMIN_LIST_PER_PAGE = 25
 

@@ -15,7 +15,8 @@ nav:
     - Запускаем проект: install_start_project.md
   - Примеры:
     - Простой корпорат на шаблонах: example_simple_templates_site.md
-    - Вход по логину/паролю: example_simple_auth.md
+    - Вход по логину/паролю (SPA): example_auth_spa.md
+    - Вход по логину/паролю (шаблоны): example_auth_templates.md
     - Уведомления (Email, SMS, PUSH и другие): example_notify.md
   - Пакеты: packages.md
   - Утилиты: utils.md
@@ -23,3 +24,5 @@ nav:
     - CORS: faq_cors.md
     - Создание своего пакета: faq_pack.md
     - Количество выводимых записей в Структуре страниц: faq_list_per_page.md
+  - Миграция кода:
+    - 1.15.0 -> 2.0.0: migrate/migrate_1.15.0_to_2.0.0.md

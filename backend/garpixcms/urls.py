@@ -9,7 +9,6 @@ from django.conf.urls import url
 from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
 from garpix_auth.views import LogoutView, LoginView
-from garpix_auth.rest.obtain_auth_token import obtain_auth_token
 from django.conf.urls.static import static
 
 
@@ -22,7 +21,7 @@ if settings.ENABLE_GARPIX_AUTH:
     urlpatterns += [
         path('logout/', LogoutView.as_view(url='/'), name="logout"),
         path('login/', LoginView.as_view(), name="authorize"),
-        path('api/login/', obtain_auth_token),
+        path('api/auth/', include(('garpix_auth.urls', 'garpix_auth'), namespace='garpix_auth')),
     ]
 
 if settings.DEBUG:
