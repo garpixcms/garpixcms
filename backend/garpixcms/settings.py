@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'oauth2_provider',
     'social_django',
-    'rest_framework_social_oauth2',
     # garpixcms
     'garpix_qa',
     'garpix_page',
@@ -254,7 +253,6 @@ REST_FRAMEWORK = {
 }
 
 AUTHENTICATION_BACKENDS = [
-    'rest_framework_social_oauth2.backends.DjangoOAuth2',
     'django.contrib.auth.backends.ModelBackend',
 ]
 
@@ -272,7 +270,11 @@ SOCIAL_AUTH_PIPELINE = (
 )
 
 if ENABLE_GARPIX_AUTH:
+    AUTHENTICATION_BACKENDS += [
+        'rest_framework_social_oauth2.backends.DjangoOAuth2',
+    ]
     INSTALLED_APPS += [
+        'rest_framework_social_oauth2',
         'garpix_auth',
     ]
 
