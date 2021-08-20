@@ -12,10 +12,11 @@
 
 ## Внешние пакеты
 
-* [garpix_blog](https://github.com/garpixcms/garpix_blog) - блог на сайте (новости, акции и т.п.).
+* (В РАЗРАБОТКЕ) [garpix_blog](https://github.com/garpixcms/garpix_blog) - блог на сайте (новости, акции и т.п.).
 * [garpix_vacancy](https://github.com/garpixcms/garpix_vacancy) - вакансии на сайте.
 
 ## Внешние пакеты для интеграции с другими системами
 
 * [garpix_profitbase](https://github.com/garpixcms/garpix_profitbase) - интеграция с сервисом в сфере недвижимости [profitbase.ru](https://profitbase.ru).
 * (В РАЗРАБОТКЕ) [garpix_instagram](https://github.com/garpixcms/garpix_instagram) - интеграция с [Instagram](https://www.instagram.com).
+* [garpix_jira](https://github.com/garpixcms/garpix_jira) - интеграция с Jira Server.
