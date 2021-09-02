@@ -167,6 +167,38 @@ Notify.send(<event>, <context>[, <user=None>, <email=None>, <phone=None>, <files
 
 Команда использует шаблоны `notify.models.NotifyTemplate`, которые можно заполнить в админке *Уведомления -> Шаблоны*. Команда автоматически пробегает по всем созданным шаблонам, соответствующим указанному событию и создает по ним уведомления, предварительно отрендерив поля текст и html, с указанным контекстом
 
+## Telegram
+
+Зарегистрируйте своего бота [https://t.me/BotFather](https://t.me/BotFather)
+
+Зайдите в конфигурацию [http://localhost:8000/admin/garpix_notify/notifyconfig/](https://t.me/BotFather) и заполните раздел "Telegram" (`API ключ` и `Имя бота`).
+
+Запустите демона:
+
+```bash
+python3 backend/manage.py garpix_notify_telegram
+```
+
+Напишите вашему боту в Telegram команду `/start`
+
+Также, можете дополнить ваш файл `user/admin.py` следующим содержимым и увидите инструкции по привязке пользователя Telegram к пользователю вашей системы:
+
+```python
+from django.contrib import admin
+from .models import User
+from django.contrib.auth.admin import UserAdmin
+
+
+@admin.register(User)
+class UserAdmin(UserAdmin):
+    fieldsets = (
+        ('Telegram', {
+            'fields': ('telegram_chat_id', 'telegram_secret', 'get_telegram_connect_user_help'),
+        })
+    ) + UserAdmin.fieldsets
+    readonly_fields = ['telegram_secret', 'get_telegram_connect_user_help'] + list(UserAdmin.readonly_fields)
+```
+
 ## Viber
 
 * **Регистрация бота**
@@ -201,4 +233,4 @@ Notify.send(settings.YOUR_EVENT, {
 }, viber_chat_id='')
 
 ```
-     
+ 

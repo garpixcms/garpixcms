@@ -1,3 +1,7 @@
+### 2.1.0 (02.09.2021)
+
+- Upgrade `garpix_notify` to version 4.1.0.
+
 ### 2.0.4 (02.09.2021)
 
 - Upgrade `garpix_notify` to version 4.0.2.
