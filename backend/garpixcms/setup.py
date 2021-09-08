@@ -30,9 +30,9 @@ setup(
     zip_safe=False,
     install_requires=[
         'Django == 3.1',
-        'garpix_utils >= 1.1.0',
+        'garpix_utils >= 1.3.0',
         'garpix_page == 2.6.0',
-        'garpix_menu == 1.0.2',
+        'garpix_menu == 1.1.0',
         'garpix_qa == 1.0.6',
         'garpix_auth == 2.0.1',
         'garpix_notify == 4.1.0',
