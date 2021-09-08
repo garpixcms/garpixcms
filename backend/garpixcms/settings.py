@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'oauth2_provider',
     'social_django',
     # garpixcms
+    'garpix_utils',
     'garpix_qa',
     'garpix_page',
     'garpix_menu',

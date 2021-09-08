@@ -1,4 +1,8 @@
-### 2.2.0 (02.09.2021)
+### 2.2.1 (08.09.2021)
+
+- Hotfix: Added `garpix_utils` to INSTALLED_APPS.
+
+### 2.2.0 (08.09.2021)
 
 - Upgrade `garpix_utils` to version 1.3.0.
 - Upgrade `garpix_page` to version 2.6.0.
