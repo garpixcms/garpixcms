@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'garpix_menu',
     'garpix_notify',
     'garpix_package',
-    'drf_yasg',
+    'drf_spectacular',
     'garpixcms',
     # website
     'app',
@@ -208,6 +208,14 @@ FCM_DJANGO_SETTINGS = {
     "FCM_SERVER_KEY": env('FCM_SERVER_KEY', "1234567890")
 }
 
+# SPECTACULAR
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Application',
+    'DESCRIPTION': '',
+    'VERSION': '1.0.0',
+}
+
 # Celery
 
 REDIS_HOST = os.getenv('REDIS_HOST', 'localhost')
@@ -249,7 +257,8 @@ REST_FRAMEWORK = {
         'garpix_auth.rest.authentication.MainAuthentication',
         'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
         'rest_framework_social_oauth2.authentication.SocialAuthentication',
-    )
+    ),
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
 AUTHENTICATION_BACKENDS = [

@@ -1,3 +1,8 @@
+### 2.2.0 (02.09.2021)
+
+- Upgrade `garpix_page` to version 2.6.0.
+- Changed `drf_yasg` to `drf_spectacular`.
+
 ### 2.1.0 (02.09.2021)
 
 - Upgrade `garpix_notify` to version 4.1.0.
