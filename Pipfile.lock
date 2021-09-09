@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "db274d5192fae52240f82d9118f8146952829c0c24126d8387d132cfdc039da4"
+            "sha256": "f18d8a8aafff508a1dba1504bd00061c7a5ad58948741ca1339cda4ccf354427"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -423,11 +423,11 @@
         },
         "garpix-page": {
             "hashes": [
-                "sha256:4c9d5c0d1c77bf67c02f8fa80b27ffc6d4c03bab60e0061b28585d13faa08301",
-                "sha256:a0e6b6d219f9609a7e2e0f8ad18f1b97709f883866d1761e722b395e9fba7462"
+                "sha256:1cacf654886d79521581a0f3f6d94546d9a6831436962e0ce3a57f4448e39258",
+                "sha256:348c00ac1bc27ee4c615fdacb35447b94138c33edc274d27f8b940778eb6e971"
             ],
             "index": "pypi",
-            "version": "==2.6.0"
+            "version": "==2.7.0"
         },
         "garpix-qa": {
             "hashes": [
@@ -653,7 +653,7 @@
                 "sha256:b8156d653ed91356e71675ce1fa1186d2b2c2085050012522895c9aa98fca3e5",
                 "sha256:f301b983a34259df90b3fcf7edc234b5e6c7065bd578781e66fd90b8cfbe76be"
             ],
-            "markers": "python_version >= '3.6' and python_version < '4.0'",
+            "markers": "python_version >= '3.6' and python_full_version < '4.0.0'",
             "version": "==0.2.1"
         },
         "mkdocs-material": {
@@ -947,7 +947,7 @@
                 "sha256:1ec7e028fe8361acc1ce909ada4e6beabec28ef31e629618549109e1d58549f0",
                 "sha256:89ca4926d0acc266235beb24cb0b0591aa6bf7adedfae54bf9421d529d782c8d"
             ],
-            "markers": "python_version < '4.0' and python_full_version >= '3.6.1'",
+            "markers": "python_full_version >= '3.6.1' and python_full_version < '4.0.0'",
             "version": "==0.11.1"
         },
         "pytz": {
@@ -1191,7 +1191,7 @@
                 "sha256:39fb8672126159acb139a7718dd10806104dec1e2f0f6c88aab05d17df10c8d4",
                 "sha256:f57b4c16c62fa2760b7e3d97c35b255512fb6b59a259730f36ba32ce9f8e342f"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4.0'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_full_version < '4.0.0'",
             "version": "==1.26.6"
         },
         "uwsgi": {
