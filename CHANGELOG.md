@@ -1,3 +1,8 @@
+### 2.6.0 (14.09.2021)
+
+- Upgrade `garpix_page` to version 2.9.0.
+- Upgrade `garpix_qa` to version 1.2.0.
+
 ### 2.5.0 (10.09.2021)
 
 - Upgrade `garpix_auth` to version 2.0.2.
