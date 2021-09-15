@@ -1,3 +1,7 @@
+### 2.7.0 (15.09.2021)
+
+- Added settings.py variable `API_URL` (defaults to `api`).
+
 ### 2.6.0 (14.09.2021)
 
 - Upgrade `garpix_page` to version 2.9.0.

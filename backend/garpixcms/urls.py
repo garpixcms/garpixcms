@@ -22,13 +22,13 @@ if settings.ENABLE_GARPIX_AUTH:
     urlpatterns += [
         path('logout/', LogoutView.as_view(url='/'), name="logout"),
         path('login/', LoginView.as_view(), name="authorize"),
-        path('api/auth/', include(('garpix_auth.urls', 'garpix_auth'), namespace='garpix_auth')),
+        path(f'{settings.API_URL}/auth/', include(('garpix_auth.urls', 'garpix_auth'), namespace='garpix_auth')),
     ]
 
 if settings.DEBUG:
     urlpatterns += [
-        path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
-        path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
+        path(f'{settings.API_URL}/schema/', SpectacularAPIView.as_view(), name='schema'),
+        path(f'{settings.API_URL}/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
     ]
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(
         settings.STATIC_URL, document_root=settings.STATIC_ROOT)
