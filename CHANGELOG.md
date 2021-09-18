@@ -1,3 +1,7 @@
+### 2.8.0 (18.09.2021)
+
+- Upgrade `garpix_menu` to version 1.2.0.
+
 ### 2.7.0 (15.09.2021)
 
 - Added settings.py variable `API_URL` (defaults to `api`).
