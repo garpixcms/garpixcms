@@ -1,3 +1,7 @@
+### 2.8.1 (18.09.2021)
+
+- Added to INSTALLED_APPS 'django.contrib.sitemaps'.
+
 ### 2.8.0 (18.09.2021)
 
 - Upgrade `garpix_menu` to version 1.2.0.
