@@ -26,3 +26,5 @@ nav:
     - Количество выводимых записей в Структуре страниц: faq_list_per_page.md
   - Миграция кода:
     - 1.15.0 -> 2.0.0: migrate/migrate_1.15.0_to_2.0.0.md
+  - Устаревшие статьи:
+    - Простой корпорат на шаблонах (устарел 10.09.2021): deprecated/example_simple_templates_site_deprecated_2021-09-10.md
