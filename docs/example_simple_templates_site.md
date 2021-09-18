@@ -30,7 +30,7 @@ git init
 
 Если на [http://localhost:8000](http://localhost:8000) вы видите надпись "Ура, работает!", то можно переходить к следующему шагу.
 
-![Ура, работает](/example_simple_templates_site/images/corp_hooray.png)
+![Ура, работает](/garpixcms/example_simple_templates_site/images/corp_hooray.png)
 
 #### Шаг 2. Создаем необходимые страницы в коде
 
@@ -70,7 +70,7 @@ python3 backend/manage.py startpage --app=home --page=home --base=page
 
 После этого будет создано новое приложение, добавлены модели, админка, класс для переводов, шаблон.
 
-![Изображение](/example_simple_templates_site/images/corp_home_files.png)
+![Изображение](/garpixcms/example_simple_templates_site/images/corp_home_files.png)
 
 2.2. Создаем страницу Контакты
 
@@ -247,7 +247,7 @@ class HomePageAdmin(BasePageAdmin):
 После этого снова можно зайти на главную страницу и увидеть, что карусель работает. Также, вы можете создать другие
 страницы, чтобы поставить на них ссылки с карусели.
 
-![Изображение](/example_simple_templates_site/images/corp_home_site.png)
+![Изображение](/garpixcms/example_simple_templates_site/images/corp_home_site.png)
 
 3.2 Страница Контакты
 
@@ -319,7 +319,7 @@ python3 backend/manage.py migrate
 
 Получится нечто подобное:
 
-![Изображение](/example_simple_templates_site/images/corp_contact_site.png)
+![Изображение](/garpixcms/example_simple_templates_site/images/corp_contact_site.png)
 
 3.2.2. Реализация формы обратной связи
 
@@ -526,11 +526,11 @@ class ContactPage(BasePage):
 После этого можете зайти на страницу "Контакты" и отправить форму, в административной панели можно увидеть,
 что все сохраняется, когда форма валидна.
 
-![Изображение](/example_simple_templates_site/images/corp_contact_site_success.png)
+![Изображение](/garpixcms/example_simple_templates_site/images/corp_contact_site_success.png)
 
-![Изображение](/example_simple_templates_site/images/corp_contact_site_error.png)
+![Изображение](/garpixcms/example_simple_templates_site/images/corp_contact_site_error.png)
 
-![Изображение](/example_simple_templates_site/images/corp_contact_feedback.png)
+![Изображение](/garpixcms/example_simple_templates_site/images/corp_contact_feedback.png)
 
 3.2.3. Отправка уведомления
 
@@ -673,11 +673,11 @@ celery -A app worker --loglevel=info -B
 
 После этих действий попробуйте заполнить и отправить форму на лицевой части сайта.
 
-![Изображение](/example_simple_templates_site/images/corp_site_feedback_pending.png)
+![Изображение](/garpixcms/example_simple_templates_site/images/corp_site_feedback_pending.png)
 
 Примерно через минуту письма дойдут (можно изменить в "Уведомления" - "Настройка")
 
-![Изображение](/example_simple_templates_site/images/corp_site_feedback_success.png)
+![Изображение](/garpixcms/example_simple_templates_site/images/corp_site_feedback_success.png)
 
 Итого, обратная связь полностью готова. Переходим к следующему пункту.
 
@@ -746,7 +746,7 @@ python3 backend/manage.py migrate
 
 Получится примерно следующее
 
-![Изображение](/example_simple_templates_site/images/corp_news_admin.png)
+![Изображение](/garpixcms/example_simple_templates_site/images/corp_news_admin.png)
 
 Давайте подправим шаблон детальной новости (мы же добавили новое поле):
 
@@ -764,9 +764,9 @@ python3 backend/manage.py migrate
 Теперь можете попробовать перейти по ссылке "Новости" в "Структуре страниц" и увидите, работающие переходы между страницами и хлебными крошками. Также, вы можете добавить большое количество постов
 или уменьшить значение `paginated_by` в модели `PostList` для того, чтобы появилась пагинация.
 
-![Изображение](/example_simple_templates_site/images/corp_site_news.png)
+![Изображение](/garpixcms/example_simple_templates_site/images/corp_site_news.png)
 
-![Изображение](/example_simple_templates_site/images/corp_site_news_post.png)
+![Изображение](/garpixcms/example_simple_templates_site/images/corp_site_news_post.png)
 
 С новостями готово, пошли к следующему шагу.
 
@@ -783,7 +783,7 @@ python3 backend/manage.py migrate
 Попробуйте перейти на страницу на лицевой части сайта и вбить заголовок одной из страниц, получите
 нечто подобное:
 
-![Изображение](/example_simple_templates_site/images/corp_site_search.png)
+![Изображение](/garpixcms/example_simple_templates_site/images/corp_site_search.png)
 
 Для того, чтобы поиск шел также по содержимому, то добавьте поля в `searchable_fields` у модели.
 
@@ -902,7 +902,7 @@ python3 backend/manage.py migrate
 
 После добавления меню, вы сможете перемещаться по сайту. Количество типов меню также не ограничивается, но будьте аккуратны с неймингом.
 
-![Изображение](/example_simple_templates_site/images/corp_site_menu.png)
+![Изображение](/garpixcms/example_simple_templates_site/images/corp_site_menu.png)
 
 3.7. Карта сайта
 
