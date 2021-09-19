@@ -1,3 +1,20 @@
+### 2.13.0 (19.09.2021)
+
+- Upgrade `garpix_menu` to version 1.5.1.
+
+### 2.12.0 (19.09.2021)
+
+- Upgrade `garpix_menu` to version 1.5.0.
+
+### 2.11.0 (19.09.2021)
+
+- Upgrade `garpix_menu` to version 1.4.0.
+
+### 2.10.0 (19.09.2021)
+
+- Added global context for api pages.
+- Upgrade `garpix_menu` to version 1.3.0.
+
 ### 2.9.0 (19.09.2021)
 
 - Added endpoint `{API_URL}/page/{page_slug}` for SPA sites.

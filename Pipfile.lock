@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "485fbcd1f70b230f576ee6d928ef49555c5758c949871c6d7acb8ce15cbf3ab8"
+            "sha256": "0ec259494230a521e08287ba90390bbe2cc5c889816de4267d692016381e2314"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -195,6 +195,7 @@
                 "sha256:3520667fda779eb788ea00080124875be18f2d8f0848ec00733c0ec3bb8219fc",
                 "sha256:3fa3a7ccf96e826affdf1a0a9432be74dc73423125c8f96a909e3835a5ef194a",
                 "sha256:5b0fbfae7ff7febdb74b574055c7466da334a5371f253732d7e2e7525d570498",
+                "sha256:695104a9223a7239d155d7627ad912953b540929ef97ae0c34c7b8bf30857e89",
                 "sha256:8695456444f277af73a4877db9fc979849cd3ee74c198d04fc0776ebc3db52b9",
                 "sha256:94cc5ed4ceaefcbe5bf38c8fba6a21fc1d365bb8fb826ea1688e3370b2e24a1c",
                 "sha256:94fff993ee9bc1b2440d3b7243d488c6a3d9724cc2b09cdb297f6a886d040ef7",
@@ -399,11 +400,11 @@
         },
         "garpix-menu": {
             "hashes": [
-                "sha256:edd363117a0984913eb95b3166d5e84f7c2acca0b556bfe74f308c67063da8bd",
-                "sha256:f9ba9b94eb29626f2ec9278f93936e0d4a647e6306f2e821c7fb927a80adcf97"
+                "sha256:0c2979ee7d723e4b98b5046c3f50942b46ae46e0d34919b18f4e635eb2ac9ecd",
+                "sha256:8d3bd63f74a693588653e28f1fe77f5f48f97b7d0097e736d69945fd3b4b1d97"
             ],
             "index": "pypi",
-            "version": "==1.2.0"
+            "version": "==1.5.1"
         },
         "garpix-notify": {
             "hashes": [
@@ -423,11 +424,11 @@
         },
         "garpix-page": {
             "hashes": [
-                "sha256:164dcf5bf22ce052a8bfc038401c8741d43dd4671249ff77d6fbb30591cedf9a",
-                "sha256:6bb2a76774404ec43c730fd44e9f50ce3dfa4152cefb7edbf045e40f06ac72ef"
+                "sha256:52ce878da38920a03cb6376dffa3f1c0f3c7acad0e5fbd08d837311c2bb9f5f4",
+                "sha256:caabaff1517a9efd289f71df896e843c2235b9d0a099a890bd4324ea513f0ce0"
             ],
             "index": "pypi",
-            "version": "==2.9.0"
+            "version": "==2.10.0"
         },
         "garpix-qa": {
             "hashes": [
@@ -658,11 +659,11 @@
         },
         "mkdocs-material": {
             "hashes": [
-                "sha256:4bdeff63904680865676ceb3193216934de0b33fa5b2446e0a84ade60929ee54",
-                "sha256:4c6939b9d7d5c6db948ab02df8525c64211828ddf33286acea8b9d2115cec369"
+                "sha256:2ce49ece52fc92a9728ea4a3aea941744bfe23442814a1e1db93368f858aee30",
+                "sha256:4be317aa17829746d9e36150207c5c6311fb82042dbd0a56ae2a3301a351fda1"
             ],
             "index": "pypi",
-            "version": "==7.2.6"
+            "version": "==7.2.7"
         },
         "mkdocs-material-extensions": {
             "hashes": [

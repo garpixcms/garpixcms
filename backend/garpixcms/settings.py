@@ -293,6 +293,7 @@ if ENABLE_GARPIX_AUTH:
 
 
 GARPIX_PAGE_ADMIN_LIST_PER_PAGE = 25
+GARPIX_PAGE_GLOBAL_CONTEXT = 'garpixcms.contexts.global_context.global_context'
 
 if DEBUG:
     CORS_ALLOW_ALL_ORIGINS = True
