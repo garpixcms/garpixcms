@@ -1,3 +1,7 @@
+### 2.9.0 (19.09.2021)
+
+- Added endpoint `{API_URL}/page/{page_slug}` for SPA sites.
+
 ### 2.8.1 (18.09.2021)
 
 - Added to INSTALLED_APPS 'django.contrib.sitemaps'.

@@ -11,11 +11,13 @@ from garpix_auth.views import LogoutView, LoginView
 from garpix_page.views.page import PageView
 from garpix_page.views.index import IndexView
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
+from garpix_page.views.page_api import PageApiView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('sitemap.xml', sitemap, sitemap_view(), name='django.contrib.sitemaps.views.sitemap'),
+    re_path(f'{settings.API_URL}/page/(?P<slugs>.*)$', PageApiView.as_view()),
 ]
 
 if settings.ENABLE_GARPIX_AUTH:
