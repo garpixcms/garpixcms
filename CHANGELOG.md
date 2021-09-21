@@ -1,3 +1,7 @@
+### 2.14.0 (21.09.2021)
+
+- Upgrade `garpix_auth` to version 2.1.0.
+
 ### 2.13.0 (19.09.2021)
 
 - Upgrade `garpix_menu` to version 1.5.1.
