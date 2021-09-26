@@ -1,3 +1,7 @@
+### 2.16.0 (26.09.2021)
+
+- Upgrade `garpix_page` to version 2.12.0.
+
 ### 2.15.0 (25.09.2021)
 
 - Upgrade `garpix_page` to version 2.11.0.
