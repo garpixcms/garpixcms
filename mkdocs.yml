@@ -2,6 +2,7 @@ theme:
   name: "material"
 
 site_name: GarpixCMS
+repo_url: https://github.com/garpixcms/garpixcms
 
 plugins:
 - search
