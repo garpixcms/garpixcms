@@ -1,3 +1,7 @@
+### 2.18.0 (18.10.2021)
+
+- Upgrade `garpix_auth` to version 2.3.0.
+
 ### 2.17.0 (08.10.2021)
 
 - Upgrade `garpix_auth` to version 2.2.0.
