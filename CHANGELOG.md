@@ -2,6 +2,10 @@
 
 - Added new parameters into example.env. They will disable chosen apps
 
+### 2.18.0 (18.10.2021)
+
+- Upgrade `garpix_auth` to version 2.3.0.
+
 ### 2.17.0 (08.10.2021)
 
 - Upgrade `garpix_auth` to version 2.2.0.
@@ -149,7 +153,7 @@
 
 ### 1.7.2 (19.07.2021)
 
-- Added `/frontend/templates` to `TEMPLATES` variable. 
+- Added `/frontend/templates` to `TEMPLATES` variable.
 
 ### 1.7.1 (18.07.2021)
 
