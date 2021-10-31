@@ -153,7 +153,7 @@
 
 ### 1.7.2 (19.07.2021)
 
-- Added `/frontend/templates` to `TEMPLATES` variable.
+- Added `/frontend/templates` to `TEMPLATES` variable. 
 
 ### 1.7.1 (18.07.2021)
 
