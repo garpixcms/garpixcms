@@ -1,3 +1,7 @@
+### 2.19.0(31.10.2021)
+
+- Added new parameters into example.env. They will disable chosen apps
+
 ### 2.17.0 (08.10.2021)
 
 - Upgrade `garpix_auth` to version 2.2.0.
