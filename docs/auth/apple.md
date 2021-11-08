@@ -1,5 +1,9 @@
 # Пример входа через AppleId (SPA)
 
+Пример также можно увидеть здесь: https://example.cms.garpix.com/kontakty (см. консоль браузера)
+
+Репозиторий здесь: https://github.com/garpixcms/example-corp-spa
+
 #### Шаг 1. Создание нового проекта
 
 Для начала, создайте новый проект по [документации](install_new_project.md).
