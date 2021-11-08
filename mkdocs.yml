@@ -18,6 +18,8 @@ nav:
     - Простой корпорат на шаблонах: example_simple_templates_site.md
     - Вход по логину/паролю (SPA): example_auth_spa.md
     - Вход по логину/паролю (шаблоны): example_auth_templates.md
+    - Вход через социальные сети:
+      - Apple ID: auth/apple.md
     - Уведомления (Email, SMS, PUSH и другие): example_notify.md
   - Пакеты: packages.md
   - Утилиты: utils.md
