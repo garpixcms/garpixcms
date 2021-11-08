@@ -119,7 +119,6 @@ yarn add react-apple-signin-auth
 ```jsx
 import React from "react";
 import AppleSignin from 'react-apple-signin-auth';
-import api from "../../api";
 
 export default class LoginWithAppleId extends React.Component {
 

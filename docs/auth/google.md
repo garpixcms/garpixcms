@@ -105,13 +105,26 @@ export default SocialLogin(SocialButton);
 ```jsx
 import React from "react";
 import SocialButton from "../SocialButton";
-import api from "../../api";
 
 export default class LoginWithGoogle extends React.Component {
 
     handleSocialLogin = async (user) => {
         console.log(user);
-        await api.convertTokenGoogle({token: user._token.accessToken})
+        // convert token
+        // POST /api/social-auth/convert-token/
+        // Payload:
+        /*
+        {
+            grant_type: 'convert_token',
+            // Client id из п. 5
+            client_id: '999999999999-A99AAAAAAAAAA652f6hlem2q5rfvnel4.apps.googleusercontent.com',
+            // Client secret из п. 5
+            client_secret: 'AAAAAA-Jt8qTX3Nw8_mXW2dxnpiDM-AAAA9A',
+            backend: 'google-oauth2',
+            token: user._token.accessToken,
+        }
+        */
+        // В ответ вернется стандартный ответ как при получении токена.
     };
 
     handleSocialLoginFailure = (err) => {
