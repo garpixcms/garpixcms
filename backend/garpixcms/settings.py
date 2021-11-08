@@ -178,6 +178,9 @@ COMMON_CONTEXT = 'garpix_page.contexts.default.context'
 
 # menu
 
+MENU_ICON_ALLOWED_TYPES = ['bmp', 'svg', 'jpg', 'png', 'jpeg']
+MENU_ICON_MAX_SIZE = 1024 * 1024 * 1
+
 MENU_TYPE_HEADER_MENU = 'header_menu'
 MENU_TYPE_FOOTER_MENU = 'footer_menu'
 

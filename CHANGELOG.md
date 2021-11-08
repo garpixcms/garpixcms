@@ -1,3 +1,11 @@
+### 2.19.0 (08.11.2021)
+
+- Add social urls.
+
+### 2.19.0 (18.10.2021)
+
+- Upgrade `garpix_menu` to version 1.6.0.
+
 ### 2.18.0 (18.10.2021)
 
 - Upgrade `garpix_auth` to version 2.3.0.

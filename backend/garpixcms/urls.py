@@ -24,6 +24,7 @@ if settings.ENABLE_GARPIX_AUTH:
     urlpatterns += [
         path('logout/', LogoutView.as_view(url='/'), name="logout"),
         path('login/', LoginView.as_view(), name="authorize"),
+        path(f'{settings.API_URL}/social-auth/', include('rest_framework_social_oauth2.urls')),
         path(f'{settings.API_URL}/auth/', include(('garpix_auth.urls', 'garpix_auth'), namespace='garpix_auth')),
     ]
 

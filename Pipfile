@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 django = "==3.1"
 garpix-page = "==2.12.0"
-garpix-menu = "==1.5.1"
+garpix-menu = "==1.6.0"
 environs = "*"
 psycopg2-binary = "*"
 garpix-qa = "==1.2.0"
@@ -22,6 +22,7 @@ django-cors-headers = "*"
 garpix-utils = ">=1.3.0"
 garpix-package = "==2.0.0"
 drf-spectacular = "*"
+raven = "*"
 
 [dev-packages]
 
