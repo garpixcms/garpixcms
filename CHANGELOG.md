@@ -1,3 +1,11 @@
+### 2.21.0 (08.11.2021)
+
+- Upgrade `garpix_menu` to version 1.6.2.
+
+### 2.20.0 (08.11.2021)
+
+- Upgrade `garpix_menu` to version 1.6.1.
+
 ### 2.19.0 (08.11.2021)
 
 - Add social urls.
