@@ -20,7 +20,7 @@ garpix-auth = "==2.3.0"
 garpix-notify = "==4.1.0"
 django-cors-headers = "*"
 garpix-utils = ">=1.3.0"
-garpix-package = "==2.0.0"
+garpix-package = "==2.0.1"
 drf-spectacular = "*"
 raven = "*"
 
