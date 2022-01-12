@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d58f94021b0c6c80da4155e50a7499d4e0f0266e4025a1e84cbc30b68c10afaf"
+            "sha256": "2767218da66d7b4ed7b6725ed065e3c5538e0f66650488359f038dac92000d0f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -214,7 +214,7 @@
                 "sha256:a0713dc7a1de3f06bc0df5a9567ad19ead2d3d5689b434768a6145bff77c0667",
                 "sha256:f184f0d851d96b6d29297354ed981b7dd71df7ff500d82fa6d11f0856bee8035"
             ],
-            "markers": "python_version < '4' and python_full_version >= '3.6.2'",
+            "markers": "python_full_version >= '3.6.2' and python_full_version < '4.0.0'",
             "version": "==0.3.0"
         },
         "click-plugins": {
@@ -357,10 +357,10 @@
         },
         "django-oauth-toolkit": {
             "hashes": [
-                "sha256:6e8ca35e02cca3442692eef9e56d49787fe39c0398b34a856c24ad4149b64ecb",
-                "sha256:8e5a14e8a47726527eb89e4185f10e399b4f02992f6491a558297c9debdcdc66"
+                "sha256:c3a0acd10a9c8442aedd298f8cb835d242c114ce0b8894c7e9290991bee667ca",
+                "sha256:d9acbe8ef193bf31d192d90ea2e2df5e7be8adab391cec4acf55f0c048a35274"
             ],
-            "version": "==1.6.2"
+            "version": "==1.6.3"
         },
         "django-polymorphic": {
             "hashes": [
@@ -472,11 +472,11 @@
         },
         "garpix-menu": {
             "hashes": [
-                "sha256:6b46887a58841b59b3612a94b2c0597055f74733f335376078a0972632ab4ad6",
-                "sha256:a2dce798a28f1ba011479fa1cc3ca06b958de04ce2071e905e1071ad91b53326"
+                "sha256:2f42282beb5fdc63eebc024d26fa154e56aed243ac1a4e0635f88fb787f170f3",
+                "sha256:35fb9f44adf9d94f36c7ca8c076d3a060f7bb7a151e2ba8b6966dbc463420188"
             ],
             "index": "pypi",
-            "version": "==1.6.2"
+            "version": "==1.7.0"
         },
         "garpix-notify": {
             "hashes": [
@@ -636,11 +636,11 @@
         },
         "jsonschema": {
             "hashes": [
-                "sha256:eb7a69801beb7325653aa8fd373abbf9ff8f85b536ab2812e5e8287b522fb6a2",
-                "sha256:f210d4ce095ed1e8af635d15c8ee79b586f656ab54399ba87b8ab87e5bff0ade"
+                "sha256:636694eb41b3535ed608fe04129f26542b59ed99808b4f688aa32dcf55317a83",
+                "sha256:77281a1f71684953ee8b3d488371b162419767973789272434bbc3f29d9c8823"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==4.3.3"
+            "version": "==4.4.0"
         },
         "jwcrypto": {
             "hashes": [
@@ -804,16 +804,16 @@
                 "sha256:12baad29359f468b44d980ed35b713715409097a1d8e3d0ef90962db95205eda",
                 "sha256:f0fd7c115eaafda7fb16bf5ff5d70eda55d7c0599eac64f8b25eacf864312a85"
             ],
-            "markers": "python_version < '4' and python_full_version >= '3.6.2'",
+            "markers": "python_full_version >= '3.6.2' and python_full_version < '4.0.0'",
             "version": "==0.3.1"
         },
         "mkdocs-material": {
             "hashes": [
-                "sha256:98dd282d81129a99b540cd56769d6879367e1096cf5a0a89b46279d8fba9accb",
-                "sha256:cab1fc730d72fd17ae59d9c59361b7161f8ffc3e8d40d7156b756d6492f6d6e8"
+                "sha256:12eb74faf018950f51261a773f9bea12cc296ec4bdbb2c8cf74102ee35b6df79",
+                "sha256:b2303413e3154502759f90ee2720b451be8855f769c385d8fb06a93ce54aafe2"
             ],
             "index": "pypi",
-            "version": "==8.1.5"
+            "version": "==8.1.6"
         },
         "mkdocs-material-extensions": {
             "hashes": [
@@ -1494,7 +1494,7 @@
                 "sha256:000ca7f471a233c2251c6c7023ee85305721bfdf18621ebff4fd17a8653427ed",
                 "sha256:0e7c33d9a63e7ddfcb86780aac87befc2fbddf46c58dbb487e0855f7ceec283c"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_full_version < '4.0.0'",
             "version": "==1.26.8"
         },
         "uwsgi": {
