@@ -1,3 +1,7 @@
+### 3.3.0 (13.01.2022)
+
+- Upgrade `garpix_qa` to version 1.3.0.
+
 ### 3.2.0 (13.01.2022)
 
 - Added `sentry`. See `SENTRY_DSN_STRING` in `.env`.
