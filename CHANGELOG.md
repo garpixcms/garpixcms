@@ -1,3 +1,7 @@
+### 3.2.0 (13.01.2022)
+
+- Added `sentry`. See `SENTRY_DSN_STRING` in `.env`.
+
 ### 3.1.0 (12.01.2022)
 
 - Upgrade `garpix_menu` to version 1.7.0.

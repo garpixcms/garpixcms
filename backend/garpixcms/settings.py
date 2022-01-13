@@ -1,6 +1,9 @@
 import os
 from environs import Env
 from app.basedir import BASE_DIR
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
 
 env = Env()
 env.read_env(os.path.join(BASE_DIR, '.env'), recurse=True)
@@ -297,6 +300,14 @@ if ENABLE_GARPIX_AUTH:
 
 GARPIX_PAGE_ADMIN_LIST_PER_PAGE = 25
 GARPIX_PAGE_GLOBAL_CONTEXT = 'garpixcms.contexts.global_context.global_context'
+
+# sentry
+SENTRY_DSN_STRING = env('SENTRY_DSN_STRING', '')
+if SENTRY_DSN_STRING != '':
+    sentry_sdk.init(
+        dsn=SENTRY_DSN_STRING,
+        integrations=[DjangoIntegration()]
+    )
 
 if DEBUG:
     CORS_ALLOW_ALL_ORIGINS = True

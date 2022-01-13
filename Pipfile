@@ -23,6 +23,7 @@ garpix-utils = ">=1.3.0"
 garpix-package = "==2.0.1"
 drf-spectacular = "*"
 raven = "*"
+sentry-sdk = "*"
 
 [dev-packages]
 
