@@ -25,6 +25,7 @@ drf-spectacular = "*"
 raven = "*"
 sentry-sdk = "*"
 pre-commit = "*"
+django-tabbed-admin = "*"
 
 [dev-packages]
 
