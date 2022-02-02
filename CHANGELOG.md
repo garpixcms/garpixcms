@@ -1,3 +1,11 @@
+### 3.4.0 (02.02.2022)
+
+- Upgrade `garpix_qa` to version 1.5.0.
+- Upgrade `garpix_page` to version 2.13.0.
+- Upgrade `garpix_notify` to version 5.3.0.
+- Added `Makefile`.
+- Added pre commit hooks.
+
 ### 3.3.0 (13.01.2022)
 
 - Upgrade `garpix_qa` to version 1.3.0.
