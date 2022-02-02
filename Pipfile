@@ -24,6 +24,8 @@ garpix-package = "==2.0.1"
 drf-spectacular = "*"
 raven = "*"
 sentry-sdk = "*"
+pre-commit = "*"
+django-tabbed-admin = "*"
 
 [dev-packages]
 
