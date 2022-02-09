@@ -1,3 +1,7 @@
+### 3.4.1 (09.02.2022)
+
+- Fixed upgrade `garpix_qa` to version 1.5.0 in setup.py.
+
 ### 3.4.0 (02.02.2022)
 
 - Upgrade `garpix_qa` to version 1.5.0.
