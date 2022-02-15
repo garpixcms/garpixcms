@@ -1,3 +1,9 @@
+### 3.5.0 (15.02.2022)
+
+- Fixed upgrade `garpix_page` to version 2.13.0 in setup.py.
+- Fixed upgrade `garpix_notify` to version 5.3.0 in setup.py.
+- Upgrade `garpix_qa` to version 1.6.0.
+
 ### 3.4.1 (09.02.2022)
 
 - Fixed upgrade `garpix_qa` to version 1.5.0 in setup.py.
