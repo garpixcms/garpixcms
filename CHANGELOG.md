@@ -1,3 +1,7 @@
+### 3.6.0 (16.02.2022)
+
+- Upgrade `garpix_page` to version 2.14.0.
+
 ### 3.5.0 (15.02.2022)
 
 - Fixed upgrade `garpix_page` to version 2.13.0 in setup.py.
