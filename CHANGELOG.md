@@ -1,3 +1,8 @@
+### 3.7.0 (17.02.2022)
+
+- LocaleMiddleware added to settings.
+- Upgrade `garpix_page` to version 2.15.0.
+
 ### 3.6.0 (16.02.2022)
 
 - Upgrade `garpix_page` to version 2.14.0.

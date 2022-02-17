@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5f53247407e6ae4777e737922a5d2a0371cc27baa32ffcb25307d099813af865"
+            "sha256": "b34e461e0acbf425dc8e14a2bad5618e19d85437d8372cf0052b817b12b1d29e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -222,7 +222,7 @@
                 "sha256:a0713dc7a1de3f06bc0df5a9567ad19ead2d3d5689b434768a6145bff77c0667",
                 "sha256:f184f0d851d96b6d29297354ed981b7dd71df7ff500d82fa6d11f0856bee8035"
             ],
-            "markers": "python_full_version >= '3.6.2' and python_full_version < '4.0.0'",
+            "markers": "python_version < '4' and python_full_version >= '3.6.2'",
             "version": "==0.3.0"
         },
         "click-plugins": {
@@ -468,11 +468,11 @@
         },
         "filelock": {
             "hashes": [
-                "sha256:137b661e657f7850eec9def2a001efadba3414be523b87cd3f9a037372d80a15",
-                "sha256:a7141afb4feca60925cfc090b411fb9faaf542d06d58ece4f93d940265e6b995"
+                "sha256:7b23620a293cf3e19924e469cb96672dc72b36c26e8f80f85668310117fcbe4e",
+                "sha256:d1eccb164ed020bc84edd9e45bf6cdb177f64749f6b8fe066648832d2e98726d"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==3.5.0"
+            "version": "==3.5.1"
         },
         "flake8": {
             "hashes": [
@@ -530,11 +530,11 @@
         },
         "garpix-page": {
             "hashes": [
-                "sha256:bbddc2dbbd167c34bb483903055e2bd130b8168ae4717020a0ae70316630e7fe",
-                "sha256:f1cf2abfad5e2cbaa2180ef57ae97bdd1a4b5ad903ccb312e95cdfe40e097739"
+                "sha256:8eaa3bac74c4992ce5d7b46c4bc3ce51aba1b5fb15707865b3b975bfa2d84807",
+                "sha256:d32cdd696041dee3dc9b33d184c273095b41148ca546ec31a3f9ed4095d84bc2"
             ],
             "index": "pypi",
-            "version": "==2.14.0"
+            "version": "==2.15.0"
         },
         "garpix-qa": {
             "hashes": [
@@ -846,7 +846,7 @@
                 "sha256:12baad29359f468b44d980ed35b713715409097a1d8e3d0ef90962db95205eda",
                 "sha256:f0fd7c115eaafda7fb16bf5ff5d70eda55d7c0599eac64f8b25eacf864312a85"
             ],
-            "markers": "python_full_version >= '3.6.2' and python_full_version < '4.0.0'",
+            "markers": "python_version < '4' and python_full_version >= '3.6.2'",
             "version": "==0.3.1"
         },
         "mkdocs-material": {
@@ -1243,11 +1243,11 @@
         },
         "python-slugify": {
             "hashes": [
-                "sha256:6d8c5df75cd4a7c3a2d21e257633de53f52ab0265cd2d1dc62a730e8194a7380",
-                "sha256:f13383a0b9fcbe649a1892b9c8eb4f8eab1d6d84b84bb7a624317afa98159cab"
+                "sha256:89eec682c5180ba64811c9906a28184bbcc0a35792ba1bda3b5c2ab0cb2d0f67",
+                "sha256:ba72aa9d9f0514c0c3dd4430442f698ccc27a24d19630473663a71e3ec606bc1"
             ],
-            "markers": "python_version >= '3.6'",
-            "version": "==5.0.2"
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'",
+            "version": "==6.0.1"
         },
         "python-telegram-bot": {
             "hashes": [
@@ -1359,11 +1359,11 @@
         },
         "redis": {
             "hashes": [
-                "sha256:267e89e476eb684517584e8988f1e5d755f483a368c133020c4c40e8b676bc5d",
-                "sha256:f2715caad9f0e8c6ff8df46d3c4c9022a3929001f530f66b62747554d3067068"
+                "sha256:04629f8e42be942c4f7d1812f2094568f04c612865ad19ad3ace3005da70631a",
+                "sha256:1d9a0cdf89fdd93f84261733e24f55a7bbd413a9b219fdaf56e3e728ca9a2306"
             ],
             "markers": "python_version >= '3.6'",
-            "version": "==4.1.3"
+            "version": "==4.1.4"
         },
         "requests": {
             "hashes": [
@@ -1593,7 +1593,7 @@
                 "sha256:000ca7f471a233c2251c6c7023ee85305721bfdf18621ebff4fd17a8653427ed",
                 "sha256:0e7c33d9a63e7ddfcb86780aac87befc2fbddf46c58dbb487e0855f7ceec283c"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_full_version < '4.0.0'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4'",
             "version": "==1.26.8"
         },
         "uwsgi": {
