@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9100289194a56e11bad21b7e35d1c8f563b6324a32a9ece27b60b432d59eca1f"
+            "sha256": "1d321405475ba064ade2abcc7ece255d1333fd3336aafb9c18ce34e407aaa5b1"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -530,11 +530,11 @@
         },
         "garpix-page": {
             "hashes": [
-                "sha256:95aea5846a54377db31fc54b2b705171798bb99081c09731bdb28bf729db2d81",
-                "sha256:eb8e41169e5551b4a37ee5de992ed4b3e4d7b5a6350989917731e6e2fb2600e6"
+                "sha256:0849938223c1643aef26648582fb8185c01db191e2668fa87c572ecde88e79ae",
+                "sha256:f908650a7e7f713ed5ee6db485b74238b390301692de129d755efe44f50b742d"
             ],
             "index": "pypi",
-            "version": "==2.18.0"
+            "version": "==2.19.0"
         },
         "garpix-qa": {
             "hashes": [
@@ -1369,11 +1369,11 @@
         },
         "sentry-sdk": {
             "hashes": [
-                "sha256:411a8495bd18cf13038e5749e4710beb4efa53da6351f67b4c2f307c2d9b6d49",
-                "sha256:aa52da941c56b5a76fd838f8e9e92a850bf893a9eb1e33ffce6c21431d07ee30"
+                "sha256:32af1a57954576709242beb8c373b3dbde346ac6bd616921def29d68846fb8c3",
+                "sha256:38fd16a92b5ef94203db3ece10e03bdaa291481dd7e00e77a148aa0302267d47"
             ],
             "index": "pypi",
-            "version": "==1.5.7"
+            "version": "==1.5.8"
         },
         "service-identity": {
             "hashes": [
@@ -1537,11 +1537,11 @@
         },
         "tzdata": {
             "hashes": [
-                "sha256:3eee491e22ebfe1e5cfcc97a4137cd70f092ce59144d81f8924a844de05ba8f5",
-                "sha256:68dbe41afd01b867894bbdfd54fa03f468cfa4f0086bfb4adcd8de8f24f3ee21"
+                "sha256:238e70234214138ed7b4e8a0fab0e5e13872edab3be586ab8198c407620e2ab9",
+                "sha256:8b536a8ec63dc0751342b3984193a3118f8fca2afe25752bb9b7fffd398552d3"
             ],
             "markers": "python_version >= '3.6'",
-            "version": "==2021.5"
+            "version": "==2022.1"
         },
         "tzlocal": {
             "hashes": [
