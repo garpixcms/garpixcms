@@ -12,6 +12,7 @@ from garpix_page.views.page import PageView
 from garpix_page.views.index import IndexView
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from garpix_page.views.page_api import PageApiView
+from garpix_page.views.page_api import PageApiListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,6 +27,7 @@ if settings.ENABLE_GARPIX_AUTH:
         path('login/', LoginView.as_view(), name="authorize"),
         path(f'{settings.API_URL}/social-auth/', include('rest_framework_social_oauth2.urls')),
         path(f'{settings.API_URL}/auth/', include(('garpix_auth.urls', 'garpix_auth'), namespace='garpix_auth')),
+        path(f'{settings.API_URL}/page_models_list/', PageApiListView.as_view()),
     ]
 
 if settings.DEBUG:

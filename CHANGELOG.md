@@ -1,3 +1,8 @@
+### 3.15.0-3.15.1 (15.04.2022)
+
+- Upgrade `garpix_page` to version 2.21.0.
+- Pinned `django-ckeditor == 6.3.0`.
+
 ### 3.14.0 (12.04.2022)
 
 - Upgrade `garpix_page` to version 2.20.0.

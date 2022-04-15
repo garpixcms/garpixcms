@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "705189a76d318a9ad2b7bce8001e566f0a6c5a42f0e691e2b11e4db5f39e64ab"
+            "sha256": "9a1dfb0c605d5ff7ccc4f6f96265ba74208baaef09072fa8c901d1df85707007"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -328,11 +328,11 @@
         },
         "django-ckeditor": {
             "hashes": [
-                "sha256:ce0c806e40172dbea35330a207632701a6d418314ae8c8fa140fd277d9322c96",
-                "sha256:e1580105c9ff6fcaca6345acda1dc01416733027c61c6387e02dd5960b8ade3c"
+                "sha256:b5c03d77b9fe848bf12520512a82d07533afa8678040731b1d4d86c1dcea8344",
+                "sha256:d04f350f4a200c2a0f96307fc8827bd4e87af5694fb12d53189ba92025b2da37"
             ],
             "index": "pypi",
-            "version": "==6.3.2"
+            "version": "==6.3.0"
         },
         "django-cors-headers": {
             "hashes": [
@@ -530,11 +530,11 @@
         },
         "garpix-page": {
             "hashes": [
-                "sha256:7575cfd99bb908699bc60c8f7b83ed866deab6de9db28756f98ab349521ed42a",
-                "sha256:bcc66b489bda88eecb5c4cf727ab76210b0b2713b8ead4c3ff8110a37aa2060d"
+                "sha256:7f37498c98154bf84668718d1fd2f566bf4ac3a0fdc1052546e247863974b6a9",
+                "sha256:f00602c414ae079927a2d5d56658dbc89f329ab7bd4f643f14a8b7b11653f47b"
             ],
             "index": "pypi",
-            "version": "==2.20.0"
+            "version": "==2.21.0"
         },
         "garpix-qa": {
             "hashes": [
@@ -1372,11 +1372,11 @@
         },
         "sentry-sdk": {
             "hashes": [
-                "sha256:02c0f79941964297341c14d53e4df09a81c949707bd91e2d5e66b565aad75c8b",
-                "sha256:afd9f92711556739172f3bc845a02fc921ca1560bee974ae65072ef6a30e3921"
+                "sha256:0a9eb20a84f4c17c08c57488d59fdad18669db71ebecb28fb0721423a33535f9",
+                "sha256:972c8fe9318a415b5cf35f687f568321472ef94b36806407c370ce9c88a67f2e"
             ],
             "index": "pypi",
-            "version": "==1.5.9"
+            "version": "==1.5.10"
         },
         "service-identity": {
             "hashes": [
