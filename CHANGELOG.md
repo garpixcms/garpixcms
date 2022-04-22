@@ -1,3 +1,9 @@
+### 3.16.0 (22.04.2022)
+
+- Upgrade `garpix_page` to version 2.22.0.
+- Upgrade `garpix_menu` to version 1.8.0.
+- Upgrade `garpix_qa` to version 1.7.0.
+
 ### 3.15.0-3.15.1 (15.04.2022)
 
 - Upgrade `garpix_page` to version 2.21.0.
