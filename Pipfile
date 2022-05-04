@@ -5,11 +5,11 @@ name = "pypi"
 
 [packages]
 django = "==3.1"
-garpix-page = "==2.22.0"
+garpix-page = "==2.23.0"
 garpix-menu = "==1.8.0"
 environs = "*"
 psycopg2-binary = "*"
-garpix-qa = "==1.7.0"
+garpix-qa = "==1.8.0"
 uwsgi = "*"
 django-ckeditor = "==6.3.0"
 djangorestframework = "*"
