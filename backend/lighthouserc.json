@@ -1,0 +1,36 @@
+
+{
+  "ci": {
+    "collect": {
+      "url": "http://127.0.0.1:8000"
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": [
+          "error",
+          {
+            "minScore": 0.90
+          }
+        ],
+        "categories:accessibility": [
+          "error",
+          {
+            "minScore": 0.90
+          }
+        ],
+        "categories:best-practices": [
+          "error",
+          {
+            "minScore": 0.90
+          }
+        ],
+        "categories:SEO": [
+          "error",
+          {
+            "minScore": 0.90
+          }
+        ]
+      }
+    }
+  }
+}
