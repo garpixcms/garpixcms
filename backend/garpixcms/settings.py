@@ -3,6 +3,7 @@ from environs import Env
 from app.basedir import BASE_DIR
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
+from garpix_notify.settings import *  # noqa
 
 
 env = Env()
