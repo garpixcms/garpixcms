@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "83bbdc2bce5c29fad61667a833f4493d22579b215c04c42d7d731ba3ddb79654"
+            "sha256": "9320c87b064c3328d528e4a3da1d7fe26b2f83af8475dbcc24af54f38f45efc2"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -472,11 +472,11 @@
         },
         "filelock": {
             "hashes": [
-                "sha256:b795f1b42a61bbf8ec7113c341dad679d772567b936fbd1bf43c9a238e673e20",
-                "sha256:c7b5fdb219b398a5b28c8e4c1893ef5f98ece6a38c6ab2c22e26ec161556fed6"
+                "sha256:37def7b658813cda163b56fc564cdc75e86d338246458c4c28ae84cabefa2404",
+                "sha256:3a0fd85166ad9dbab54c9aec96737b744106dc5f15c0b09a6744a445299fcf04"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==3.7.0"
+            "version": "==3.7.1"
         },
         "flake8": {
             "hashes": [
@@ -518,11 +518,11 @@
         },
         "garpix-notify": {
             "hashes": [
-                "sha256:a390c228b0e0ae1ce538fd20d5ab955a2262e22ddd76a024f9c0547a1cf8b74c",
-                "sha256:ad4dc270c594abdc92d6d4d4fca3effa5ed419695f698de7dadee54038413a5f"
+                "sha256:7d9901d85f395e7dce59ac75ae55ce2c6e3f54d353bd302a6978dfb4abda0cc0",
+                "sha256:caba93f6a7948339be2f9f40c1a69ca19a11e8b7a6523af1c7585f19d678202d"
             ],
             "index": "pypi",
-            "version": "==5.6.2"
+            "version": "==5.7.0"
         },
         "garpix-package": {
             "hashes": [
