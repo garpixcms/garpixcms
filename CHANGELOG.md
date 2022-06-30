@@ -1,3 +1,11 @@
+### 3.22.0 (30.06.2022)
+
+- Upgrade `garpix_notify` to version 5.9.0.
+- Upgrade `garpix_page` to version 2.25.0.
+- Upgrade `garpix_menu` to version 1.9.0.
+- Upgrade `garpix_utils` to version 1.5.0.
+- Upgrade `garpix_qa` to version 1.10.0.
+
 ### 3.21.0 (01.06.2022)
 
 - Upgrade `garpix_notify` to version 5.7.0.
