@@ -42,7 +42,7 @@ setup(
         'environs >= 9.3.2',
         'django-ckeditor == 6.3.0',
         'djangorestframework >= 3.12.4',
-        'django-cors-headers == 3.13.0',
+        'django-cors-headers >= 3.7.0, < 3.13.0',
         'drf-spectacular >= 0.18.2',
         'sentry-sdk >= 1.5.2',
         'pre-commit >= 2.17.0',
