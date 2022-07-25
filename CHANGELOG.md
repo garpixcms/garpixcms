@@ -1,3 +1,7 @@
+### 3.24.0-rc4 (25.07.2022)
+
+- Upgrade `garpix_page` to version 2.27.1
+
 ### 3.24.0-rc3 (25.07.2022)
 
 - Upgrade `garpix_page` to version 2.27.0.

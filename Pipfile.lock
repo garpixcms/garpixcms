@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f7a63e2f654f2856908ffbc96e6318c96ca13a2d3b01864af02de16740b6739a"
+            "sha256": "b2629713579ff08bd38e922d5c311d4be10b6b0b074c1eacf8035eab40044544"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -569,11 +569,11 @@
         },
         "garpix-page": {
             "hashes": [
-                "sha256:64bdc3e37baad842767ce5c5da15bd9dde507f3e89a94fe7a5f7a3698207e47f",
-                "sha256:94b94e0ba5afb2ac6100fc430f0283fc2e0747b652cd38a556d55b0bc41bf42c"
+                "sha256:a9e6a028b3200a98de0c5ad0f2548ccab4e4e2fbf8ad3072f27c1cab372843bf",
+                "sha256:f83a7b5e5c91f210500dd981f8b6f1a284bcad377af999b0478e16daf112172c"
             ],
             "index": "pypi",
-            "version": "==2.27.0"
+            "version": "==2.27.1"
         },
         "garpix-qa": {
             "hashes": [
