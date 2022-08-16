@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ebb8af5674d693f06e1abd549ab0db3404acda15db47068c721cf437446fcf37"
+            "sha256": "19cbca220bc7d4c37031aa739a4358ffdd65b9a615071ebd1cc9aa32b4d3ac1d"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -259,7 +259,7 @@
                 "sha256:a0713dc7a1de3f06bc0df5a9567ad19ead2d3d5689b434768a6145bff77c0667",
                 "sha256:f184f0d851d96b6d29297354ed981b7dd71df7ff500d82fa6d11f0856bee8035"
             ],
-            "markers": "python_version < '4' and python_full_version >= '3.6.2'",
+            "markers": "python_full_version >= '3.6.2' and python_full_version < '4.0.0'",
             "version": "==0.3.0"
         },
         "click-plugins": {
@@ -501,11 +501,11 @@
         },
         "eqator": {
             "hashes": [
-                "sha256:32f74b13c52789a1aef733566149ee75d403bf851755db83f022724b17a72ccb",
-                "sha256:d08172ea695588acfbd0434535a1cf696c51efa1423c3f69be53670191876845"
+                "sha256:cd5c980fb6ea6ebf2521356403304f7f8a806b85410c870c0f8e519367dbe51e",
+                "sha256:d07e970070ddeee3ef3c94156512ba73d27b61ea245ba24f5ce0af0e99b0c6b9"
             ],
             "index": "pypi",
-            "version": "==2.1.0"
+            "version": "==2.1.1"
         },
         "fcm-django": {
             "hashes": [
@@ -1424,7 +1424,7 @@
                 "sha256:7c5599b102feddaa661c826c56ab4fee28bfd17f5abca1ebbe3e7f19d7c97983",
                 "sha256:8fefa2a1a1365bf5520aac41836fbee479da67864514bdb821f31ce07ce65349"
             ],
-            "markers": "python_version >= '3.7' and python_version < '4'",
+            "markers": "python_version >= '3.7' and python_full_version < '4.0.0'",
             "version": "==2.28.1"
         },
         "requests-oauthlib": {
@@ -1633,7 +1633,7 @@
                 "sha256:c33ccba33c819596124764c23a97d25f32b28433ba0dedeb77d873a38722c9bc",
                 "sha256:ea6e8fb210b19d950fab93b60c9009226c63a28808bc8386e05301e25883ac0a"
             ],
-            "markers": "python_version >= '3.5'",
+            "markers": "python_version >= '3.6'",
             "version": "==1.26.11"
         },
         "uwsgi": {
