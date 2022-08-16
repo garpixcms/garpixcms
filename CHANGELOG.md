@@ -1,3 +1,10 @@
+### 3.24.0 (16.08.2022)
+
+- Upgrade `garpix_page` to version 2.28.0.
+- Upgrade `garpix_menu` to version 1.10.0.
+- Remove `garpix_qa`.
+- Add `equator` version 2.1.0.
+
 ### 3.24.0-rc4 (25.07.2022)
 
 - Upgrade `garpix_page` to version 2.27.1
