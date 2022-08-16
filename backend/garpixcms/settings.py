@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'social_django',
     # garpixcms
     'garpix_utils',
-    'garpix_qa',
+    'eqator',
     'garpix_page',
     'garpix_menu',
     'garpix_notify',
