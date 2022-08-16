@@ -25,7 +25,7 @@ raven = "*"
 sentry-sdk = "*"
 pre-commit = "*"
 django-tabbed-admin = "*"
-eqator = "==2.1.0"
+eqator = "==2.1.1"
 
 [dev-packages]
 
