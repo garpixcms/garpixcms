@@ -1,3 +1,7 @@
+### 3.25.0 (17.08.2022)
+
+- Upgrade `equator` to version 2.1.2.
+
 ### 3.24.0 (16.08.2022)
 
 - Upgrade `garpix_page` to version 2.28.0.

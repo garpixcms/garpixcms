@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "19cbca220bc7d4c37031aa739a4358ffdd65b9a615071ebd1cc9aa32b4d3ac1d"
+            "sha256": "b9a188aa76c2284a99b1448c5b530f6cc5f9c23a1a7b70a96c5e2f9c08e5d164"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -501,11 +501,11 @@
         },
         "eqator": {
             "hashes": [
-                "sha256:cd5c980fb6ea6ebf2521356403304f7f8a806b85410c870c0f8e519367dbe51e",
-                "sha256:d07e970070ddeee3ef3c94156512ba73d27b61ea245ba24f5ce0af0e99b0c6b9"
+                "sha256:0022b4714b88f8cfac15dcdd4d9aefebded0a011588b11d1453ea824c39b22e4",
+                "sha256:c61e461d29402d955c132346ed769e91ffd8690bf8c258aefb3acea0116a7bab"
             ],
             "index": "pypi",
-            "version": "==2.1.1"
+            "version": "==2.1.2"
         },
         "fcm-django": {
             "hashes": [
@@ -1467,11 +1467,11 @@
         },
         "setuptools": {
             "hashes": [
-                "sha256:7a2e7e95c3bf33f356b4c59aee7a6848585c4219dd3e941e43cc117888f210e4",
-                "sha256:c04a012ae3a1b2cc2aeed4893377b70ea61c6c143d0acceea16ec4b60de6e40d"
+                "sha256:101bf15ca723beef42c8db91a761f3748d4d697e17fae904db60c0b619d8d094",
+                "sha256:39275e7aafa4a4f0f4308f2302c6ee384dcdacdbaacc1e30dcbb6fd824c625bb"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==65.0.1"
+            "version": "==65.0.2"
         },
         "six": {
             "hashes": [
@@ -1633,7 +1633,7 @@
                 "sha256:c33ccba33c819596124764c23a97d25f32b28433ba0dedeb77d873a38722c9bc",
                 "sha256:ea6e8fb210b19d950fab93b60c9009226c63a28808bc8386e05301e25883ac0a"
             ],
-            "markers": "python_version >= '3.6'",
+            "markers": "python_version >= '3.5'",
             "version": "==1.26.11"
         },
         "uwsgi": {

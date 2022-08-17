@@ -8,7 +8,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='garpixcms',
-    version='3.24.0',
+    version='3.25.0',
     description='',
     long_description=long_description,
     url='https://github.com/garpixcms/garpixcms',
@@ -33,7 +33,7 @@ setup(
         'garpix_utils == 1.5.0',
         'garpix_page == 2.28.0',
         'garpix_menu == 1.10.0',
-        'eqator == 2.1.1',
+        'eqator == 2.1.2',
         'garpix_auth == 2.3.0',
         'garpix_notify == 5.10.2',
         'garpix_package == 2.0.1',
