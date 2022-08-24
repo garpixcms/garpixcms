@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "0f51db9e644d0fd6a1643a95a3da1cdabd91bae8993c06df27eddbd8a462ac25"
+            "sha256": "3f7e2e6c8de362096344168b9aa731a18524d8a485efc6ec5f1122284cd3fd7e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -561,11 +561,11 @@
         },
         "garpix-notify": {
             "hashes": [
-                "sha256:16c8e23700743da6c801d64b80bdf6482bf3d9db26dd4c74bae2ba6eda866bf7",
-                "sha256:86e319c7fa2dc45acd4f0f7aa8c1bde275dcb394c7a9ec105f2fecc0840db481"
+                "sha256:43ef7041588d2cdf7f9088f4bb2870cea8805cfcf33077abe582d94d57b31eb6",
+                "sha256:cd93da4dd49780284df4d512a5d9dd76bfc2d3e3abd212ca61a3a5d40c001930"
             ],
             "index": "pypi",
-            "version": "==5.11.1"
+            "version": "==5.11.2"
         },
         "garpix-package": {
             "hashes": [
@@ -823,11 +823,11 @@
         },
         "marshmallow": {
             "hashes": [
-                "sha256:00040ab5ea0c608e8787137627a8efae97fabd60552a05dc889c888f814e75eb",
-                "sha256:635fb65a3285a31a30f276f30e958070f5214c7196202caa5c7ecf28f5274bc7"
+                "sha256:1172ce82765bf26c24a3f9299ed6dbeeca4d213f638eaa39a37772656d7ce408",
+                "sha256:48e2d88d4ab431ad5a17c25556d9da529ea6e966876f2a38d274082e270287f0"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==3.17.0"
+            "version": "==3.17.1"
         },
         "mccabe": {
             "hashes": [
@@ -1630,11 +1630,11 @@
         },
         "urllib3": {
             "hashes": [
-                "sha256:c33ccba33c819596124764c23a97d25f32b28433ba0dedeb77d873a38722c9bc",
-                "sha256:ea6e8fb210b19d950fab93b60c9009226c63a28808bc8386e05301e25883ac0a"
+                "sha256:3fa96cf423e6987997fc326ae8df396db2a8b7c667747d47ddd8ecba91f4a74e",
+                "sha256:b930dd878d5a8afb066a637fbb35144fe7901e3b209d1cd4f524bd0e9deee997"
             ],
-            "markers": "python_version >= '3.6'",
-            "version": "==1.26.11"
+            "markers": "python_version >= '3.5'",
+            "version": "==1.26.12"
         },
         "uwsgi": {
             "hashes": [
