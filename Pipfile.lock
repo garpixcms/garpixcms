@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "95bc29e1792b59642bb17b69d6e53769ee553229965f351da742e7606b201323"
+            "sha256": "af88581c7187ed4ae7ef965118e474608a96c74640c08679bf78ed07a685fba6"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -401,10 +401,10 @@
         },
         "distlib": {
             "hashes": [
-                "sha256:a7f75737c70be3b25e2bee06288cec4e4c221de18455b2dd037fe2a795cab2fe",
-                "sha256:b710088c59f06338ca514800ad795a132da19fda270e3ce4affc74abf955a26c"
+                "sha256:14bad2d9b04d3a36127ac97f30b12a19268f211063d8f8ee4f47108896e11b46",
+                "sha256:f35c4b692542ca110de7ef0bea44d73981caeb34ca0b9b6b2e6d7790dda8f80e"
             ],
-            "version": "==0.3.5"
+            "version": "==0.3.6"
         },
         "django": {
             "hashes": [
@@ -557,11 +557,11 @@
         },
         "eqator": {
             "hashes": [
-                "sha256:47c063d2c7aac77b1ffe43088cd63c2a8a498d37f38729ffd78de9e52152c564",
-                "sha256:e1c5c1bf934e4040f9b856cf8511e2ceb2b7e7ed2f6fbe2a208af7850e1f110e"
+                "sha256:28de22cb96fb66ac92c9a5f9797c89ed801f3a58a7ab48f88acd05b759c6b3c4",
+                "sha256:2d44fbc0a2611987b2fca4fd6095f638ea45fded5ef4fa5bec2312ecdc74850c"
             ],
             "index": "pypi",
-            "version": "==2.2.1"
+            "version": "==2.3.0"
         },
         "fcm-django": {
             "hashes": [
@@ -633,11 +633,11 @@
         },
         "garpix-page": {
             "hashes": [
-                "sha256:4a4ce2a7d79f4b4e4698a89ca92df46984d2a946201770d5326d72e531a082f7",
-                "sha256:f61148eb8252bc5d203320543e46a303c4bd7d7f7c9b30cd989b13295bd68e1f"
+                "sha256:2f2c077a2ba3594459b04a8936058206cf2158ef9e8bf6c77b3dac087da9463d",
+                "sha256:37b3aa73e577417fa4a309e11dd9be321a8c755aba55893d52da87e01ce6ffe2"
             ],
             "index": "pypi",
-            "version": "==2.30.0"
+            "version": "==2.31.0"
         },
         "garpix-utils": {
             "hashes": [
@@ -926,11 +926,11 @@
         },
         "mkdocs-material": {
             "hashes": [
-                "sha256:319a6254819ce9d864ff79de48c43842fccfdebb43e4e6820eef75216f8cfb0a",
-                "sha256:92c70f94b2e1f8a05d9e05eec1c7af9dffc516802d69222329db89503c97b4f3"
+                "sha256:166287bb0e4197804906bf0389a852d5ced43182c30127ac8b48a4e497ecd7e5",
+                "sha256:704c64c3fff126a3923c2961d95f26b19be621342a6a4e49ed039f0bb7a5c540"
             ],
             "index": "pypi",
-            "version": "==8.4.1"
+            "version": "==8.4.2"
         },
         "mkdocs-material-extensions": {
             "hashes": [
@@ -1689,7 +1689,7 @@
                 "sha256:3fa96cf423e6987997fc326ae8df396db2a8b7c667747d47ddd8ecba91f4a74e",
                 "sha256:b930dd878d5a8afb066a637fbb35144fe7901e3b209d1cd4f524bd0e9deee997"
             ],
-            "markers": "python_version >= '3.6'",
+            "markers": "python_version >= '3.5'",
             "version": "==1.26.12"
         },
         "uwsgi": {
