@@ -1,3 +1,8 @@
+### 3.35.0 (21.09.2022)
+
+- Upgrade `garpix_page` to version 2.35.0.
+- Upgrade `garpix_notify` to version 5.11.4.
+
 ### 3.34.0 (02.09.2022)
 
 - Upgrade `garpix_page` to version 2.34.0.
