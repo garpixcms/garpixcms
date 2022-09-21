@@ -33,7 +33,7 @@ setup(
         'garpix_utils == 1.5.0',
         'garpix_page == 2.35.0',
         'garpix_menu == 1.10.0',
-        'eqator == 2.3.0',
+        'eqator == 2.4.0',
         'garpix_auth == 2.3.0',
         'garpix_notify == 5.11.5',
         'garpix_package == 2.0.1',

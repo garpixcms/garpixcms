@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "54439ed2faa4cb883373568f25923ef7d7a90c89a60b99e64140df56128b3d62"
+            "sha256": "ebdea390097b81155a755f2d595834dc41a16399e0f410764371e83fa178baab"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -561,11 +561,11 @@
         },
         "eqator": {
             "hashes": [
-                "sha256:28de22cb96fb66ac92c9a5f9797c89ed801f3a58a7ab48f88acd05b759c6b3c4",
-                "sha256:2d44fbc0a2611987b2fca4fd6095f638ea45fded5ef4fa5bec2312ecdc74850c"
+                "sha256:1f25d34d0893ed0703ca6efd87a1e83213ad50344086edc8827f5dd05b7b510f",
+                "sha256:5c25c363a64cbce7ba88eb3972e99ab4f2413dd3acfd752b3c38c0adfe7c097e"
             ],
             "index": "pypi",
-            "version": "==2.3.0"
+            "version": "==2.4.0"
         },
         "fcm-django": {
             "hashes": [
