@@ -16,6 +16,7 @@ from garpix_page.views.page_api import PageApiListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('page_lock/', include('garpix_admin_lock.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('sitemap.xml', sitemap, sitemap_view(), name='django.contrib.sitemaps.views.sitemap'),
     re_path(f'{settings.API_URL}/page/(?P<slugs>.*)$', PageApiView.as_view()),

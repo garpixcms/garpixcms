@@ -1,3 +1,7 @@
+### 3.35.1 (21.09.2022)
+
+- Add `garpix_admin_lock` settings to `settings.py` file.  
+
 ### 3.35.0 (21.09.2022)
 
 - Upgrade `garpix_page` to version 2.35.0.
