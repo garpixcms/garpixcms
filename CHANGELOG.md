@@ -1,3 +1,7 @@
+### 3.36.1 (23.09.2022)
+
+- Fixed upgrade `garpix_notify` to version 5.11.6 in setup.py.
+
 ### 3.36.0 (23.09.2022)
 
 - Upgrade `garpix_notify` to version 5.11.6.
