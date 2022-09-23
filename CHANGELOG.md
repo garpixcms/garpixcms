@@ -1,3 +1,7 @@
+### 3.36.0 (23.09.2022)
+
+- Upgrade `garpix_notify` to version 5.11.6.
+
 ### 3.35.1 (21.09.2022)
 
 - Add `garpix_admin_lock` settings to `settings.py` file.  
