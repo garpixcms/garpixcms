@@ -35,7 +35,7 @@ setup(
         'garpix_menu == 1.10.0',
         'eqator == 2.4.0',
         'garpix_auth == 2.3.0',
-        'garpix_notify == 5.11.5',
+        'garpix_notify == 5.11.6',
         'garpix_package == 2.0.1',
         'psycopg2-binary >= 2.8.6',
         'uwsgi >= 2.0.19.1',
