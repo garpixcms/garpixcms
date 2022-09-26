@@ -1,3 +1,9 @@
+### 3.37.0 (26.09.2022)
+
+- Upgrade `garpix_utils` to version 1.5.1.
+- Upgrade `garpix_notify` to version 5.12.2.
+- Upgrade `eqator` to version 2.4.1.
+
 ### 3.36.1 (23.09.2022)
 
 - Fixed upgrade `garpix_notify` to version 5.11.6 in setup.py.
