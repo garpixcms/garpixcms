@@ -32,7 +32,7 @@ setup(
         'Django >= 3.1, < 4',
         'garpix_utils == 1.5.1',
         'garpix_page == 2.35.0',
-        'garpix_menu == 1.10.0',
+        'garpix_menu == 1.11.0',
         'eqator == 2.4.1',
         'garpix_auth == 2.3.0',
         'garpix_notify == 5.12.5',
