@@ -6,11 +6,11 @@ For russian documentation, please see [https://garpixcms.github.io/garpixcms/](h
 
 # Changelog
 
-See [CHANGELOG.md](CHANGELOG.md).
+See [CHANGELOG.md](backend/garpixcms/CHANGELOG.md).
 
 # Contributing
 
-See [CONTRIBUTING.md](backend/garpixcms/CONTRIBUTING.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 # License
 
