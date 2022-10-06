@@ -10,7 +10,7 @@ See [CHANGELOG.md](backend/garpixcms/CHANGELOG.md).
 
 # Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+See [CONTRIBUTING.md](backend/garpixcms/CONTRIBUTING.md).
 
 # License
 
