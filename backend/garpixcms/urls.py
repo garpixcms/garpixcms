@@ -6,7 +6,6 @@ from django.http import Http404
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.sitemaps.views import sitemap
-from garpix_page.views.sitemap import sitemap_view
 from garpix_auth.views import LogoutView, LoginView
 from garpix_page.views.page import PageView
 from garpix_page.views.index import IndexView
@@ -14,11 +13,15 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from garpix_page.views.page_api import PageApiView
 from garpix_page.views.page_api import PageApiListView
 
+from garpix_page.views.sitemap import sitemap_view
+from garpix_page.views.robots import robots_txt
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('page_lock/', include('garpix_admin_lock.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('sitemap.xml', sitemap, sitemap_view(), name='django.contrib.sitemaps.views.sitemap'),
+    path('robots.txt', robots_txt),
     re_path(f'{settings.API_URL}/page/(?P<slugs>.*)$', PageApiView.as_view()),
 ]
 
