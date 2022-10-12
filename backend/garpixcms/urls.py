@@ -5,19 +5,10 @@ from multiurl import ContinueResolving, multiurl
 from django.http import Http404
 from django.conf import settings
 from django.conf.urls.static import static
-from django.contrib.sitemaps.views import sitemap
 from garpix_auth.views import LogoutView, LoginView
 from garpix_page.views.page import PageView
 from garpix_page.views.index import IndexView
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
-from garpix_page.views.page_api import PageApiView
-from garpix_page.views.page_api import PageApiListView
-
-from garpix_page.views.sitemap import sitemap_view
-from garpix_page.views.robots import robots_txt
-
-from garpix_page.views.get_template import GetTemplate
-from garpix_page.views.upload import DgjsUpload
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,8 +22,7 @@ if settings.ENABLE_GARPIX_AUTH:
         path('logout/', LogoutView.as_view(url='/'), name="logout"),
         path('login/', LoginView.as_view(), name="authorize"),
         path(f'{settings.API_URL}/social-auth/', include('rest_framework_social_oauth2.urls')),
-        path(f'{settings.API_URL}/auth/', include(('garpix_auth.urls', 'garpix_auth'), namespace='garpix_auth')),
-        path(f'{settings.API_URL}/page_models_list/', PageApiListView.as_view()),
+        path(f'{settings.API_URL}/auth/', include(('garpix_auth.urls', 'garpix_auth'), namespace='garpix_auth'))
     ]
 
 if settings.DEBUG:
@@ -47,7 +37,6 @@ urlpatterns += i18n_patterns(
     multiurl(
         path('', PageView.as_view()),
         re_path(r'^(?P<url>.*?)$', PageView.as_view(), name='page'),
-        re_path(r'^(?P<url>.*?)/$', PageView.as_view(), name='page'),
         path('', IndexView.as_view()),
         catch=(Http404, ContinueResolving),
     ),

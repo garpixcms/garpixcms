@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "20d6bfb8d644b512d1f7a79799d0dcdc587e8ea428c00ce73d732f59b6c0f2fd"
+            "sha256": "276dbfa06b42235e288f8156d73ca6f9d815e6899e2f9a1ed5f880ed0a3753b9"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -451,10 +451,10 @@
         },
         "django-modeltranslation": {
             "hashes": [
-                "sha256:756de996c44919108926b9d442e2f119e39a860f7295d6a1bdad7327a5d769c6",
-                "sha256:f4b6755248a7c6ff121b8e2a3e5ece47d3b47f4350f09b570cdf15d0af4b6939"
+                "sha256:274affe36b1d2c94bb6af7f60452239d3fdd0eec515612871ed2d39a4a9cb665",
+                "sha256:dbae401db8a816559e83c3cfa40423610d33ed5b4af9f2f9b4f2a4e02ecd894e"
             ],
-            "version": "==0.18.4"
+            "version": "==0.18.5"
         },
         "django-mptt": {
             "hashes": [
@@ -644,11 +644,11 @@
         },
         "garpix-page": {
             "hashes": [
-                "sha256:1cce0ec04c1ab13efcdb76435ccebea753b331ffcb5475b7ea5cc433ec8e4cd5",
-                "sha256:23691f5558c100474d58b5cc92732deb6dddf8bf8b2938a4a8a7c9eaaf790f50"
+                "sha256:6d5b421a9ef2ad657bde88128566ac721b1498f0cbac8e49e271f1188c9240ed",
+                "sha256:c5641a400d1fb3cea661ba94d653f164c344889d12739acb461db06a7d515b25"
             ],
             "index": "pypi",
-            "version": "==2.38.0rc3"
+            "version": "==2.38.0rc4"
         },
         "garpix-utils": {
             "hashes": [
