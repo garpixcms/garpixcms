@@ -23,14 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('page_lock/', include('garpix_admin_lock.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
-    path('get_template/', GetTemplate.as_view(), name='dgjs_get_template'),
-    path('dgjs_upload/', DgjsUpload.as_view(), name='dgjs_upload'),
-    path('sitemap.xml', sitemap, sitemap_view(), name='django.contrib.sitemaps.views.sitemap'),
-    path('robots.txt', robots_txt),
-    re_path(f'{settings.API_URL}/page/(?P<slugs>.*)$', PageApiView.as_view()),
+    path('', include(('garpix_page.urls', 'garpix_page'), namespace='garpix_page')),
 ]
-
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 if settings.ENABLE_GARPIX_AUTH:
     urlpatterns += [
