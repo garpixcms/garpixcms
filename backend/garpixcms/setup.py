@@ -31,7 +31,7 @@ setup(
     install_requires=[
         'Django >= 3.1, < 4',
         'garpix_utils == 1.6.0',
-        'garpix_page == 2.38.0-rc3',
+        'garpix_page == 2.38.0-rc4',
         'garpix_menu == 1.11.0',
         'eqator == 2.5.0',
         'garpix_auth == 2.3.0',
