@@ -1,3 +1,7 @@
+### 3.44.0-rc6 (20.10.2022)
+
+- Upgrade `garpix_page` to version 2.38.0-rc7.
+
 ### 3.44.0-rc5 (14.10.2022)
 
 - Upgrade `garpix_page` to version 2.38.0-rc6.
