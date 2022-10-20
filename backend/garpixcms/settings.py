@@ -30,8 +30,6 @@ INSTALLED_APPS = [
     'polymorphic_tree',
     'polymorphic',
     'mptt',
-    'garpix_admin_lock',
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -60,6 +58,8 @@ INSTALLED_APPS = [
     # website
     'app',
     'user',
+    'garpix_admin_lock',
+    'django.contrib.admin',
 ]
 
 MIDDLEWARE = [
