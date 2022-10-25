@@ -1,3 +1,9 @@
+### 3.44.0 (25.10.2022)
+
+- Upgrade `garpix_page` to version 2.38.0.
+- Upgrade `garpix_notify` to version 5.13.3.
+- Upgrade `eqator` to version 2.6.0.
+
 ### 3.44.0-rc6 (20.10.2022)
 
 - Upgrade `garpix_page` to version 2.38.0-rc7.
