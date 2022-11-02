@@ -310,3 +310,5 @@ if SENTRY_DSN_STRING != '':
 
 if DEBUG:
     CORS_ALLOW_ALL_ORIGINS = True
+
+GARPIXCMS_CELERY_SETTINGS = 'app.celery.app'
