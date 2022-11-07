@@ -40,7 +40,7 @@ python3 backend/manage.py runserver
 Начиная с версии 4.0.0 `garpix_auth` заменен на `garpix_user`.
 Если вы использовали `garpix_auth` на проекте с более младшей версией cms, для корректного обновления следуйте инструкциям ниже.
 
-1. Установите новую версию модуля `python3 manage.py garpixcms==4.0.0`.
+1. Установите новую версию модуля `pipenv install garpixcms==4.0.0`.
 2. Следуя инструкциям по установке `garpix_user` (https://github.com/garpixcms/garpix_user#quickstart), настройте проект (обратите внимание, что роуты и базовые настройки уже включены в модуль garpixcms в файлах `garpixcms/settings.py` и `garpixcms/urls.py` соответственно).
 3. После применения миграций выполните команду `python3 manage.py update_user_module`.
 4. Установите переменную окружения `ENABLE_GARPIX_AUTH` в False или просто удалите ее.
