@@ -26,6 +26,7 @@ sentry-sdk = "*"
 pre-commit = "*"
 django-tabbed-admin = "*"
 eqator = "==2.6.0"
+garpix-user = "*"
 
 [dev-packages]
 

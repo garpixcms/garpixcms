@@ -54,6 +54,8 @@ INSTALLED_APPS = [
     'garpix_notify',
     'garpix_package',
     'drf_spectacular',
+    'rest_framework_social_oauth2',
+    'garpix_user',
     'garpixcms',
     # website
     'app',
@@ -201,6 +203,7 @@ CHOICE_MENU_TYPES = [(k, v['title']) for k, v in MENU_TYPES.items()]
 
 MIGRATION_MODULES = {
     'garpix_auth': 'app.migrations.garpix_auth',
+    'garpix_user': 'app.migrations.garpix_user',
     'garpix_page': 'app.migrations.garpix_page',
     'garpix_menu': 'app.migrations.garpix_menu',
     'garpix_notify': 'app.migrations.garpix_notify',
@@ -264,7 +267,7 @@ GARPIX_REFRESH_TOKEN_TTL_SECONDS = 0  # infinity
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'garpix_auth.rest.authentication.MainAuthentication',
+        'garpix_user.rest.authentication.MainAuthentication',
         'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
         'rest_framework_social_oauth2.authentication.SocialAuthentication',
     ),
@@ -272,7 +275,9 @@ REST_FRAMEWORK = {
 }
 
 AUTHENTICATION_BACKENDS = [
+    'garpix_user.utils.backends.CustomAuthenticationBackend',
     'django.contrib.auth.backends.ModelBackend',
+    'rest_framework_social_oauth2.backends.DjangoOAuth2',
 ]
 
 SOCIAL_AUTH_PIPELINE = (
@@ -289,12 +294,8 @@ SOCIAL_AUTH_PIPELINE = (
 )
 
 if ENABLE_GARPIX_AUTH:
-    AUTHENTICATION_BACKENDS += [
-        'rest_framework_social_oauth2.backends.DjangoOAuth2',
-    ]
     INSTALLED_APPS += [
-        'rest_framework_social_oauth2',
-        'garpix_auth',
+        'garpix_auth'
     ]
 
 GARPIX_PAGE_ADMIN_LIST_PER_PAGE = 25
@@ -312,3 +313,5 @@ if DEBUG:
     CORS_ALLOW_ALL_ORIGINS = True
 
 GARPIXCMS_CELERY_SETTINGS = 'app.celery.app'
+
+GARPIX_USER = {}
