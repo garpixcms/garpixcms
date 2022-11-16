@@ -2,23 +2,35 @@ import functools
 
 from django.conf import settings
 from django.middleware.locale import LocaleMiddleware
-from django.urls import get_resolver, LocalePrefixPattern
+from django.urls import get_resolver, LocalePrefixPattern, Resolver404
 from django.utils import translation
+
+
+def resolve_class(get_resolver, path):
+    path = str(path)
+    tried = []
+    match = get_resolver.pattern.match(path)
+    if match:
+        new_path, args, kwargs = match
+        for pattern in get_resolver.url_patterns:
+            try:
+                sub_match = pattern.resolve(new_path)
+            except Resolver404 as e:
+                get_resolver._extend_tried(tried, pattern, e.args[0].get('tried'))
+            else:
+                if sub_match:
+                    sub_match_dict = {**kwargs, **get_resolver.default_kwargs}
+                    sub_match_dict.update(sub_match.kwargs)
+                    get_resolver._extend_tried(tried, pattern, sub_match.tried)
+                    return pattern
+                tried.append([pattern])
 
 
 @functools.lru_cache(maxsize=None)
 def is_language_prefix_patterns_used_for_url(urlconf, path):
-    """
-    Return a tuple of two booleans: (
-        `True` if i18n_patterns() (LocalePrefixPattern) is used in the URLconf for the matching pattern
-        `True` if the default language should be prefixed
-    )
-    """
-    for url_pattern in get_resolver(urlconf).url_patterns:
-        if url_pattern.pattern.match(path):
-            if isinstance(url_pattern.pattern, LocalePrefixPattern):
-                return True, url_pattern.pattern.prefix_default_language
-            break
+    resolver_class = resolve_class(get_resolver(urlconf), path)
+    if isinstance(resolver_class.pattern, LocalePrefixPattern):
+        return True, resolver_class.pattern.prefix_default_language
     return False, False
 
 
