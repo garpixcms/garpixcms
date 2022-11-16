@@ -71,7 +71,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'garpixcms.middleware.locale.LocaleMiddleware'
+    'garpixcms.middleware.locale.GarpixLocaleMiddleware'
 ]
 
 ROOT_URLCONF = 'app.urls'

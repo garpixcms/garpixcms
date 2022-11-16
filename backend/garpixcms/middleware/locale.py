@@ -22,7 +22,7 @@ def is_language_prefix_patterns_used_for_url(urlconf, path):
     return False, False
 
 
-class LocaleMiddleware(LocaleMiddleware):
+class GarpixLocaleMiddleware(LocaleMiddleware):
 
     def process_request(self, request):
         urlconf = getattr(request, 'urlconf', settings.ROOT_URLCONF)
