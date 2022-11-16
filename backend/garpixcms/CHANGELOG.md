@@ -1,3 +1,9 @@
+### 3.47.0 (16.11.2022)
+
+- Upgrade `garpix_menu` to version 1.13.0.
+- Upgrade `garpix_notify` to version 5.13.4.
+- `GarpixLocaleMiddleware` added.
+
 ### 3.46.0 (02.11.2022)
 
 - Upgrade `garpix_menu` to version 1.12.1.
