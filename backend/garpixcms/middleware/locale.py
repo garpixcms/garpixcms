@@ -16,12 +16,18 @@ def resolve_class(get_resolver, path):
             try:
                 sub_match = pattern.resolve(new_path)
             except Resolver404 as e:
-                get_resolver._extend_tried(tried, pattern, e.args[0].get('tried'))
+                try:
+                    get_resolver._extend_tried(tried, pattern, e.args[0].get('tried'))
+                except AttributeError:
+                    pass
             else:
                 if sub_match:
                     sub_match_dict = {**kwargs, **get_resolver.default_kwargs}
                     sub_match_dict.update(sub_match.kwargs)
-                    get_resolver._extend_tried(tried, pattern, sub_match.tried)
+                    try:
+                        get_resolver._extend_tried(tried, pattern, sub_match.tried)
+                    except AttributeError:
+                        pass
                     return pattern
                 tried.append([pattern])
 

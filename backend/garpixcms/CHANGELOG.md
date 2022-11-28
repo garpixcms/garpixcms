@@ -1,3 +1,7 @@
+### 3.49.1 (28.11.2022)
+
+- Исправлена ошибка `AttributeError: 'URLResolver' object has no attribute '_extend_tried'` для `django==3.1`.
+
 ### 3.49.0 (24.11.2022)
 
 - Upgrade `garpix_page` to version 2.40.0.
