@@ -1,3 +1,9 @@
+### 3.50.0 (30.11.2022)
+
+- Upgrade `garpix_notify` to version 5.13.6.
+- Upgrade `garpix_utils` to version 1.7.0.
+- `ENABLE_SWAGGER` setting added.
+
 ### 3.49.1 (28.11.2022)
 
 - Исправлена ошибка `AttributeError: 'URLResolver' object has no attribute '_extend_tried'` для `django==3.1`.
