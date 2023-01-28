@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a22039cadd91e748c05d162a322b5219c278e12174d404193a7bd578d2e15d61"
+            "sha256": "d25877f78e7d63112d315fa8e58735da1675c8a69cf4716addc5f09da3c8f61e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -300,7 +300,7 @@
                 "sha256:f9d0c5c045a3ca9bedfc35dca8526798eb91a07aa7a2c0fee134c6c6f321cbd7",
                 "sha256:ff6f3db31555657f3163b15a6b7c6938d08df7adbfc9dd13d9d19edad678f1e8"
             ],
-            "markers": "python_version >= '3.6'",
+            "markers": "python_full_version >= '3.6.0'",
             "version": "==3.0.1"
         },
         "click": {
@@ -684,11 +684,11 @@
         },
         "garpix-notify": {
             "hashes": [
-                "sha256:7658795cd0e1ee76239aee6280c6f1230a153f734c0a9584fa4f96c3ce6a80b3",
-                "sha256:fb2d1d2f81306c8ce44dcee626ba4254adb08373f668f8e371ef3ca251436f0c"
+                "sha256:12d6a642f3f393a0fb2bc1803f3c86baaf9ff3560d4021ee7cd75e7c73cf5329",
+                "sha256:4e09059dee2c95ab9d91e02aba137f9fa996d8aecd70cf008331d0f558585812"
             ],
             "index": "pypi",
-            "version": "==5.13.4"
+            "version": "==5.13.6"
         },
         "garpix-package": {
             "hashes": [
@@ -700,19 +700,19 @@
         },
         "garpix-page": {
             "hashes": [
-                "sha256:c400db98ec66b428a29d8755c7d1cab144425c4000f8461ace6831d411d6f4e8",
-                "sha256:dde9f65693d5fd891d0c1867e334c3246919ab794057a142c2d9b283d007a8de"
+                "sha256:34a1a7b855fd5fcdb8c0a42c6400b3ef14b5b51e62dfc0a58cde7ff5d08356a0",
+                "sha256:63b3aad1484de28a843bce1475de98140aa78d614a9de4b94953183fd14e6642"
             ],
             "index": "pypi",
-            "version": "==2.39.0"
+            "version": "==2.40.1"
         },
         "garpix-utils": {
             "hashes": [
-                "sha256:1e83f9d5263e60ed4d1a08a1bdb63bf190be8d42ff1eb98d68476763de50dca9",
-                "sha256:c86a80943809fad819dee072e4642d8d02edfeecf3097320afd6c6d52276b99e"
+                "sha256:781f154498eab3301d8315834cbee2f449c37a3cec3b1d91801a6626f75909f9",
+                "sha256:e56f4b972b1a4049ed94c9b325afc19d13e402c73db6e75d8bc7d408bd104301"
             ],
             "index": "pypi",
-            "version": "==1.6.0"
+            "version": "==1.7.0"
         },
         "ghp-import": {
             "hashes": [
