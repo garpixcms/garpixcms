@@ -1,12 +1,18 @@
 theme:
   name: "material"
+  language: ru
 
 site_name: GarpixCMS
 repo_url: https://github.com/garpixcms/garpixcms
 
 plugins:
-- search
-- mkdocstrings
+  - search
+  - mkdocstrings
+  - i18n:
+      default_language: ru
+      languages:
+        en: 'English'
+        ru: 'Russian'
 
 nav:
   - Быстрый старт: index.md
@@ -22,8 +28,17 @@ nav:
       - Apple ID: auth/apple.md
       - Google: auth/google.md
     - Уведомления (Email, SMS, PUSH и другие): example_notify.md
-  - Пакеты: packages.md
-  - Утилиты: utils.md
+  - Пакеты:
+    - packages/packages.md
+    - packages/garpix_notify.md
+    - packages/garpix_page.md
+    - packages/garpix_menu.md
+    - packages/garpix_auth.md
+    - packages/garpix_user.md
+    - packages/garpix_qa.md
+    - packages/garpix_company.md
+    - packages/utils.md
+  # - Утилиты: utils.md
   - FAQ:
     - CORS: faq_cors.md
     - Создание своего пакета: faq_pack.md
