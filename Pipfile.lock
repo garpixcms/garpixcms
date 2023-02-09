@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d4b4c74c13a7a47aab5b71400a33598694103b36d1055e7241f3ae4c425d5e5c"
+            "sha256": "aecf018fa881d528bafaa2f8cb9aa8820d88fc1c981cd2910bc06edcfee7c898"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -316,7 +316,7 @@
                 "sha256:a0713dc7a1de3f06bc0df5a9567ad19ead2d3d5689b434768a6145bff77c0667",
                 "sha256:f184f0d851d96b6d29297354ed981b7dd71df7ff500d82fa6d11f0856bee8035"
             ],
-            "markers": "python_full_version >= '3.6.2' and python_full_version < '4.0.0'",
+            "markers": "python_version < '4' and python_full_version >= '3.6.2'",
             "version": "==0.3.0"
         },
         "click-plugins": {
@@ -698,11 +698,11 @@
         },
         "garpix-page": {
             "hashes": [
-                "sha256:8d051d5811e92a6ef2ecce62d08845e1082f9540277aab25438eb102eb241e2e",
-                "sha256:f1b50aff2cede01032ed23714c6411e88e82c062fe73c2f19548b107e93d4853"
+                "sha256:3f5bcb06e79312c73ea84ce7130c249289e523e87316f800f77abb2030ae3a32",
+                "sha256:8e46c4f1e7cde49461eb58498fcfdd55fd89e5afc3c373b13b52b5368a841815"
             ],
             "index": "pypi",
-            "version": "==2.42.0-rc1"
+            "version": "==2.42.0-rc2"
         },
         "garpix-utils": {
             "hashes": [
@@ -1768,7 +1768,7 @@
                 "sha256:64299f4909223da747622c030b781c0d7811e359c37124b4bd368fb8c6518baa",
                 "sha256:98b1b2782e3c6c4904938b84c0eb932721069dfdb9134313beff7c83c2df24bf"
             ],
-            "markers": "python_version >= '3.7' and python_full_version < '4.0.0'",
+            "markers": "python_version >= '3.7' and python_version < '4'",
             "version": "==2.28.2"
         },
         "requests-oauthlib": {
