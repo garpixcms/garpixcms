@@ -1,4 +1,4 @@
-# Пользователь
+# User
 
 Auth module for Django/DRF projects. Part of GarpixCMS.
 

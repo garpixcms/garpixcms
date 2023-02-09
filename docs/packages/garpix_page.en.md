@@ -1,4 +1,4 @@
-# Страницы
+# Page
 
 Convenient page structure with any context and template.
 It is suitable not only for a blog, but also for large sites with a complex presentation.

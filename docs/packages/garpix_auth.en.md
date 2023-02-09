@@ -1,4 +1,4 @@
-# Авторизация (устарел)
+# Auth (old)
 
 Auth module for Django/DRF projects. Part of GarpixCMS.
 

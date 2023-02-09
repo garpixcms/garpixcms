@@ -1,4 +1,4 @@
-# Меню
+# Menu
 
 Customizable menus for [garpix_page](https://github.com/garpixcms/garpix_page).
 

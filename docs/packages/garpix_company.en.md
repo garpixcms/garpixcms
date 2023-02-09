@@ -1,4 +1,4 @@
-# Компании
+# Company
 
 Company module for Django/DRF projects.
 
