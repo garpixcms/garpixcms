@@ -1,11 +1,31 @@
-# Утилиты
+# Utils
 
-Все утилиты импортируются из `garpix_utils`
+Набор утилит для GARPIX CMS.
+
+Утилиты:
 
 * `file.get_file_path` - генерация пути для сохранения файла (для FileField)
 * `string.get_random_string` - создание строки случайных символов
 * `signature.make_signature_sha512` - создание цифровой подписи
 * `models.ActiveMixin` - миксин для моделей, которым необходимо поле "Активность"
+* `models.EmptyMixin` - миксин-пустышка, который можно использовать при обязательных миксинах
+* `models.AvailableMixin` - миксин для моделей, которые должны обладать полями "Активность" и "Удалено"
+* `models.PolymorphicActiveMixin` - миксин для модели `garpix_page.BasePage`, добавляет возможность выбора доступных страниц (которые активны). Используется внутри GARPIX CMS.
+* `templatetags.url_replace` - подмена одного значения в dict на другое в Django-шаблонах.
+* `models.DeleteMixin` - миксин для моделей, добавляющий функционал мягкого/жесткого удаления, `models.AdminDeleteMixin` - миксин для админ.модели.
+* `models.PolymorphicAvailableMixin` - миксин для модели `garpix_page.BasePage`, добавляет возможность выбора доступных страниц (которые активны и неудалены). Используется внутри GARPIX CMS.
+* `models.GarpixSiteConfiguration` - класс для добавления мультисайтовых настроек в проекте, `admin.GarpixSiteConfigurationAdmin` - класс для админ.панели
+
+
+## Установка
+
+Установка с помощью pip:
+
+```bash
+pip install garpix_utils
+```
+
+### Утилиты
 
 #### `file.get_file_path` - генерация пути для сохранения файла (для FileField)
 
@@ -152,4 +172,70 @@ class Product(ActiveMixin, models.Model):
 Product.active_objects.all()
 
 # Будут выбраны записи только с is_active == True.
+```
+
+#### `models.EmptyMixin` - миксин-пустышка, который можно использовать при обязательных миксинах
+
+ПРИМЕР:
+
+```python
+# необходимый вам файл
+
+from django.db import models
+from garpix_utils.models import EmptyMixin
+
+
+class Product(EmptyMixin, models.Model):
+    pass
+
+# Ничего не изменилось.
+```
+
+Или использование в пакете `garpix_blog`:
+
+```python
+# app/settings.py
+
+GARPIX_BLOG_MIXIN = 'garpix_utils.models.EmptyMixin'
+
+```
+
+#### `models.AvailableMixin` - миксин для моделей, которые должны обладать полями "Активность" и "Удалено"
+
+Добавляет поля `is_active (Boolean, default=True)` и `is_deleted (Boolean, default=False)`. Добавляет менеджера `available_objects`, который выбирает только доступные объекты (`is_active=True, is_deleted=False`).
+
+ПРИМЕР:
+
+```python
+# необходимый вам файл
+
+from django.db import models
+from garpix_utils.models import AvailableMixin
+
+
+class Product(AvailableMixin, models.Model):
+    pass
+
+
+Product.available_objects.all()
+
+# Будут выбраны записи только с is_active == True.
+```
+
+#### `templatetags.url_replace` - подмена одного значения в dict на другое в Django-шаблонах.
+
+ПРИМЕР для пагинации (взято из https://github.com/garpixcms/garpix_page/):
+
+```
+{% load url_replace %}
+
+<nav>
+    <ul class="pagination">
+        {% for page_num in page_range %}
+            <li class="page-item {% if page_num == page %}active{% endif %}">
+                <a class="page-link" href="?{% url_replace request 'page' page_num %}">{{ page_num }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>
 ```

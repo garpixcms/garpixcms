@@ -10,9 +10,9 @@ def global_context(request, page):
     menus = {}
     menu_items = MenuItem.objects.filter(is_active=True, parent=None).order_by('sort', 'title')
     for menu_type_arr in settings.CHOICE_MENU_TYPES:
-        menu = list(filter(lambda item: item.menu_type == menu_type_arr[0], menu_items))
-        menus[menu_type_arr[0]] = []
-        menus[menu_type_arr[0]].append(MenuItemSerializer(menu, context={'request': request, 'current_path': current_path}, many=True).data)
+        menu_type = menu_type_arr[0]
+        menu = list(filter(lambda item: item.menu_type == menu_type, menu_items))
+        menus[menu_type] = MenuItemSerializer(menu, context={'request': request, 'current_path': current_path}, many=True).data
 
     return {
         'menus': menus,

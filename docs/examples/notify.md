@@ -28,14 +28,14 @@ from garpix_notify.models import Notify
 # Пример
 user = request.user  # это будет получатель уведомления.
 
-Notify(CHOICES_NOTIFY_CONFIRM_EVENT, {
+Notify.send(CHOICES_NOTIFY_CONFIRM_EVENT, {
     'confirmation_code': 'abcdef12345',
 }, user=user)
 
 # Если у нас нет пользователя в системе, но необходимо отправить емейл, то можем поступить
 # следующим образом
 
-Notify(CHOICES_NOTIFY_CONFIRM_EVENT, {
+Notify.send(CHOICES_NOTIFY_CONFIRM_EVENT, {
     'confirmation_code': 'abcdef12345',
 }, email='example@mail.ru')
 

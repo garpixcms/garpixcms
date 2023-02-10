@@ -1,29 +1,51 @@
 theme:
   name: "material"
+  language: ru
 
 site_name: GarpixCMS
 repo_url: https://github.com/garpixcms/garpixcms
 
 plugins:
-- search
-- mkdocstrings
+  - search
+  - mkdocstrings
+  - i18n:
+      default_language: ru
+      languages:
+        en: 'English'
+        ru: 'Russian'
+      nav_translations:
+        en:
+          Установка: Install
+          Примеры: Examples
+          Пакеты: Packages
+          Миграция кода: Migrations 
+          Устаревшие статьи: Old
 
 nav:
-  - Быстрый старт: index.md
+  - index.md
   - Установка:
-    - Установка зависимостей: install_deps.md
-    - Создание нового проекта: install_new_project.md
-    - Запускаем проект: install_start_project.md
+    - install_deps.md
+    - install_new_project.md
+    - install_start_project.md
   - Примеры:
-    - Простой корпорат на шаблонах: example_simple_templates_site.md
-    - Вход по логину/паролю (SPA): example_auth_spa.md
-    - Вход по логину/паролю (шаблоны): example_auth_templates.md
-    - Вход через социальные сети:
-      - Apple ID: auth/apple.md
-      - Google: auth/google.md
-    - Уведомления (Email, SMS, PUSH и другие): example_notify.md
-  - Пакеты: packages.md
-  - Утилиты: utils.md
+    - examples/simple_templates_site.md
+    - examples/auth_spa.md
+    - examples/auth_templates.md
+    - Social authentication:
+      - Apple ID: examples/auth/apple.md
+      - Google: examples/auth/google.md
+    - examples/notify.md
+  - Пакеты:
+    - packages/packages.md
+    - packages/garpix_notify.md
+    - packages/garpix_page.md
+    - packages/garpix_menu.md
+    - packages/garpix_auth.md
+    - packages/garpix_user.md
+    - packages/garpix_qa.md
+    - packages/garpix_company.md
+    - packages/utils.md
+  # - Утилиты: utils.md
   - FAQ:
     - CORS: faq_cors.md
     - Создание своего пакета: faq_pack.md
