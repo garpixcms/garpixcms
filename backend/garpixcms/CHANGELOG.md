@@ -1,3 +1,9 @@
+### 3.53.0-rc3 (10.02.2023)
+
+- Upgrade `garpix_menu` to version 1.14.0rc1.
+- Update documentation.
+- Update `global_context` menus structure (one array nesting was deprecated).
+
 ### 3.53.0-rc2 (09.02.2023)
 
 - Upgrade `garpix_page` to version 2.42.0-rc2.
