@@ -726,3 +726,7 @@ const Grapesjs = ({ data }): React.ReactElement => {
 ## Important!
 
 Also, see this project for additional features (`BaseListPage`, `BaseSearchPage`, `sitemap.xml`, etc).
+
+## TODO
+
+- Add information about GARPIX_PAGE_GLOBAL_CONTEXT
