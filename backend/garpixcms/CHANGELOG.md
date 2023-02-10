@@ -1,4 +1,8 @@
-### 3.53.0-rc1 (01.02.2023)
+### 3.53.0-rc2 (09.02.2023)
+
+- Upgrade `garpix_page` to version 2.42.0-rc2.
+
+### 3.53.0-rc1 (08.02.2023)
 
 - Upgrade `garpix_page` to version 2.42.0-rc1.
 

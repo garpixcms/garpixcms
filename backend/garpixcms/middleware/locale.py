@@ -35,7 +35,7 @@ def resolve_class(get_resolver, path):
 @functools.lru_cache(maxsize=None)
 def is_language_prefix_patterns_used_for_url(urlconf, path):
     resolver_class = resolve_class(get_resolver(urlconf), path)
-    if isinstance(resolver_class.pattern, LocalePrefixPattern):
+    if resolver_class and isinstance(resolver_class.pattern, LocalePrefixPattern):
         return True, resolver_class.pattern.prefix_default_language
     return False, False
 
