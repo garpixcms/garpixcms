@@ -1,3 +1,7 @@
+### 3.53.0-rc4 (24.02.2023)
+
+- Upgrade `garpix_page` to version 2.42.0-rc3.
+
 ### 3.53.0-rc3 (10.02.2023)
 
 - Upgrade `garpix_menu` to version 1.14.0rc1.
