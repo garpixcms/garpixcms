@@ -1,3 +1,7 @@
+### 3.54.0-rc1 (28.02.2023)
+
+- New admin styles
+
 ### 3.53.0-3.53.1 (28.02.2023)
 
 - Upgrade `garpix_page` to version 2.42.0.
