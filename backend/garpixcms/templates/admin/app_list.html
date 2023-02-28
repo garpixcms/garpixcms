@@ -1,0 +1,47 @@
+{% load i18n %}
+
+{% if app_list %}
+  {% for app in app_list %}
+    <div class="app-{{ app.app_label }} module{% if app.app_url in request.path %} current-app{% endif %}">
+      <table>
+        <caption>
+          <a href="{{ app.app_url }}" class="section" title="{% blocktranslate with name=app.name %}Models in the {{ name }} application{% endblocktranslate %}">{{ app.name }}</a>
+        </caption>
+        {% for model in app.models %}
+          <tr class="model-{{ model.object_name|lower }}{% if model.admin_url in request.path %} current-model{% endif %}">
+            {% if model.admin_url %}
+              <th scope="row"><a href="{{ model.admin_url }}"{% if model.admin_url in request.path %} aria-current="page"{% endif %}>{{ model.name }}</a></th>
+            {% else %}
+              <th scope="row">{{ model.name }}</th>
+            {% endif %}
+
+            {% if model.add_url %}
+              <td><a href="{{ model.add_url }}" class="addlink" data-styles-hidden-icon data-styles-hidden-text><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="inner" fill-rule="evenodd" clip-rule="evenodd" d="M7.5 6.25C6.83696 6.25 6.20107 6.51339 5.73223 6.98223C5.26339 7.45107 5 8.08696 5 8.75V22.5C5 23.163 5.26339 23.7989 5.73223 24.2678C6.20107 24.7366 6.83696 25 7.5 25H21.25C21.913 25 22.5489 24.7366 23.0178 24.2678C23.4866 23.7989 23.75 23.163 23.75 22.5V8.75C23.75 8.08696 23.4866 7.45107 23.0178 6.98223C22.5489 6.51339 21.913 6.25 21.25 6.25H7.5ZM13.75 15H8.75V16.25H13.75V21.25H15V16.25H20V15H15V10H13.75V15Z" fill="transparent"/>
+                <path class="outer" d="M8.75 15H13.75V10H15V15H20V16.25H15V21.25H13.75V16.25H8.75V15ZM7.5 5H21.25C22.2446 5 23.1984 5.39509 23.9017 6.09835C24.6049 6.80161 25 7.75544 25 8.75V22.5C25 23.4946 24.6049 24.4484 23.9017 25.1517C23.1984 25.8549 22.2446 26.25 21.25 26.25H7.5C6.50544 26.25 5.55161 25.8549 4.84835 25.1517C4.14509 24.4484 3.75 23.4946 3.75 22.5V8.75C3.75 7.75544 4.14509 6.80161 4.84835 6.09835C5.55161 5.39509 6.50544 5 7.5 5ZM7.5 6.25C6.83696 6.25 6.20107 6.51339 5.73223 6.98223C5.26339 7.45107 5 8.08696 5 8.75V22.5C5 23.163 5.26339 23.7989 5.73223 24.2678C6.20107 24.7366 6.83696 25 7.5 25H21.25C21.913 25 22.5489 24.7366 23.0178 24.2678C23.4866 23.7989 23.75 23.163 23.75 22.5V8.75C23.75 8.08696 23.4866 7.45107 23.0178 6.98223C22.5489 6.51339 21.913 6.25 21.25 6.25H7.5Z" fill="currentColor"/>
+                </svg><span >{% translate 'Add' %}</span></a></td>
+            {% else %}
+              <td></td>
+            {% endif %}
+
+            {% if model.admin_url and show_changelinks %}
+              {% if model.view_only %}
+                <td><a href="{{ model.admin_url }}" class="viewlink"><span>{% translate 'View' %}</span></a></td>
+              {% else %}
+                <td><a href="{{ model.admin_url }}" class="changelink" data-styles-hidden-icon data-styles-hidden-text><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="outer" d="M24.6325 10.0525L21.7175 12.9675L17.03 8.28004L19.945 5.36504C20.061 5.24885 20.1987 5.15668 20.3504 5.09379C20.502 5.03091 20.6646 4.99854 20.8288 4.99854C20.9929 4.99854 21.1555 5.03091 21.3071 5.09379C21.4588 5.15668 21.5965 5.24885 21.7125 5.36504L24.6325 8.28504C24.7487 8.40102 24.8409 8.53878 24.9037 8.69042C24.9666 8.84206 24.999 9.00462 24.999 9.16879C24.999 9.33295 24.9666 9.49551 24.9037 9.64715C24.8409 9.7988 24.7487 9.93655 24.6325 10.0525ZM3.74875 21.56L16.33 8.98004L21.0175 13.6675L8.43625 26.2475H3.75V21.56H3.74875ZM20.7763 6.30504L18.8513 8.22879L21.7725 11.1475L23.695 9.22379L20.7763 6.30504ZM19.1962 13.7238L16.2775 10.8038L5 22.08V25H7.92L19.1962 13.7238Z" fill="currentColor"/>
+                  <path class="inner" d="M19.1962 13.7238L16.2775 10.8038L5 22.08V25H7.92L19.1962 13.7238Z" fill="transparent"/>
+                  <path class="inner" d="M20.7763 6.30504L18.8513 8.22879L21.7725 11.1475L23.695 9.22379L20.7763 6.30504Z" fill="transparent"/>
+                  </svg><span >{% translate 'Change' %}</span></a></td>
+              {% endif %}
+            {% elif show_changelinks %}
+              <td></td>
+            {% endif %}
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% endfor %}
+{% else %}
+  <p>{% translate 'You don’t have permission to view or edit anything.' %}</p>
+{% endif %}

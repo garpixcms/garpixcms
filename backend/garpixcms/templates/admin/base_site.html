@@ -1,0 +1,21 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block userlinks %}
+    <div class="userlinks">
+        {% if site_url %}
+            <a href="{{ site_url }}">{% translate 'View site' %}</a>
+        {% endif %}
+        {% if user.is_active and user.is_staff %}
+            {% url 'django-admindocs-docroot' as docsroot %}
+            {% if docsroot %}
+                <a href="{{ docsroot }}">{% translate 'Documentation' %}</a>
+            {% endif %}
+        {% endif %}
+        {% if user.has_usable_password %}
+        <a href="{% url 'admin:password_change' %}">{% translate 'Change password' %}</a>
+        {% endif %}
+        <a href="{% url 'admin:admin_clear_cache' %}">Clear cache</a>
+        <a href="{% url 'admin:logout' %}">{% translate 'Log out' %}</a>
+    </div>
+{% endblock %}
