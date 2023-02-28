@@ -620,7 +620,7 @@ input[type="button"][disabled].default {
 /* MODULES */
 
 .module {
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   padding: 0 5px;
 }
 
@@ -684,8 +684,8 @@ input[type="button"][disabled].default {
 
 #nav-sidebar .module table tr,
 .dashboard .module table tr {
-  border-radius: 15px;
-  padding: 5px;
+  border-radius: 12px;
+  padding: 6px 8px;
 }
 
 #nav-sidebar .module table th,
@@ -693,6 +693,7 @@ input[type="button"][disabled].default {
 .dashboard .module table th,
 .dashboard .module table td {
   border: none;
+  padding: 0;
 }
 
 #nav-sidebar .module table tr:not(:last-child),
@@ -742,6 +743,7 @@ input[type="button"][disabled].default {
 #nav-sidebar .module table td a.addlink,
 .dashboard .module table td a.addlink {
   color: var(--color-green);
+  line-height: 1;
 }
 
 #nav-sidebar .module table td a.addlink:hover .inner,
@@ -908,6 +910,8 @@ div.breadcrumbs a:hover {
 
 .addlink svg {
   transition: var(--transition-medium);
+  width: 18px;
+  height: 18px;
 }
 
 .changelink,
