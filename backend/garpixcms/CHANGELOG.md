@@ -1,3 +1,7 @@
+### 4.0.0-rc1 (07.03.2023)
+
+- `garpx_auth` replaced by `garpix_user` (see https://garpixcms.github.io/garpixcms/ for detailed info)
+
 ### 3.54.0-rc1-3.54.0-rc2 (28.02.2023)
 
 - New admin styles
