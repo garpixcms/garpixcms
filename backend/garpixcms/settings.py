@@ -54,7 +54,6 @@ INSTALLED_APPS = [
     'garpix_notify',
     'garpix_package',
     'drf_spectacular',
-    'rest_framework_social_oauth2',
     'garpix_user',
     'garpixcms',
     # website
@@ -299,7 +298,7 @@ if ENABLE_GARPIX_AUTH:
     ]
     INSTALLED_APPS += [
         'rest_framework_social_oauth2',
-        'garpix_user',
+        'garpix_auth',
     ]
 
 GARPIX_PAGE_ADMIN_LIST_PER_PAGE = 25
