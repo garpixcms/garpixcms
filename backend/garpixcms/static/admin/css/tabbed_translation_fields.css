@@ -1,0 +1,21 @@
+.ui-tabs .ui-tabs-nav {
+  border-bottom: 1px solid var(--color-dark-02);
+}
+
+.ui-tabs .ui-tabs-nav li a {
+  border: 1px solid var(--color-dark);
+  border-bottom-width: 0;
+  background: transparent repeat-x;
+  color: var(--color-dark);
+}
+
+.ui-tabs .ui-tabs-nav li a:hover,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a {
+  background: var(--color-dark) repeat-x;
+  color: var(--color-white);
+}
+
+.ui-tabs .ui-tab-has-errors a::after {
+  color: var(--color-red);
+}

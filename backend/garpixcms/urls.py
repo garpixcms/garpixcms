@@ -25,13 +25,15 @@ urlpatterns += [
 ]
 
 
-if settings.DEBUG:
+if settings.DEBUG or settings.ENABLE_SWAGGER:
     urlpatterns += [
         path(f'{settings.API_URL}/schema/', SpectacularAPIView.as_view(), name='schema'),
         path(f'{settings.API_URL}/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
     ]
+
+if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(
-        settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 urlpatterns += i18n_patterns(
     multiurl(

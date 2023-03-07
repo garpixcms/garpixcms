@@ -1,3 +1,69 @@
+### 3.54.0-rc1-3.54.0-rc2 (28.02.2023)
+
+- New admin styles
+
+### 3.53.0-3.53.1 (28.02.2023)
+
+- Upgrade `garpix_page` to version 2.42.0.
+- Upgrade `garpix_menu` to version 1.14.0.
+
+### 3.53.0-rc4 (24.02.2023)
+
+- Upgrade `garpix_page` to version 2.42.0-rc3.
+
+### 3.53.0-rc3 (10.02.2023)
+
+- Upgrade `garpix_menu` to version 1.14.0-rc1.
+- Update documentation.
+- Update `global_context` menus structure (one array nesting was deprecated).
+
+### 3.53.0-rc2 (09.02.2023)
+
+- Upgrade `garpix_page` to version 2.42.0-rc2.
+
+### 3.53.0-rc1 (08.02.2023)
+
+- Upgrade `garpix_page` to version 2.42.0-rc1.
+
+### 3.52.0 (01.02.2023)
+
+- Upgrade `garpix_page` to version 2.41.0.
+- Upgrade `garpix_utils` to version 1.8.0.
+
+### 3.51.0 (09.12.2022)
+
+- Upgrade `garpix_page` to version 2.40.1.
+
+### 3.50.0 (30.11.2022)
+
+- Upgrade `garpix_notify` to version 5.13.6.
+- Upgrade `garpix_utils` to version 1.7.0.
+- `ENABLE_SWAGGER` setting added.
+
+### 3.49.1 (28.11.2022)
+
+- Исправлена ошибка `AttributeError: 'URLResolver' object has no attribute '_extend_tried'` для `django==3.1`.
+
+### 3.49.0 (24.11.2022)
+
+- Upgrade `garpix_page` to version 2.40.0.
+- Upgrade `garpix_notify` to version 5.13.5.
+
+### 3.48.0 - 3.48.2 (17.11.2022)
+
+- Upgrade `garpix_page` to version 2.39.1.
+
+### 3.47.0 (16.11.2022)
+
+- Upgrade `garpix_menu` to version 1.13.0.
+- Upgrade `garpix_notify` to version 5.13.4.
+- `GarpixLocaleMiddleware` added.
+
+### 3.46.0 (02.11.2022)
+
+- Upgrade `garpix_menu` to version 1.12.1.
+- `global_context` fixed (menu serialized for drf).
+
 ### 3.45.0 (02.11.2022)
 
 - Upgrade `garpix_page` to version 2.39.0.

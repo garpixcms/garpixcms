@@ -73,7 +73,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.locale.LocaleMiddleware'
+    'garpixcms.middleware.locale.GarpixLocaleMiddleware'
 ]
 
 ROOT_URLCONF = 'app.urls'
@@ -294,8 +294,12 @@ SOCIAL_AUTH_PIPELINE = (
 )
 
 if ENABLE_GARPIX_AUTH:
+    AUTHENTICATION_BACKENDS += [
+        'rest_framework_social_oauth2.backends.DjangoOAuth2',
+    ]
     INSTALLED_APPS += [
-        'garpix_auth'
+        'rest_framework_social_oauth2',
+        'garpix_user',
     ]
 
 GARPIX_PAGE_ADMIN_LIST_PER_PAGE = 25
@@ -315,3 +319,5 @@ if DEBUG:
 GARPIXCMS_CELERY_SETTINGS = 'app.celery.app'
 
 GARPIX_USER = {}
+
+ENABLE_SWAGGER = False
