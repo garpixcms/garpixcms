@@ -5,7 +5,7 @@ from multiurl import ContinueResolving, multiurl
 from django.http import Http404
 from django.conf import settings
 from django.conf.urls.static import static
-from garpix_auth.views import LogoutView, LoginView
+from garpix_user.views import LogoutView, LoginView
 from garpix_page.views.page import PageView
 from garpix_page.views.index import IndexView
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
@@ -14,16 +14,16 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('page_lock/', include('garpix_admin_lock.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
+    path(f'{settings.API_URL}/social-auth/', include('rest_framework_social_oauth2.urls')),
+    path('', include(('garpix_user.urls', 'garpix_user'), namespace='garpix_user')),
     path('', include(('garpix_page.urls', 'garpix_page'), namespace='garpix_page')),
 ]
 
-if settings.ENABLE_GARPIX_AUTH:
-    urlpatterns += [
-        path('logout/', LogoutView.as_view(url='/'), name="logout"),
-        path('login/', LoginView.as_view(), name="authorize"),
-        path(f'{settings.API_URL}/social-auth/', include('rest_framework_social_oauth2.urls')),
-        path(f'{settings.API_URL}/auth/', include(('garpix_auth.urls', 'garpix_auth'), namespace='garpix_auth'))
-    ]
+urlpatterns += [
+    path('logout/', LogoutView.as_view(url='/'), name="logout"),
+    path('login/', LoginView.as_view(), name="authorize")
+]
+
 
 if settings.DEBUG or settings.ENABLE_SWAGGER:
     urlpatterns += [
