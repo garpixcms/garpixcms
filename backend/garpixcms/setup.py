@@ -11,6 +11,7 @@ setup(
     version='4.0.0-rc1',
     description='',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     url='https://github.com/garpixcms/garpixcms',
     author='Garpix LTD',
     author_email='info@garpix.com',
