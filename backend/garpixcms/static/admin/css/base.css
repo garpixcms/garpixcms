@@ -908,7 +908,8 @@ div.breadcrumbs a:hover {
   color: var(--color-green);
 }
 
-.addlink svg {
+.addlink svg,
+.changelink svg{
   transition: var(--transition-medium);
   width: 18px;
   height: 18px;

@@ -4,6 +4,7 @@ from app.basedir import BASE_DIR
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 from garpix_notify.settings import *  # noqa
+from corsheaders.defaults import default_headers
 
 env = Env()
 env.read_env(os.path.join(BASE_DIR, '.env'), recurse=True)
@@ -320,3 +321,7 @@ GARPIXCMS_CELERY_SETTINGS = 'app.celery.app'
 GARPIX_USER = {}
 
 ENABLE_SWAGGER = False
+
+CORS_ALLOW_HEADERS = list(default_headers) + [
+    "user-session-token",
+]
