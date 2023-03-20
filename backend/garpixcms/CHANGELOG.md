@@ -1,3 +1,7 @@
+### 4.0.0-rc6 (20.03.2023)
+
+- Upgrade `garpix_user` to version 3.5.0-rc5.
+
 ### 4.0.0-rc5 (15.03.2023)
 
 - Upgrade `garpix_user` to version 3.5.0-rc3.
