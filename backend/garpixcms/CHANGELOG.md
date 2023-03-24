@@ -1,3 +1,9 @@
+### 4.0.0-rc7 (24.03.2023)
+
+- Upgrade `garpix_page` to version 2.45.0-rc1.
+- Upgrade `garpix_menu` to version 1.15.0.
+- Upgrade `garpix_notify` to version 5.14.0.
+
 ### 4.0.0-rc6 (20.03.2023)
 
 - Upgrade `garpix_user` to version 3.5.0-rc5.
