@@ -256,6 +256,8 @@ You also need to add notify events:
 ```python
 # settings.py
 
+from garpix_user.settings import GARPIX_USER_NOTIFY_EVENTS
+
 NOTIFY_EVENTS.update(GARPIX_USER_NOTIFY_EVENTS)
 
 ```
@@ -372,3 +374,16 @@ GARPIX_USER = {
 ```
 
 See `garpix_user/tests/test_api/*.py` for examples.
+
+- `get_from_request(cls, request)`: a method that takes a request object and returns a `UserSession` object based on the request:
+    - If the user is authenticated, it returns the `UserSession` object associated with the user.
+    - If the request contains a token in the header, it returns the `UserSession` object associated with that token.
+    - If the request contains a session key, it returns the `UserSession` object associated with that session key.
+    - If the request contains a username in the query parameters, it returns the `UserSession` object associated with the user with that username.
+    - If none of these conditions are met, it returns `None`.
+
+- `create_from_request(cls, request, username, session)`: a class method that takes a request object, a username string, and a boolean session value. It creates a new `UserSession` object based on the request:
+    - If the user is authenticated, it creates a new `UserSession` object associated with the authenticated user.
+    - If session is True, it creates a new `UserSession` object associated with the session key.
+    - If username is not `None`, it creates a new `UserSession` object associated with the user with that username.
+    - If none of these conditions are met, it creates a new `UserSession` object."
