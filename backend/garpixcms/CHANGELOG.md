@@ -1,3 +1,7 @@
+### 4.0.0-rc14 (06.04.2023)
+
+- Upgrade `eqator` to version 2.7.0.
+
 ### 4.0.0-rc13 (30.03.2023)
 
 - Upgrade `garpix_page` to version 2.45.0-rc7.
