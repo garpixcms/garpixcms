@@ -1,3 +1,9 @@
+### 4.0.0-rc15 (14.04.2023)
+
+- Upgrade `garpix_page` to version 2.45.0-rc8.
+- Upgrade `garpix_notify` to version 5.15.0.
+- - Upgrade `garpix_user` to version 3.5.0-rc6.
+
 ### 4.0.0-rc14 (06.04.2023)
 
 - Upgrade `eqator` to version 2.7.0.
