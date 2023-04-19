@@ -8,7 +8,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='garpixcms',
-    version='4.0.0-rc15',
+    version='4.0.0-rc17',
     description='',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -37,7 +37,7 @@ setup(
         'eqator == 2.7.0',
         'garpix_auth == 2.3.0',
         'garpix_notify == 5.15.0',
-        'garpix_user == 3.5.0-rc6',
+        'garpix_user == 3.5.0-rc8',
         'garpix_package == 2.0.1',
         'psycopg2-binary >= 2.8.6',
         'uwsgi >= 2.0.19.1',
