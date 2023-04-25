@@ -1,3 +1,8 @@
+### 4.0.0-rc18 (25.04.2023)
+
+- Upgrade `garpix_page` to version 2.45.0-rc9.
+- Upgrade `garpix_notify` to version 5.15.1.
+
 ### 4.0.0-rc17 (19.04.2023)
 
 - Upgrade `garpix_user` to version 3.5.0-rc8.
