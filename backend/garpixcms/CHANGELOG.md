@@ -1,3 +1,9 @@
+### 4.3.0 (31.05.2023)
+
+- Upgrade `garpix_page` to version 2.48.0
+- Upgrade `garpix_user` to version 3.6.0
+- Update documentation
+
 ### 4.2.0 (29.05.2023)
 
 - Upgrade `garpix_page` to version 2.47.0
