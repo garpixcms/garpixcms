@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
          <loc>None./</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/"/>
@@ -10,7 +10,7 @@
     </url>
     <url>
          <loc>Nonefaq_cors/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/faq_cors/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/faq_cors/"/>
@@ -18,7 +18,7 @@
     </url>
     <url>
          <loc>Nonefaq_list_per_page/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/faq_list_per_page/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/faq_list_per_page/"/>
@@ -26,7 +26,7 @@
     </url>
     <url>
          <loc>Nonefaq_pack/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/faq_pack/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/faq_pack/"/>
@@ -34,7 +34,7 @@
     </url>
     <url>
          <loc>Noneinstall_deps/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/install_deps/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/install_deps/"/>
@@ -42,7 +42,7 @@
     </url>
     <url>
          <loc>Noneinstall_new_project/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/install_new_project/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/install_new_project/"/>
@@ -50,7 +50,7 @@
     </url>
     <url>
          <loc>Noneinstall_start_project/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/install_start_project/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/install_start_project/"/>
@@ -58,7 +58,7 @@
     </url>
     <url>
          <loc>Nonedeprecated/example_simple_templates_site_deprecated_2021-09-10/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/deprecated/example_simple_templates_site_deprecated_2021-09-10/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/deprecated/example_simple_templates_site_deprecated_2021-09-10/"/>
@@ -66,7 +66,7 @@
     </url>
     <url>
          <loc>Noneexamples/auth_spa/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/examples/auth_spa/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/examples/auth_spa/"/>
@@ -74,7 +74,7 @@
     </url>
     <url>
          <loc>Noneexamples/auth_templates/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/examples/auth_templates/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/examples/auth_templates/"/>
@@ -82,7 +82,7 @@
     </url>
     <url>
          <loc>Noneexamples/notify/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/examples/notify/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/examples/notify/"/>
@@ -90,7 +90,7 @@
     </url>
     <url>
          <loc>Noneexamples/simple_templates_site/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/examples/simple_templates_site/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/examples/simple_templates_site/"/>
@@ -98,7 +98,7 @@
     </url>
     <url>
          <loc>Noneexamples/auth/apple/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/examples/auth/apple/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/examples/auth/apple/"/>
@@ -106,7 +106,7 @@
     </url>
     <url>
          <loc>Noneexamples/auth/google/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/examples/auth/google/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/examples/auth/google/"/>
@@ -114,7 +114,7 @@
     </url>
     <url>
          <loc>Nonemigrate/migrate_1.15.0_to_2.0.0/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/migrate/migrate_1.15.0_to_2.0.0/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/migrate/migrate_1.15.0_to_2.0.0/"/>
@@ -122,7 +122,7 @@
     </url>
     <url>
          <loc>Nonepackages/garpix_auth/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/packages/garpix_auth/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/packages/garpix_auth/"/>
@@ -130,7 +130,7 @@
     </url>
     <url>
          <loc>Nonepackages/garpix_company/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/packages/garpix_company/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/packages/garpix_company/"/>
@@ -138,7 +138,7 @@
     </url>
     <url>
          <loc>Nonepackages/garpix_menu/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/packages/garpix_menu/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/packages/garpix_menu/"/>
@@ -146,7 +146,7 @@
     </url>
     <url>
          <loc>Nonepackages/garpix_notify/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/packages/garpix_notify/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/packages/garpix_notify/"/>
@@ -154,7 +154,7 @@
     </url>
     <url>
          <loc>Nonepackages/garpix_page/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/packages/garpix_page/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/packages/garpix_page/"/>
@@ -162,7 +162,7 @@
     </url>
     <url>
          <loc>Nonepackages/garpix_qa/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/packages/garpix_qa/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/packages/garpix_qa/"/>
@@ -170,7 +170,7 @@
     </url>
     <url>
          <loc>Nonepackages/garpix_user/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/packages/garpix_user/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/packages/garpix_user/"/>
@@ -178,7 +178,7 @@
     </url>
     <url>
          <loc>Nonepackages/packages/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/packages/packages/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/packages/packages/"/>
@@ -186,7 +186,7 @@
     </url>
     <url>
          <loc>Nonepackages/utils/</loc>
-         <lastmod>2023-04-04</lastmod>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
          <xhtml:link rel="alternate" hreflang="en" href="Noneen/packages/utils/"/>
          <xhtml:link rel="alternate" hreflang="ru" href="Noneru/packages/utils/"/>
