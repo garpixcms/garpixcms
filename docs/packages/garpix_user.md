@@ -1,6 +1,6 @@
 # Пользователь
 
-Auth module for Django/DRF projects. Part of GarpixCMS.
+Модуль авторизации для Django/DRF. Part of GarpixCMS.
 
 Used packages: 
 
@@ -9,9 +9,9 @@ Used packages:
 * [django-rest-framework-social-oauth2](https://github.com/RealmTeam/django-rest-framework-social-oauth2)
 * etc; see setup.py
 
-## Quickstart
+## Установка
 
-Install with pip:
+Выполнить команду pip:
 
 ```bash
 pip install garpix_user
@@ -256,6 +256,8 @@ You also need to add notify events:
 ```python
 # settings.py
 
+from garpix_user.settings import GARPIX_USER_NOTIFY_EVENTS
+
 NOTIFY_EVENTS.update(GARPIX_USER_NOTIFY_EVENTS)
 
 ```
@@ -372,3 +374,21 @@ GARPIX_USER = {
 ```
 
 See `garpix_user/tests/test_api/*.py` for examples.
+
+```python
+from garpix_user.models import UserSession
+```
+
+- `get_from_request(cls, request)`: метод, который принимает объект request и возвращает объект `UserSession` на основе запроса:
+    - Если пользователь аутентифицирован, он возвращает объект `UserSession`, связанный с пользователем. 
+    - Если запрос содержит токен в заголовке, он возвращает объект `UserSession`, связанный с этим токеном. 
+    - Если запрос содержит ключ сессии, он возвращает объект `UserSession`, связанный с этим ключом сессии. 
+    - Если запрос содержит `username` в параметрах запроса, он возвращает объект `UserSession`, связанный с пользователем с этим именем пользователя. 
+    - Если ни одно из этих условий не выполняется, он возвращает `None`.
+
+
+- `create_from_request(cls, request, username, session):` метод класса, который принимает объект request, строку username и логическое значение session. Он создает новый объект `UserSession` на основе запроса:
+    - Если пользователь аутентифицирован, он создает новый объект `UserSession`, связанный с аутентифицированным пользователем.
+    - Если session равно True, он создает новый объект `UserSession`, связанный с ключом сессии.
+    - Если username не равно `None`, он создает новый объект `UserSession`, связанный с пользователем с этим именем пользователя.
+    - Если ни одно из этих условий не выполняется, он создает новый объект `UserSession`
