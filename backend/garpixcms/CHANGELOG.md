@@ -1,4 +1,12 @@
-### 4.4.0 (09.06.2023)
+### 4.5.0-rc1 (26.06.2023)
+
+- Upgrade `garpix_utils` to version 1.9.0-rc1
+
+### 4.4.1 (26.06.2023)
+
+- Upgrade `garpix_user` to version 3.8.1
+
+### 4.4.0 (23.06.2023)
 
 - Upgrade `garpix_user` to version 3.8.0
 - `django.contrib.auth.backends.ModelBackend` deprecated
