@@ -413,6 +413,7 @@ python3 manage.py makemigrations
 python3 manage.py migrate
 ```
 
+
 Также, можем реализовать другой шаблон, поэтому давайте создадим файл `content/templates/pages/news_list_page.html`:
 
 ```html
