@@ -103,6 +103,7 @@ python3 manage.py migrate
 Также, вы можете реализовать другой шаблон. Ниже пример обычного шаблона `garpixcms/pages/login.html`:
 
 ```html
+{% extends 'garpixcms/base.html' %}
 
 {% block content %}
 <h1>{{object.title}}</h1>
