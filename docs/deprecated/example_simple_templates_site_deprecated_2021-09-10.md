@@ -192,16 +192,16 @@ python3 manage.py migrate
 Также, у нас должно быть другой шаблон, поэтому давайте создадим директорию `content/templates/pages/` и в ней файл `contact_page.html` с содержимым:
 
 ```html
-<!--{% extends 'garpixcms/base.html' %}-->
+{% extends 'garpixcms/base.html' %}
 
-<!--{% block content %}-->
-<!--<h1>{{object.title}}</h1>-->
-<!--<div>-->
-<!--    <p>Номер телефона: {{object.phone}}</p>-->
-<!--    <p>E-mail: {{object.email}}</p>-->
-<!--    <p>Адрес: {{object.address}}</p>-->
-<!--</div>-->
-<!--{% endblock %}-->
+{% block content %}
+<h1>{{object.title}}</h1>
+<div>
+    <p>Номер телефона: {{object.phone}}</p>
+    <p>E-mail: {{object.email}}</p>
+    <p>Адрес: {{object.address}}</p>
+</div>
+{% endblock %}
 ```
 
 После этого идем в админ-панель и добавляем новую страницу через "Структура страниц":
@@ -310,15 +310,15 @@ python3 manage.py migrate
 Также, можем реализовать другой шаблон, поэтому давайте создадим файл `content/templates/pages/news_detail.html`:
 
 ```html
-<!--{% extends 'garpixcms/base.html' %}-->
+{% extends 'garpixcms/base.html' %}
 
-<!--{% block content %}-->
-<!--<h1>{{object.title}}</h1>-->
-<!--<div>{{object.created_at|date:"d.m.Y"}}</div>-->
-<!--<div>-->
-<!--    {{object.content|safe}}-->
-<!--</div>-->
-<!--{% endblock %}-->
+{% block content %}
+<h1>{{object.title}}</h1>
+<div>{{object.created_at|date:"d.m.Y"}}</div>
+<div>
+    {{object.content|safe}}
+</div>
+{% endblock %}
 ```
 
 Пока не добавляйте новости в админ-панели. Сначала сделаем их списочное представление, см. дальше.
@@ -416,16 +416,16 @@ python3 manage.py migrate
 Также, можем реализовать другой шаблон, поэтому давайте создадим файл `content/templates/pages/news_list_page.html`:
 
 ```html
-<!--{% extends 'garpixcms/base.html' %}-->
+{% extends 'garpixcms/base.html' %}
 
-<!--{% block content %}-->
-<!--<h1>{{object.title}}</h1>-->
-<!--{% for post in posts %}-->
-<!--    <div>-->
-<!--        <h3><a href="{{post.get_absolute_url}}">{{post.title}}</a></h3>-->
-<!--    </div>-->
-<!--{% endfor %}-->
-<!--{% endblock %}-->
+{% block content %}
+<h1>{{object.title}}</h1>
+{% for post in posts %}
+    <div>
+        <h3><a href="{{post.get_absolute_url}}">{{post.title}}</a></h3>
+    </div>
+{% endfor %}
+{% endblock %}
 ```
 
 Теперь можно заходить в административную панель, создавать объект "Список новостей" и заполнять его данные.
@@ -445,12 +445,12 @@ python3 manage.py migrate
 P.S. Вы можете переписать шаблон для обычных страниц `templates/garpixcms/pages/default.html`, например, на следующее содержимое:
 
 ```html
-<!--{% extends 'garpixcms/base.html' %}-->
+{% extends 'garpixcms/base.html' %}
 
-<!--{% block content %}-->
-<!--<h1>{{object.title}}</h1>-->
-<!--<div>-->
-<!--    {{object.content|safe}}-->
-<!--</div>-->
-<!--{% endblock %}-->
+{% block content %}
+<h1>{{object.title}}</h1>
+<div>
+    {{object.content|safe}}
+</div>
+{% endblock %}
 ```
