@@ -38,7 +38,7 @@ if settings.DEBUG:
 urlpatterns += i18n_patterns(
     multiurl(
         path('', PageView.as_view()),
-        re_path(r'^(?P<url>.*?)$', PageView.as_view(), name='page'),
+        re_path(r'^(?P<url>.*?)/$', PageView.as_view(), name='page'),
         path('', IndexView.as_view()),
         catch=(Http404, ContinueResolving),
     ),
