@@ -325,3 +325,5 @@ ENABLE_SWAGGER = False
 CORS_ALLOW_HEADERS = list(default_headers) + [
     "user-session-token",
 ]
+
+ISO_LOGS_NAME = 'garpixcms'
