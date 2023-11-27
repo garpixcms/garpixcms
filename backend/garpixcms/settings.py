@@ -327,3 +327,6 @@ CORS_ALLOW_HEADERS = list(default_headers) + [
 ]
 
 ISO_LOGS_NAME = 'garpixcms'
+
+IB_ISO_LOGS_NAME = 'garpixcms_ib'
+SYSTEM_ISO_LOGS_NAME = 'garpixcms_system'
