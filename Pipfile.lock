@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "7c7daba08ddb49b1fafb55820c42158e8b6c4d3e9d389b0b7eb6e5cdffc692af"
+            "sha256": "c6787b38f62c9a0e50735fea3f5f88c4e7c7deffbdd28dd57429d7e18a73da7b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -740,19 +740,19 @@
         },
         "garpix-user": {
             "hashes": [
-                "sha256:e2186480f0a68fd102a35610c19525ac27a35babb7ce3c5cf97111a4d1948ff4",
-                "sha256:f7e915e10092ae7a4a365bd7af0a0f3cf372bc76542c4610076e049b48bb3901"
+                "sha256:43c20a6604bac776ad9b23b258be584a24f28abd44d7b15f18168c132c42570f",
+                "sha256:e16ad76e8532f490d77bb19b55cf80cea8c5d631543ccbf1d339981715ff8687"
             ],
             "index": "pypi",
-            "version": "==3.10.0-rc9"
+            "version": "==3.10.0-rc10"
         },
         "garpix-utils": {
             "hashes": [
-                "sha256:077ae024789affbd480cb25cfb185477bed8dbabbcccf5f8f125f4e53c7359cd",
-                "sha256:932825d066283db410932059479c400629b4d8d71d733d96546e247bf8c83791"
+                "sha256:751b3fefbcf39965778367bcde55fe40bf854579f5003f7e9478cae81a23d594",
+                "sha256:9261f1c7dd4384dc1c8cb8d7d54aaf1d0a5a5a2218dea82ddd15166f2b7c9809"
             ],
             "index": "pypi",
-            "version": "==1.10.0-rc4"
+            "version": "==1.10.0-rc6"
         },
         "ghp-import": {
             "hashes": [
