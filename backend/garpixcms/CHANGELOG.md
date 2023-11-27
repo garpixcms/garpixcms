@@ -2,6 +2,7 @@
 
 - Upgrade `garpix_user` to version 3.10.0-rc12
 - Upgrade `garpix_utils` to version 1.10.0-rc13
+- `IB_ISO_LOGS_NAME`, `SYSTEM_ISO_LOGS_NAME`, `ISO_LOGS_NAME` settings added
 
 ### 4.6.0-rc12 (27.11.2023)
 
