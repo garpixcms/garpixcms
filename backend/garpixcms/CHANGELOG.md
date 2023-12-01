@@ -1,4 +1,9 @@
-### 4.6.0-rc43 (27.11.2023)
+### 4.6.0-rc15 (01.12.2023)
+
+- Upgrade `garpix_user` to version 3.10.0-rc14
+- Upgrade `garpix_utils` to version 1.10.0-rc17
+
+### 4.6.0-rc14 (27.11.2023)
 
 - Upgrade `garpix_user` to version 3.10.0-rc13
 - Upgrade `garpix_utils` to version 1.10.0-rc14
