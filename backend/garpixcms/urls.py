@@ -5,7 +5,7 @@ from multiurl import ContinueResolving, multiurl
 from django.http import Http404
 from django.conf import settings
 from django.conf.urls.static import static
-from garpix_user.views import LogoutView, LoginView
+from garpix_user.views import LogoutView, LoginView, obtain_auth_token
 from garpix_page.views.page import PageView
 from garpix_page.views.index import IndexView
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
@@ -16,6 +16,7 @@ urlpatterns = [
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path(f'{settings.API_URL}/social-auth/', include('rest_framework_social_oauth2.urls')),
     path('', include(('garpix_user.urls', 'garpix_user'), namespace='garpix_user')),
+    path(f'{settings.API_URL}/garpix_user/token/', obtain_auth_token, name='token'),
     path('', include(('garpix_page.urls', 'garpix_page'), namespace='garpix_page')),
 ]
 
