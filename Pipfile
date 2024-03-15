@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 django = "==4.2"
-garpix-page = "==2.49.0-rc4"
+garpix-page = "==2.49.0-rc5"
 garpix-menu = "==1.17.1"
 environs = "*"
 psycopg2-binary = "*"
@@ -25,7 +25,7 @@ raven = "*"
 sentry-sdk = "*"
 pre-commit = "*"
 eqator = "==2.7.0"
-garpix-user = "==3.10.0-rc23"
+garpix-user = "==3.10.0-rc24"
 mkdocs-static-i18n = "*"
 
 [dev-packages]

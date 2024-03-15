@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, re_path, include
 from django.conf.urls.i18n import i18n_patterns
-from multiurl import ContinueResolving, multiurl
+from multiurl.multiurl import ContinueResolving, multiurl
 from django.http import Http404
 from django.conf import settings
 from django.conf.urls.static import static
