@@ -675,6 +675,10 @@ input[type="button"][disabled].default {
   border-collapse: collapse;
 }
 
+#nav-filter {
+  width: 100%;
+}
+
 #nav-sidebar .module table,
 #nav-sidebar .module table caption,
 #nav-sidebar .module table tbody,
