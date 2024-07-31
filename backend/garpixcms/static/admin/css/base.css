@@ -554,6 +554,10 @@ select[multiple] {
   min-height: 150px;
 }
 
+.flex-container {
+  display: flex;
+}
+
 /* FORM BUTTONS */
 
 .button,
@@ -669,6 +673,10 @@ input[type="button"][disabled].default {
 
 .module table {
   border-collapse: collapse;
+}
+
+#nav-filter {
+  width: 100%;
 }
 
 #nav-sidebar .module table,
@@ -922,6 +930,7 @@ div.breadcrumbs a:hover {
 }
 
 .deletelink {
+  float: left;
   padding-left: 16px;
   background: url(/static-backend/admin/img/icon-deletelink.svg) 0 1px no-repeat;
 }
@@ -1135,6 +1144,10 @@ table#change-history tbody th {
 
 #branding a:hover {
   text-decoration: none;
+}
+
+#branding .theme-toggle {
+  display: none;
 }
 
 #user-tools {
