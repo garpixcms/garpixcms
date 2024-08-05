@@ -5,7 +5,7 @@ from garpix_user.models import AccessToken as NewAccessToken, RefreshToken as Ne
 
 
 @pytest.fixture
-def old_access_tokens(db):
+def old_access_tokens(db):  #Эта фикстура создает два старых токена доступа в базе данных, которые будут использоваться в тесте.
     return OldAccessToken.objects.bulk_create([
         OldAccessToken(token='old_access_token_1'),
         OldAccessToken(token='old_access_token_2'),
@@ -13,7 +13,7 @@ def old_access_tokens(db):
 
 
 @pytest.fixture
-def old_refresh_tokens(db):
+def old_refresh_tokens(db):  #Эта фикстура создает два старых токена обновления в базе данных, которые будут использоваться в тесте.
     return OldRefreshToken.objects.bulk_create([
         OldRefreshToken(token='old_refresh_token_1'),
         OldRefreshToken(token='old_refresh_token_2'),

@@ -33,7 +33,7 @@ def settings_choice_menu_types():
     settings.CHOICE_MENU_TYPES = original_choice_menu_types
 
 
-def test_global_context_no_page(request_factory, menu_items, settings_choice_menu_types):
+def test_global_context_no_page(request_factory, menu_items, settings_choice_menu_types):  #Этот тест проверяет, что global_context() правильно возвращает контекст, когда нет страницы, переданной в качестве аргумента.
     request = request_factory.get('/some-path/')
     context = global_context(request, None)
 
@@ -50,7 +50,7 @@ def test_global_context_no_page(request_factory, menu_items, settings_choice_men
         footer_menu, context={'request': request, 'current_path': '/some-path/'}, many=True).data
 
 
-def test_global_context_with_page(request_factory, menu_items, settings_choice_menu_types):
+def test_global_context_with_page(request_factory, menu_items, settings_choice_menu_types):  #Этот тест проверяет, что global_context() правильно возвращает контекст, когда страница передается в качестве аргумента.
     class MockPage:
         def get_absolute_url(self):
             return '/mock-page/'
