@@ -161,7 +161,8 @@
   border-bottom: 4px solid var(--color-gray);
 }
 
-#changelist-filter h3 {
+#changelist-filter h3,
+#changelist-filter details summary {
   font-weight: bold;
   font-size: 16px;
   padding: 0 15px;
@@ -240,58 +241,6 @@
 .change-list ul.toplinks .date-back a:focus,
 .change-list ul.toplinks .date-back a:hover {
   color: #036;
-}
-
-/* PAGINATOR */
-
-.paginator {
-  font-size: 13px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 22px;
-  margin: 0;
-  border-top: 1px solid #ddd;
-  width: 100%;
-}
-
-.paginator a.showall {
-  border: none;
-  background: none;
-}
-
-.paginator a.showall:focus,
-.paginator a.showall:hover {
-  background: none;
-}
-
-.paginator .end {
-  margin-right: 6px;
-}
-
-.paginator .this-page,
-.paginator a:not(.showall) {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-  line-height: 1;
-  height: 30px;
-  min-width: 30px;
-  font-size: 13px;
-  border: 1px solid var(--color-dark);
-  color: var(--color-dark);
-  border-radius: 5px;
-}
-
-.paginator .this-page {
-  background-color: var(--color-dark);
-  color: var(--color-white);
-}
-
-.paginator a:not(.showall):focus,
-.paginator a:not(.showall):hover {
-  background-color: var(--color-dark);
-  color: var(--color-white);
 }
 
 /* ACTIONS */
