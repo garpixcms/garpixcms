@@ -263,7 +263,6 @@ fieldset.monospace textarea {
   border-radius: 4px;
   overflow: hidden;
   display: flex;
-  flex-direction: row-reverse;
   gap: 10px;
   flex-wrap: wrap;
 }
@@ -292,7 +291,7 @@ body.popup .submit-row {
 
 .submit-row a.deletelink {
   display: block;
-  margin-right: auto;
+  margin-left: auto;
   background: var(--color-red);
   border-radius: 10px;
   padding: 10px 15px;
@@ -302,7 +301,7 @@ body.popup .submit-row {
 
 .submit-row a.closelink {
   display: inline-block;
-  margin-right: auto;
+  margin-left: auto;
   background: #bbbbbb;
   border-radius: 4px;
   padding: 10px 15px;
