@@ -18,10 +18,6 @@
   margin-bottom: 5px;
 }
 
-.selector-chosen select {
-  border-top: none;
-}
-
 .selector-available h2,
 .selector-chosen h2 {
   border: 1px solid var(--color-dark);
@@ -32,6 +28,10 @@
 .selector-chosen h2 {
   background: var(--color-dark);
   color: var(--color-white);
+}
+
+.selector .selector-chosen:not(.selector-chosen--with-filtered) .list-footer-display {
+  display: none;
 }
 
 .selector .selector-available h2 {
@@ -60,7 +60,8 @@
   line-height: 1;
 }
 
-.selector .selector-available input {
+.selector .selector-available input,
+.selector .selector-chosen input {
   width: 320px;
   margin-left: 8px;
 }

@@ -930,7 +930,6 @@ div.breadcrumbs a:hover {
 }
 
 .deletelink {
-  float: left;
   padding-left: 16px;
   background: url(/static-backend/admin/img/icon-deletelink.svg) 0 1px no-repeat;
 }
