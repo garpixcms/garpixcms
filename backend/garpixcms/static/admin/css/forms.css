@@ -129,7 +129,6 @@ form .aligned p.help,
 form .aligned div.help {
   clear: left;
   margin-top: 0;
-  padding-left: 10px;
 }
 
 form .aligned label + p.help,
@@ -174,6 +173,11 @@ form .aligned table p {
 .colM .aligned .vLargeTextField,
 .colM .aligned .vXMLLargeTextField {
   width: 610px;
+}
+
+.flex-container.checkbox-row {
+  display: flex;
+  align-items: center;
 }
 
 .checkbox-row p.help,
@@ -237,7 +241,7 @@ fieldset.collapsed h2 {
 }
 
 fieldset .collapse-toggle {
-  color: #fff;
+  color: #447e9b;
 }
 
 fieldset.collapsed .collapse-toggle {
@@ -546,4 +550,10 @@ form .related-widget-wrapper ul {
 
 .clearable-file-input input {
   margin-top: 0;
+}
+
+/* Raw id field */
+.flex-container .related-lookup,
+.flex-container .related-lookup+strong {
+  align-self: center;
 }

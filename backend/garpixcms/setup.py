@@ -39,7 +39,7 @@ setup(
         'garpix_utils >= 1.10, < 2',
         'garpix_page == 2.49.0-rc5',
         'garpix_menu == 1.17.1',
-        'eqator == 2.7.0',
+        'eqator >= 2.7, < 3',
         'garpix_auth == 2.3.0',
         'garpix_notify == 5.17.0-rc1',
         'garpix_user == 3.10.0-rc24',
