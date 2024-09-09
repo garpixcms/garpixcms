@@ -129,7 +129,6 @@ form .aligned p.help,
 form .aligned div.help {
   clear: left;
   margin-top: 0;
-  padding-left: 10px;
 }
 
 form .aligned label + p.help,
@@ -174,6 +173,11 @@ form .aligned table p {
 .colM .aligned .vLargeTextField,
 .colM .aligned .vXMLLargeTextField {
   width: 610px;
+}
+
+.flex-container.checkbox-row {
+  display: flex;
+  align-items: center;
 }
 
 .checkbox-row p.help,
@@ -237,7 +241,7 @@ fieldset.collapsed h2 {
 }
 
 fieldset .collapse-toggle {
-  color: #fff;
+  color: #447e9b;
 }
 
 fieldset.collapsed .collapse-toggle {
@@ -256,11 +260,15 @@ fieldset.monospace textarea {
 /* SUBMIT ROW */
 
 .submit-row {
-  padding: 12px 14px;
+  padding: 12px 14px 12px;
   margin: 0 0 20px;
+  background: var(--darkened-bg);
   border-top: 1px solid var(--color-dark);
-  text-align: right;
+  border-radius: 4px;
   overflow: hidden;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 body.popup .submit-row {
@@ -287,6 +295,7 @@ body.popup .submit-row {
 
 .submit-row a.deletelink {
   display: block;
+  margin-left: auto;
   background: var(--color-red);
   border-radius: 10px;
   padding: 10px 15px;
@@ -296,11 +305,11 @@ body.popup .submit-row {
 
 .submit-row a.closelink {
   display: inline-block;
+  margin-left: auto;
   background: #bbbbbb;
   border-radius: 4px;
   padding: 10px 15px;
   line-height: 15px;
-  margin: 0 0 0 5px;
   color: #fff;
 }
 
@@ -541,4 +550,10 @@ form .related-widget-wrapper ul {
 
 .clearable-file-input input {
   margin-top: 0;
+}
+
+/* Raw id field */
+.flex-container .related-lookup,
+.flex-container .related-lookup+strong {
+  align-self: center;
 }
