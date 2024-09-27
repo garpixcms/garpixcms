@@ -27,8 +27,11 @@ pre-commit = "*"
 eqator = "==2.7.0"
 garpix-user = "==3.10.0-rc24"
 mkdocs-static-i18n = "*"
+pytest = "*"
+pytest-django = "*"
 
 [dev-packages]
+pytest = "*"
 
 [requires]
 python_version = "3.8"
