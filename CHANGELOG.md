@@ -1,6 +1,6 @@
 ### 4.6.0-rc36 (11.10.2024)
 
-- Обновлен garpix_user
+- Обновлен garpix_user и добавление 'phonenumber_field' в INSTALLED_APPS
 
 ### 4.6.0-rc35 (25.09.2024)
 
