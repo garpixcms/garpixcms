@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'user',
     'garpix_admin_lock',
     'django.contrib.admin',
+    'phonenumber_field'
 ]
 
 MIDDLEWARE = [
