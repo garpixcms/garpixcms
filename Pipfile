@@ -25,7 +25,7 @@ raven = "*"
 sentry-sdk = "*"
 pre-commit = "*"
 eqator = "==2.7.0"
-garpix-user = "==3.10.0-rc24"
+garpix-user = "==3.10.0-rc25"
 mkdocs-static-i18n = "*"
 
 [dev-packages]
