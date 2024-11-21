@@ -24,16 +24,15 @@ jobs:
       with:
         python-version: "3.x"
     - name: Install pypa/build
-      run: |
+      run:
         python3 -m pip install build --user
-        echo ${{ env.OUT_DIR }}
     - name: Build a binary wheel and a source tarball
       run: python3 -m build
     - name: Store the distribution packages
       uses: actions/upload-artifact@v4
       with:
         name: python-package-distributions
-        path: dist/
+        path: ${{ env.OUT_DIR }}
 
   # publish-to-pypi:
   #   name: >-
