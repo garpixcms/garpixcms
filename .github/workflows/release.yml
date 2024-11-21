@@ -74,7 +74,7 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: python-package-distributions
-        path: ${{ env.OUT_DIR }}
+        path: dist/
     - name: Publish to TestPyPI
       uses: pypa/gh-action-pypi-publish@release/v1.10
       with:
