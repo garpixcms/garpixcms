@@ -21,7 +21,9 @@ setup(
     author='Garpix LTD',
     author_email='info@garpix.com',
     license='MIT',
-    packages=find_packages(exclude=['testproject', 'testproject.*']),
+    packages=find_packages(
+        include=['garpixcms*'],
+    ),
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
