@@ -7,6 +7,10 @@ env:
   PYPI_TEST_URL: https://test.pypi.org/p/garpixcms
   OUT_DIR: backend/dist/
 
+defaults:
+  run:
+    working-directory: ./backend
+
 jobs:
   build:
     name: Build distribution
