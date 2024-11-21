@@ -3,7 +3,6 @@ from setuptools import setup, find_packages
 from garpixcms import __version__
 
 
-name = 'garpixcms'
 package = 'garpixcms'
 here = path.join(path.abspath(path.dirname(__file__)), package)
 
@@ -13,7 +12,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 
 setup(
-    name=name,
+    name='garpixcms',
     version=__version__,
     description='',
     long_description=long_description,

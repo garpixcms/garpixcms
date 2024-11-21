@@ -7,7 +7,8 @@ on:
 env:
   #PYPI_URL: https://pypi.org/p/garpixcms
   PYPI_TEST_URL: https://test.pypi.org/p/garpixcms
-  OUT_DIR: backend/dist/
+  UPLOAD_DIR: backend/dist/
+  DOWNLOAD_DIR: dist/
 
 
 jobs:
@@ -34,27 +35,27 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: python-package-distributions
-        path: ${{ env.OUT_DIR }}
+        path: ${{ env.UPLOAD_DIR }}
 
-  # publish-to-pypi:
-  #   name: >-
-  #     Publish Python 🐍 distribution 📦 to PyPI
-  #   needs:
-  #   - build
-  #   runs-on: ubuntu-latest
-  #   environment:
-  #     name: pypi
-  #     url: ${{ env.PYPI_URL }}
-  #   permissions:
-  #     id-token: write  # IMPORTANT: mandatory for trusted publishing
-  #   steps:
-  #   - name: Download all the dists
-  #     uses: actions/download-artifact@v4
-  #     with:
-  #       name: python-package-distributions
-  #       path: dist/
-  #   - name: Publish distribution 📦 to PyPI
-  #     uses: pypa/gh-action-pypi-publish@release/v1.10
+  publish-to-pypi:
+    name: >-
+      Publish to PyPI
+    needs:
+    - build
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: ${{ env.PYPI_URL }}
+    permissions:
+      id-token: write  # IMPORTANT: mandatory for trusted publishing
+    steps:
+    - name: Download all the dists
+      uses: actions/download-artifact@v4
+      with:
+        name: python-package-distributions
+        path: ${{ env.DOWNLOAD_DIR }}
+    - name: Publish to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1.10
 
   publish-to-testpypi:
     name: Publish to TestPyPI
@@ -74,7 +75,7 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: python-package-distributions
-        path: dist/
+        path: ${{ env.DOWNLOAD_DIR }}
     - name: Publish to TestPyPI
       uses: pypa/gh-action-pypi-publish@release/v1.10
       with:
