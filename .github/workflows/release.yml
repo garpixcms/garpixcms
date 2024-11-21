@@ -9,7 +9,7 @@ env:
 jobs:
   build:
     name: Build distribution
-    if: startsWith(github.ref, 'refs/tags/')  # only build on tag pushes
+    # if: startsWith(github.ref, 'refs/tags/')  # only build on tag pushes
     runs-on: ubuntu-latest
 
     defaults:
@@ -99,7 +99,7 @@ jobs:
 
   publish-to-testpypi:
     name: Publish to TestPyPI
-    if: startsWith(github.ref, 'refs/tags/')  # only publish to TestPyPI on tag pushes
+    # if: startsWith(github.ref, 'refs/tags/')  # only publish to TestPyPI on tag pushes
     needs:
     - build
     runs-on: ubuntu-latest
