@@ -6,11 +6,11 @@ env:
   #PYPI_URL: https://pypi.org/p/django-debug-toolbar
   PYPI_TEST_URL: https://test.pypi.org/p/garpixcms
 
-jobs:
-  defaults:
-      run:
-        working-directory: ./backend
+defaults:
+  run:
+    working-directory: ./backend
 
+jobs:
   build:
     name: Build distribution
     # if: startsWith(github.ref, 'refs/tags/')  # only build on tag pushes
