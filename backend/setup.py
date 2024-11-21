@@ -1,6 +1,6 @@
 from os import path
-import re
 from setuptools import setup, find_packages
+from garpixcms import __version__
 
 
 name = 'garpixcms'
@@ -12,21 +12,9 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 
-def get_version(package):
-    """
-    Return package version as listed in `__version__` in `init.py`.
-    """
-    init_py = open(path.join(package, '__init__.py')).read()
-    return re.search("^__version__ = ['\"]([^'\"]+)['\"]",
-                     init_py, re.MULTILINE).group(1)
-
-
-version = get_version(package)
-
-
 setup(
     name=name,
-    version=version,
+    version=__version__,
     description='',
     long_description=long_description,
     long_description_content_type='text/markdown',
