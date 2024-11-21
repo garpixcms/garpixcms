@@ -9,14 +9,15 @@ env:
   PYPI_TEST_URL: https://test.pypi.org/p/garpixcms
   OUT_DIR: backend/dist/
 
-defaults:
-  run:
-    working-directory: ./backend
 
 jobs:
   build:
     name: Build distribution
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./backend
 
     steps:
     - uses: actions/checkout@v4
@@ -73,7 +74,7 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: python-package-distributions
-        path: dist/
+        path: ${{ env.OUT_DIR }}
     - name: Publish to TestPyPI
       uses: pypa/gh-action-pypi-publish@release/v1.10
       with:
