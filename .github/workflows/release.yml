@@ -20,7 +20,7 @@ jobs:
       with:
         python-version: "3.x"
     - name: Install pypa/build
-      run: >-
+      run: |
         python3 -m pip install build --user
         echo ${{ env.OUT_DIR }}
     - name: Build a binary wheel and a source tarball
