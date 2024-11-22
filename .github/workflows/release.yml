@@ -38,8 +38,7 @@ jobs:
         path: ${{ env.UPLOAD_DIR }}
 
   publish-to-pypi:
-    name: >-
-      Publish to PyPI
+    name: Publish to PyPI
     needs:
     - build
     runs-on: ubuntu-latest
