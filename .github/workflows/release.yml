@@ -5,7 +5,7 @@ on:
     types: [published]
 
 env:
-  #PYPI_URL: https://pypi.org/p/garpixcms
+  PYPI_URL: https://pypi.org/p/garpixcms
   PYPI_TEST_URL: https://test.pypi.org/p/garpixcms
   UPLOAD_DIR: backend/dist/
   DOWNLOAD_DIR: dist/
