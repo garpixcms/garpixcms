@@ -1,14 +1,19 @@
-from setuptools import setup, find_packages
 from os import path
+from setuptools import setup, find_packages
+from garpixcms import __version__
 
-here = path.join(path.abspath(path.dirname(__file__)), 'garpixcms')
+
+package = 'garpixcms'
+here = path.join(path.abspath(path.dirname(__file__)), package)
+
 
 with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
+
 setup(
     name='garpixcms',
-    version='4.6.0-rc36',
+    version=__version__,
     description='',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -21,7 +26,9 @@ setup(
     author='Garpix LTD',
     author_email='info@garpix.com',
     license='MIT',
-    packages=find_packages(exclude=['testproject', 'testproject.*']),
+    packages=find_packages(
+        include=[f'{package}*'],
+    ),
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
