@@ -102,34 +102,37 @@ def test_global_context_with_no_active_menu_items(create_request):
 
 
 @pytest.mark.django_db
-def test_global_context_with_invalid_menu_type(create_request, mock_page):
+def test_global_context_with_invalid_menu_type(create_request):
     request = create_request('/home/')
+
+    MenuItem.objects.create(title='Menu1', menu_type='header', is_active=True, sort=1)
+    MenuItem.objects.create(title='Menu2', menu_type='footer', is_active=True, sort=2)
+    MenuItem.objects.create(title='Menu3', menu_type='invalid_type', is_active=True, sort=3)
 
     with patch('django.conf.settings.CHOICE_MENU_TYPES', [
         ('header', 'Header Menu'),
         ('footer', 'Footer Menu'),
     ]):
-        with patch('garpix_menu.serializers.MenuItemSerializer') as mock_serializer:
-            invalid_menu_data = {
-                'header': [{'title': 'Menu1', 'is_active': True, 'menu_type': 'header', 'sort': 1}],
-                'footer': [{'title': 'Menu2', 'is_active': True, 'menu_type': 'footer', 'sort': 2}],
-                'invalid_type': [{'title': 'Menu3', 'is_active': True, 'menu_type': 'invalid_type', 'sort': 3}]
-            }
-            mock_serializer.return_value.data = invalid_menu_data
-            context = global_context(request, mock_page)
+        context = global_context(request, None)
 
-            assert 'menus' in context
-            assert context['menus'] == {'header': [], 'footer': []}
+    assert 'menus' in context
+    assert isinstance(context['menus'], dict)
+
+    assert 'header' in context['menus']
+    assert 'footer' in context['menus']
+
+    assert 'invalid_type' not in context['menus']
+
+    assert len(context['menus']['header']) == 1
+    assert len(context['menus']['footer']) == 1
 
 
 @pytest.mark.django_db
-def test_global_context_empty_menu_type(create_request, mock_page):
+def test_global_context_empty_menu_type(create_request):
     request = create_request('/home/')
 
     with patch('django.conf.settings.CHOICE_MENU_TYPES', []):
-        with patch('garpix_menu.serializers.MenuItemSerializer') as mock_serializer:
-            mock_serializer.return_value.data = {}
-            context = global_context(request, mock_page)
+        context = global_context(request, None)
 
-            assert 'menus' in context
-            assert context['menus'] == {}
+    assert 'menus' in context
+    assert context['menus'] == {}
