@@ -29,9 +29,9 @@ garpix-user = "==3.10.0-rc25"
 mkdocs-static-i18n = "*"
 
 [dev-packages]
-pytest = "*"
-pytest-django = "*"
-pytest-mock = "*"
+pytest = "==7.4.0"
+pytest-django = "==4.5.2"
+pytest-mock = "==3.11.1"
 django-extensions = "*"
 
 [requires]
