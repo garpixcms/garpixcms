@@ -29,6 +29,10 @@ garpix-user = "==3.10.0-rc25"
 mkdocs-static-i18n = "*"
 
 [dev-packages]
+pytest = "==7.4.0"
+pytest-django = "==4.5.2"
+pytest-mock = "==3.11.1"
+django-extensions = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3.10"
