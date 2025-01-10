@@ -16,7 +16,6 @@ mkdocs-material = "*"
 mkdocstrings = "*"
 twine = "*"
 garpix-auth = "==2.3.0"
-garpix-notify = "==5.17.0-rc1"
 django-cors-headers = "==3.13.0"
 garpix-utils = "==1.10.0-rc26"
 garpix-package = "==2.0.1"
@@ -25,10 +24,11 @@ raven = "*"
 sentry-sdk = "*"
 pre-commit = "*"
 eqator = "==2.7.0"
-garpix-user = "==3.10.0-rc25"
 mkdocs-static-i18n = "*"
+garpix-user = ">=3.10.0-rc25"
+garpix-notify = ">=5.17.0-rc1"
 
 [dev-packages]
 
 [requires]
-python_version = "3.8"
+python_version = ">=3.8"
