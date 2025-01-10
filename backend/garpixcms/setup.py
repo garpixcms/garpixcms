@@ -3,6 +3,8 @@ from os import path
 
 here = path.join(path.abspath(path.dirname(__file__)), 'garpixcms')
 
+long_description = ''
+
 with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
@@ -41,7 +43,7 @@ setup(
         'garpix_menu == 1.17.1',
         'eqator >= 2.7, < 3',
         'garpix_auth == 2.3.0',
-        'garpix_notify >= 5.17.0-rc1 < 6',
+        'garpix_notify >= 5.17.0-rc1, < 6',
         'garpix_user >= 3.10.0-rc25, < 4',
         'garpix_package == 2.0.1',
         'psycopg2-binary >= 2.8.6',
@@ -53,5 +55,5 @@ setup(
         'drf-spectacular >= 0.18.2',
         'sentry-sdk >= 1.5.2',
         'pre-commit >= 2.17.0',
-    ],
+    ]
 )
