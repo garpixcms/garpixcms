@@ -41,7 +41,7 @@ setup(
         'garpix_menu == 1.17.1',
         'eqator >= 2.7, < 3',
         'garpix_auth == 2.3.0',
-        'garpix_notify == 5.17.0-rc1',
+        'garpix_notify >= 5.17.0-rc1',
         'garpix_user >= 3.10.0-rc25, < 4',
         'garpix_package == 2.0.1',
         'psycopg2-binary >= 2.8.6',
