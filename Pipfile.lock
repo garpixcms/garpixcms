@@ -635,12 +635,12 @@
         },
         "environs": {
             "hashes": [
-                "sha256:02c50088c459a2b21d6530cacd173c7528c38a723aae2791a863266ca41d9eeb",
-                "sha256:7b19816c2766b683a40946dc030fdee97eb108751ea1789a0850e93ee4aa1d6f"
+                "sha256:a5f2afe9d5a21b468e74a3cceacf5d2371fd67dbb9a7e54fe62290c75a09cdfa",
+                "sha256:a7edda1668ddf1fbfcb7662bdc242dac25648eff2c7fdbaa5d959693afed7a3e"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.9'",
-            "version": "==14.0.0"
+            "version": "==14.1.0"
         },
         "eqator": {
             "hashes": [
