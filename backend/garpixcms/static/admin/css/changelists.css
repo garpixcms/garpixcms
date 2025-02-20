@@ -36,6 +36,11 @@
   width: auto;
 }
 
+.change-list .results td {
+  max-width: 250px;
+  overflow-wrap: break-word;
+}
+
 .change-list .filtered table tbody th {
   padding-right: 1em;
 }
