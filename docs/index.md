@@ -44,3 +44,8 @@ python3 backend/manage.py runserver
 2. Следуя инструкциям по установке `garpix_user` (https://github.com/garpixcms/garpix_user#quickstart), настройте проект (обратите внимание, что роуты и базовые настройки уже включены в модуль garpixcms в файлах `garpixcms/settings.py` и `garpixcms/urls.py` соответственно).
 3. После применения миграций выполните команду `python3 manage.py update_user_module`.
 4. Установите переменную окружения `ENABLE_GARPIX_AUTH` в False или просто удалите ее.
+
+
+# Enterprise-версия
+
+Для получения информации о стоимости Enterprise-версии, пожалуйста, направьте запрос на электронную почту inbox@garpix.com.
